@@ -1458,7 +1458,7 @@ end
 if Text == "UpSu" then
 bot.answerCallbackQuery(data.id, " âŒ”ï¸™ ØªÙ… ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø³ÙˆØ±Ø³", true)
 os.execute('rm -rf start.lua')
-os.execute('curl -s https://raw.githubusercontent.com/khaled1q/Kbn/main/start.lua -o start.lua')
+os.execute('curl -s https://raw.githubusercontent.com/xXStrem/BoT/main/start.lua -o start.lua')
 dofile('start.lua')  
 end
 if Text == "UpBot" then
@@ -2518,7 +2518,7 @@ if text == ("ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø³ÙˆØ±Ø³") then
 if programmer(msg) then  
 bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™ØªÙ… ØªØ­Ø¯ÙŠØ« Ø§Ù„Ø³ÙˆØ±Ø³ Ø§Ù„Ù‰ Ø§Ù„Ø§ØµØ¯Ø§Ø± Ø§Ù„Ø¬Ø¯ÙŠØ¯*","md",true)
 os.execute('rm -rf start.lua')
-os.execute('curl -s https://raw.githubusercontent.com/khaled1q/Kbn/main/start.lua -o start.lua')
+os.execute('curl -s https://raw.githubusercontent.com/xXStrem/BoT/main/start.lua -o start.lua')
 dofile('start.lua')  
 end
 end
@@ -3373,841 +3373,227 @@ if text == "Ø§Ù…Ø«Ù„Ù‡" then
 redis:del(bot_id..":"..msg.chat_id..":game:Example")
 mthal = {"Ø¬ÙˆØ²","Ø¶Ø±Ø§Ø·Ù‡","Ø§Ù„Ø­Ø¨Ù„","Ø§Ù„Ø­Ø§ÙÙŠ","Ø´Ù‚Ø±Ù‡","Ø¨ÙŠØ¯Ùƒ","Ø³Ù„Ø§ÙŠÙ‡","Ø§Ù„Ù†Ø®Ù„Ù‡","Ø§Ù„Ø®ÙŠÙ„","Ø­Ø¯Ø§Ø¯","Ø§Ù„Ù…Ø¨Ù„Ù„","ÙŠØ±ÙƒØµ","Ù‚Ø±Ø¯","Ø§Ù„Ø¹Ù†Ø¨","Ø§Ù„Ø¹Ù…Ù‡","Ø§Ù„Ø®Ø¨Ø²","Ø¨Ø§Ù„Ø­ØµØ§Ø¯","Ø´Ù‡Ø±","Ø´ÙƒÙ‡","ÙŠÙƒØ­Ù„Ù‡",};
 name = mthal[math.random(#mthal)]
-redis:set(bot_id..":"..msg.chat_id..":game:Example",name)
-name = string.gsub(name,"Ø¬ÙˆØ²","ÙŠÙ†Ø·ÙŠ____Ù„Ù„Ù…Ø§Ø¹Ø¯Ù‡ Ø³Ù†ÙˆÙ†")
-name = string.gsub(name,"Ø¶Ø±Ø§Ø·Ù‡","Ø§Ù„ÙŠ ÙŠØ³ÙˆÙ‚ Ø§Ù„Ù…Ø·ÙŠ ÙŠØªØ­Ù…Ù„___")
-name = string.gsub(name,"Ø¨ÙŠØ¯Ùƒ","Ø§ÙƒÙ„___Ù…Ø­Ø¯ ÙŠÙÙŠØ¯Ùƒ")
-name = string.gsub(name,"Ø§Ù„Ø­Ø§ÙÙŠ","ØªØ¬Ø¯ÙŠ Ù…Ù†___Ù†Ø¹Ø§Ù„")
-name = string.gsub(name,"Ø´Ù‚Ø±Ù‡","Ù…Ø¹ Ø§Ù„Ø®ÙŠÙ„ ÙŠØ§___")
-name = string.gsub(name,"Ø§Ù„Ù†Ø®Ù„Ù‡","Ø§Ù„Ø·ÙˆÙ„ Ø·ÙˆÙ„___ÙˆØ§Ù„Ø¹Ù‚Ù„ Ø¹Ù‚Ù„ Ø§Ù„ØµØ®Ù„Ø©")
-name = string.gsub(name,"Ø³Ù„Ø§ÙŠÙ‡","Ø¨Ø§Ù„ÙˆØ¬Ù‡ Ø§Ù…Ø±Ø§ÙŠØ© ÙˆØ¨Ø§Ù„Ø¸Ù‡Ø±___")
-name = string.gsub(name,"Ø§Ù„Ø®ÙŠÙ„","Ù…Ù† Ù‚Ù„Ø©___Ø´Ø¯Ùˆ Ø¹Ù„Ù‰ Ø§Ù„Ú†Ù„Ø§Ø¨ Ø³Ø±ÙˆØ¬")
-name = string.gsub(name,"Ø­Ø¯Ø§Ø¯","Ù…ÙˆÙƒÙ„ Ù…Ù† ØµØ®Ù… ÙˆØ¬Ù‡Ù‡ ÙƒØ§Ù„ Ø¢Ù†ÙŠ___")
-name = string.gsub(name,"Ø§Ù„Ù…Ø¨Ù„Ù„","___Ù…Ø§ ÙŠØ®Ø§Ù Ù…Ù† Ø§Ù„Ù…Ø·Ø±")
-name = string.gsub(name,"Ø§Ù„Ø­Ø¨Ù„","Ø§Ù„Ù„ÙŠ ØªÙ„Ø¯ØºØ© Ø§Ù„Ø­ÙŠØ© ÙŠØ®Ø§Ù Ù…Ù† Ø¬Ø±Ø©___")
-name = string.gsub(name,"ÙŠØ±ÙƒØµ","Ø§Ù„Ù…Ø§ÙŠØ¹Ø±Ù___ÙŠÙ‚ÙˆÙ„ Ø§Ù„ÙƒØ§Ø¹ Ø¹ÙˆØ¬Ù‡")
-name = string.gsub(name,"Ø§Ù„Ø¹Ù†Ø¨","Ø§Ù„Ù…Ø§ÙŠÙ„ÙˆØ­___ÙŠÙ‚ÙˆÙ„ Ø­Ø§Ù…Ø¶")
-name = string.gsub(name,"Ø§Ù„Ø¹Ù…Ù‡","___Ø¥Ø°Ø§ Ø­Ø¨Øª Ø§Ù„Ú†Ù†Ø© Ø§Ø¨Ù„ÙŠØ³ ÙŠØ¯Ø®Ù„ Ø§Ù„Ø¬Ù†Ø©")
-name = string.gsub(name,"Ø§Ù„Ø®Ø¨Ø²","Ø§Ù†Ø·ÙŠ___Ù„Ù„Ø®Ø¨Ø§Ø² Ø­ØªÙ‰ Ù„Ùˆ ÙŠØ§ÙƒÙ„ Ù†ØµÙ‡")
-name = string.gsub(name,"Ø¨Ø§Ø­ØµØ§Ø¯","Ø§Ø³Ù…Ø©___ÙˆÙ…Ù†Ø¬Ù„Ù‡ Ù…ÙƒØ³ÙˆØ±")
-name = string.gsub(name,"Ø´Ù‡Ø±","Ø§Ù…Ø´ÙŠ__ÙˆÙ„Ø§ ØªØ¹Ø¨Ø± Ù†Ù‡Ø±")
-name = string.gsub(name,"Ø´ÙƒÙ‡","ÙŠØ§Ù…Ù† ØªØ¹Ø¨ ÙŠØ§Ù…Ù†__ÙŠØ§ Ù…Ù† Ø¹Ù„Ù‰ Ø§Ù„Ø­Ø§Ø¶Ø± Ù„ÙƒØ©")
-name = string.gsub(name,"Ø§Ù„Ù‚Ø±Ø¯","__Ø¨Ø¹ÙŠÙ† Ø§Ù…Ù‡ ØºØ²Ø§Ù„")
-name = string.gsub(name,"ÙŠÙƒØ­Ù„Ù‡","Ø§Ø¬Ù‡___Ø¹Ù…Ø§Ù‡Ø§")
-return bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠÙƒÙ…Ù„ Ø§Ù„Ù…Ø«Ù„~* ( ["..name.."] )","md",true)  
-end
-if text == "Ø³Ù…Ø§ÙŠÙ„Ø§Øª" or text == "Ø³Ù…Ø§ÙŠÙ„" then
-redis:del(bot_id..":"..msg.chat_id..":game:Smile")
-Random = {"ðŸ","ðŸŽ","ðŸ","ðŸŠ","ðŸ‹","ðŸ‰","ðŸ‡","ðŸ“","ðŸˆ","ðŸ’","ðŸ‘","ðŸ","ðŸ¥¥","ðŸ¥","ðŸ…","ðŸ†","ðŸ¥‘","ðŸ¥¦","ðŸ¥’","ðŸŒ¶","ðŸŒ½","ðŸ¥•","ðŸ¥”","ðŸ¥–","ðŸ¥","ðŸž","ðŸ¥¨","ðŸŸ","ðŸ§€","ðŸ¥š","ðŸ³","ðŸ¥“","ðŸ¥©","ðŸ—","ðŸ–","ðŸŒ­","ðŸ”","ðŸ ","ðŸ•","ðŸ¥ª","ðŸ¥™","â˜•ï¸","ðŸ¥¤","ðŸ¶","ðŸº","ðŸ»","ðŸ€","âš½ï¸","ðŸˆ","âš¾ï¸","ðŸŽ¾","ðŸ","ðŸ‰","ðŸŽ±","ðŸ“","ðŸ¸","ðŸ¥…","ðŸŽ°","ðŸŽ®","ðŸŽ³","ðŸŽ¯","ðŸŽ²","ðŸŽ»","ðŸŽ¸","ðŸŽº","ðŸ¥","ðŸŽ¹","ðŸŽ¼","ðŸŽ§","ðŸŽ¤","ðŸŽ¬","ðŸŽ¨","ðŸŽ­","ðŸŽª","ðŸŽŸ","ðŸŽ«","ðŸŽ—","ðŸµ","ðŸŽ–","ðŸ†","ðŸ¥Œ","ðŸ›·","ðŸš—","ðŸšŒ","ðŸŽ","ðŸš“","ðŸš‘","ðŸšš","ðŸš›","ðŸšœ","âš”","ðŸ›¡","ðŸ”®","ðŸŒ¡","ðŸ’£","- ","ðŸ“","ðŸ““","ðŸ“—","ðŸ“‚","ðŸ“…","ðŸ“ª","ðŸ“«","- ","ðŸ“­","â°","ðŸ“º","ðŸŽš","â˜Žï¸","ðŸ“¡"}
-SM = Random[math.random(#Random)]
-redis:set(bot_id..":"..msg.chat_id..":game:Smile",SM)
-return bot.sendText(msg.chat_id,msg.id,"  âŒ”ï¸™Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ¯Ø² Ù‡Ø§Ø°Ø§ Ø§Ù„Ø³Ù…Ø§ÙŠÙ„ ?~ ( "..SM.."}","md",true)  
-end
-if text == "Ø§Ù„Ø§Ø³Ø±Ø¹" or text == "ØªØ±ØªÙŠØ¨" then
-redis:del(bot_id..":"..msg.chat_id..":game:Monotonous")
-KlamSpeed = {"Ø³Ø­ÙˆØ±","Ø³ÙŠØ§Ø±Ù‡","Ø§Ø³ØªÙ‚Ø¨Ø§Ù„","Ù‚Ù†ÙØ°","Ø§ÙŠÙÙˆÙ†","Ø¨Ø²ÙˆÙ†Ù‡","Ù…Ø·Ø¨Ø®","ÙƒØ±Ø³ØªÙŠØ§Ù†Ùˆ","Ø¯Ø¬Ø§Ø¬Ù‡","Ù…Ø¯Ø±Ø³Ù‡","Ø§Ù„ÙˆØ§Ù†","ØºØ±ÙÙ‡","Ø«Ù„Ø§Ø¬Ù‡","Ù‚Ù‡ÙˆÙ‡","Ø³ÙÙŠÙ†Ù‡","Ø±ÙŠÙÙˆØ±","Ù…Ø­Ø·Ù‡","Ø·ÙŠØ§Ø±Ù‡","Ø±Ø§Ø¯Ø§Ø±","Ù…Ù†Ø²Ù„","Ù…Ø³ØªØ´ÙÙ‰","ÙƒÙ‡Ø±Ø¨Ø§Ø¡","ØªÙØ§Ø­Ù‡","Ø§Ø®Ø·Ø¨ÙˆØ·","Ø³Ù„Ù…ÙˆÙ†","ÙØ±Ù†Ø³Ø§","Ø¨Ø±ØªÙ‚Ø§Ù„Ù‡","ØªÙØ§Ø­","Ù…Ø·Ø±Ù‚Ù‡","Ø³ÙˆÙ†ÙŠÙƒ","Ù„Ø¹Ø¨Ù‡","Ø´Ø¨Ø§Ùƒ","Ø¨Ø§Øµ","Ø³Ù…ÙƒÙ‡","Ø°Ø¨Ø§Ø¨","ØªÙ„ÙØ§Ø²","Ø­Ø§Ø³ÙˆØ¨","Ø§Ù†ØªØ±Ù†Øª","Ø³Ø§Ø­Ù‡","Ø¬Ø³Ø±"};
-name = KlamSpeed[math.random(#KlamSpeed)]
-redis:set(bot_id..":"..msg.chat_id..":game:Monotonous",name)
-name = string.gsub(name,"Ø³Ø­ÙˆØ±","Ø³ Ø± Ùˆ Ø­")
-name = string.gsub(name,"Ø³ÙˆÙ†ÙŠÙƒ","ÙŠ Ø³ Ùƒ Ù† Ùƒ")
-name = string.gsub(name,"Ø³ÙŠØ§Ø±Ù‡","Ù‡ Ø± Ø³ ÙŠ Ø§")
-name = string.gsub(name,"Ø§Ø³ØªÙ‚Ø¨Ø§Ù„","Ù„ Ø¨ Ø§ Øª Ù‚ Ø³ Ø§")
-name = string.gsub(name,"Ù‚Ù†ÙØ°","Ø° Ù‚ Ù† Ù")
-name = string.gsub(name,"Ø§ÙŠÙÙˆÙ†","Ùˆ Ù† Ù Ø§")
-name = string.gsub(name,"Ø±ÙŠÙÙˆØ±","Ø± Ùˆ Ù Ø± ÙŠ")
-name = string.gsub(name,"Ù…Ø·Ø¨Ø®","Ø® Ø¨ Ø· Ù…")
-name = string.gsub(name,"ÙƒØ±Ø³ØªÙŠØ§Ù†Ùˆ","Ø³ Øª Ø§ Ù† Ùˆ Ùƒ Ø± ÙŠ")
-name = string.gsub(name,"Ø¯Ø¬Ø§Ø¬Ù‡","Ø¬ Ø¬ Ø§ Ø¯ Ù‡")
-name = string.gsub(name,"Ù…Ø¯Ø±Ø³Ù‡","Ù‡ Ù… Ø¯ Ø± Ø³")
-name = string.gsub(name,"Ø§Ù„ÙˆØ§Ù†","Ù† Ø§ Ùˆ Ø§ Ù„")
-name = string.gsub(name,"ØºØ±ÙÙ‡","Øº Ù‡ Ø± Ù")
-name = string.gsub(name,"Ø«Ù„Ø§Ø¬Ù‡","Ø¬ Ù‡ Øª Ù„ Ø§")
-name = string.gsub(name,"Ù‚Ù‡ÙˆÙ‡","Ù‡ Ù‚ Ù‡ Ùˆ")
-name = string.gsub(name,"Ø³ÙÙŠÙ†Ù‡","Ù‡ Ù† Ù ÙŠ Ø³")
-name = string.gsub(name,"Ù…Ø­Ø·Ù‡","Ù‡ Ø· Ù… Ø­")
-name = string.gsub(name,"Ø·ÙŠØ§Ø±Ù‡","Ø± Ø§ Ø· ÙŠ Ù‡")
-name = string.gsub(name,"Ø±Ø§Ø¯Ø§Ø±","Ø± Ø§ Ø± Ø§ Ø¯")
-name = string.gsub(name,"Ù…Ù†Ø²Ù„","Ù† Ø² Ù… Ù„")
-name = string.gsub(name,"Ù…Ø³ØªØ´ÙÙ‰","Ù‰ Ø´ Ø³ Ù Øª Ù…")
-name = string.gsub(name,"ÙƒÙ‡Ø±Ø¨Ø§Ø¡","Ø± Ø¨ Ùƒ Ù‡ Ø§ Ø¡")
-name = string.gsub(name,"ØªÙØ§Ø­Ù‡","Ø­ Ù‡ Ø§ Øª Ù")
-name = string.gsub(name,"Ø§Ø®Ø·Ø¨ÙˆØ·","Ø· Ø¨ Ùˆ Ø§ Ø® Ø·")
-name = string.gsub(name,"Ø³Ù„Ù…ÙˆÙ†","Ù† Ù… Ùˆ Ù„ Ø³")
-name = string.gsub(name,"ÙØ±Ù†Ø³Ø§","Ù† Ù Ø± Ø³ Ø§")
-name = string.gsub(name,"Ø¨Ø±ØªÙ‚Ø§Ù„Ù‡","Ø± Øª Ù‚ Ø¨ Ø§ Ù‡ Ù„")
-name = string.gsub(name,"ØªÙØ§Ø­","Ø­ Ù Ø§ Øª")
-name = string.gsub(name,"Ù…Ø·Ø±Ù‚Ù‡","Ù‡ Ø· Ù… Ø± Ù‚")
-name = string.gsub(name,"Ù…ØµØ±","Øµ Ù… Ø±")
-name = string.gsub(name,"Ù„Ø¹Ø¨Ù‡","Ø¹ Ù„ Ù‡ Ø¨")
-name = string.gsub(name,"Ø´Ø¨Ø§Ùƒ","Ø¨ Ø´ Ø§ Ùƒ")
-name = string.gsub(name,"Ø¨Ø§Øµ","Øµ Ø§ Ø¨")
-name = string.gsub(name,"Ø³Ù…ÙƒÙ‡","Ùƒ Ø³ Ù… Ù‡")
-name = string.gsub(name,"Ø°Ø¨Ø§Ø¨","Ø¨ Ø§ Ø¨ Ø°")
-name = string.gsub(name,"ØªÙ„ÙØ§Ø²","Øª Ù Ù„ Ø² Ø§")
-name = string.gsub(name,"Ø­Ø§Ø³ÙˆØ¨","Ø³ Ø§ Ø­ Ùˆ Ø¨")
-name = string.gsub(name,"Ø§Ù†ØªØ±Ù†Øª","Ø§ Øª Ù† Ù†  Ø± Øª")
-name = string.gsub(name,"Ø³Ø§Ø­Ù‡","Ø­ Ø§ Ù‡ Ø³")
-name = string.gsub(name,"Ø¬Ø³Ø±","Ø± Ø¬ Ø³")
-return bot.sendText(msg.chat_id,msg.id,"  âŒ”ï¸™Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ±ØªØ¨Ù‡Ø§~ ( ["..name.."] )","md",true)  
-end
-if text == "Ø­Ø²ÙˆØ±Ù‡" then
-redis:del(bot_id..":"..msg.chat_id..":game:Riddles")
-Hzora = {"Ø§Ù„Ø¬Ø±Ø³","Ø¹Ù‚Ø±Ø¨ Ø§Ù„Ø³Ø§Ø¹Ø©","Ø§Ù„Ø³Ù…Ùƒ","Ø§Ù„Ù…Ø·Ø±","5","Ø§Ù„ÙƒØªØ§Ø¨","Ø§Ù„Ø¨Ø³Ù…Ø§Ø±","7","Ø§Ù„ÙƒØ¹Ø¨Ù‡","Ø¨ÙŠØª Ø§Ù„Ø´Ø¹Ø±","Ù„Ù‡Ø§Ù†Ù‡","Ø§Ù†Ø§","Ø§Ù…ÙŠ","Ø§Ù„Ø§Ø¨Ø±Ù‡","Ø§Ù„Ø³Ø§Ø¹Ø©","22","ØºÙ„Ø·","ÙƒÙ… Ø§Ù„Ø³Ø§Ø¹Ø©","Ø§Ù„Ø¨ÙŠØªÙ†Ø¬Ø§Ù†","Ø§Ù„Ø¨ÙŠØ¶","Ø§Ù„Ù…Ø±Ø§ÙŠÙ‡","Ø§Ù„Ø¶ÙˆØ¡","Ø§Ù„Ù‡ÙˆØ§Ø¡","Ø§Ù„Ø¶Ù„","Ø§Ù„Ø¹Ù…Ø±","Ø§Ù„Ù‚Ù„Ù…","Ø§Ù„Ù…Ø´Ø·","Ø§Ù„Ø­ÙØ±Ù‡","Ø§Ù„Ø¨Ø­Ø±","Ø§Ù„Ø«Ù„Ø¬","Ø§Ù„Ø§Ø³ÙÙ†Ø¬","Ø§Ù„ØµÙˆØª","Ø¨Ù„Ù…"};
-name = Hzora[math.random(#Hzora)]
-redis:set(bot_id..":"..msg.chat_id..":game:Riddles",name)
-name = string.gsub(name,"Ø§Ù„Ø¬Ø±Ø³","Ø´ÙŠØ¦ Ø§Ø°Ø§ Ù„Ù…Ø³ØªÙ‡ ØµØ±Ø® Ù…Ø§ Ù‡ÙˆÙ‡ ØŸ")
-name = string.gsub(name,"Ø¹Ù‚Ø±Ø¨ Ø§Ù„Ø³Ø§Ø¹Ø©","Ø§Ø®ÙˆØ§Ù† Ù„Ø§ ÙŠØ³ØªØ·ÙŠØ¹Ø§Ù† ØªÙ…Ø¶ÙŠÙ‡ Ø§ÙƒØ«Ø± Ù…Ù† Ø¯Ù‚ÙŠÙ‚Ø© Ù…Ø¹Ø§ ÙÙ…Ø§ Ù‡Ù…Ø§ ØŸ")
-name = string.gsub(name,"Ø§Ù„Ø³Ù…Ùƒ","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø­ÙŠÙˆØ§Ù† Ø§Ù„Ø°ÙŠ Ù„Ù… ÙŠØµØ¹Ø¯ Ø§Ù„Ù‰ Ø³ÙÙŠÙ†Ø© Ù†ÙˆØ­ Ø¹Ù„ÙŠÙ‡ Ø§Ù„Ø³Ù„Ø§Ù… ØŸ")
-name = string.gsub(name,"Ø§Ù„Ù…Ø·Ø±","Ø´ÙŠØ¦ ÙŠØ³Ù‚Ø· Ø¹Ù„Ù‰ Ø±Ø£Ø³Ùƒ Ù…Ù† Ø§Ù„Ø§Ø¹Ù„Ù‰ ÙˆÙ„Ø§ ÙŠØ¬Ø±Ø­Ùƒ ÙÙ…Ø§ Ù‡Ùˆ ØŸ")
-name = string.gsub(name,"5","Ù…Ø§ Ø§Ù„Ø¹Ø¯Ø¯ Ø§Ù„Ø°ÙŠ Ø§Ø°Ø§ Ø¶Ø±Ø¨ØªÙ‡ Ø¨Ù†ÙØ³Ù‡ ÙˆØ§Ø¶ÙØª Ø¹Ù„ÙŠÙ‡ 5 ÙŠØµØ¨Ø­ Ø«Ù„Ø§Ø«ÙŠÙ† ")
-name = string.gsub(name,"Ø§Ù„ÙƒØªØ§Ø¨","Ù…Ø§ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ Ù„Ù‡ Ø§ÙˆØ±Ø§Ù‚ ÙˆÙ„ÙŠØ³ Ù„Ù‡ Ø¬Ø°ÙˆØ± ØŸ")
-name = string.gsub(name,"Ø§Ù„Ø¨Ø³Ù…Ø§Ø±","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ Ù„Ø§ ÙŠÙ…Ø´ÙŠ Ø§Ù„Ø§ Ø¨Ø§Ù„Ø¶Ø±Ø¨ ØŸ")
-name = string.gsub(name,"7","Ø¹Ø§Ø¦Ù„Ù‡ Ù…Ø¤Ù„ÙÙ‡ Ù…Ù† 6 Ø¨Ù†Ø§Øª ÙˆØ§Ø® Ù„ÙƒÙ„ Ù…Ù†Ù‡Ù† .ÙÙƒÙ… Ø¹Ø¯Ø¯ Ø§ÙØ±Ø§Ø¯ Ø§Ù„Ø¹Ø§Ø¦Ù„Ù‡ ")
-name = string.gsub(name,"Ø§Ù„ÙƒØ¹Ø¨Ù‡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ù…ÙˆØ¬ÙˆØ¯ ÙˆØ³Ø· Ù…ÙƒØ© ØŸ")
-name = string.gsub(name,"Ø¨ÙŠØª Ø§Ù„Ø´Ø¹Ø±","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø¨ÙŠØª Ø§Ù„Ø°ÙŠ Ù„ÙŠØ³ ÙÙŠØ© Ø§Ø¨ÙˆØ§Ø¨ ÙˆÙ„Ø§ Ù†ÙˆØ§ÙØ° ØŸ ")
-name = string.gsub(name,"Ù„Ù‡Ø§Ù†Ù‡","ÙˆØ­Ø¯Ù‡ Ø­Ù„ÙˆÙ‡ ÙˆÙ…ØºØ±ÙˆØ±Ù‡ ØªÙ„Ø¨Ø³ Ù…ÙŠØ© ØªÙ†ÙˆØ±Ù‡ .Ù…Ù† Ù‡ÙŠÙ‡ ØŸ ")
-name = string.gsub(name,"Ø§Ù†Ø§","Ø§Ø¨Ù† Ø§Ù…Ùƒ ÙˆØ§Ø¨Ù† Ø§Ø¨ÙŠÙƒ ÙˆÙ„ÙŠØ³ Ø¨Ø§Ø®ØªÙƒ ÙˆÙ„Ø§ Ø¨Ø§Ø®ÙŠÙƒ ÙÙ…Ù† ÙŠÙƒÙˆÙ† ØŸ")
-name = string.gsub(name,"Ø§Ù…ÙŠ","Ø§Ø®Øª Ø®Ø§Ù„Ùƒ ÙˆÙ„ÙŠØ³Øª Ø®Ø§Ù„ØªÙƒ Ù…Ù† ØªÙƒÙˆÙ† ØŸ ")
-name = string.gsub(name,"Ø§Ù„Ø§Ø¨Ø±Ù‡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙƒÙ„Ù…Ø§ Ø®Ø·Ø§ Ø®Ø·ÙˆÙ‡ ÙÙ‚Ø¯ Ø´ÙŠØ¦Ø§ Ù…Ù† Ø°ÙŠÙ„Ù‡ ØŸ ")
-name = string.gsub(name,"Ø§Ù„Ø³Ø§Ø¹Ø©","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠÙ‚ÙˆÙ„ Ø§Ù„ØµØ¯Ù‚ ÙˆÙ„ÙƒÙ†Ù‡ Ø§Ø°Ø§ Ø¬Ø§Ø¹ ÙƒØ°Ø¨ ØŸ")
-name = string.gsub(name,"22","ÙƒÙ… Ù…Ø±Ù‡ ÙŠÙ†Ø·Ø¨Ù‚ Ø¹Ù‚Ø±Ø¨Ø§ Ø§Ù„Ø³Ø§Ø¹Ø© Ø¹Ù„Ù‰ Ø¨Ø¹Ø¶Ù‡Ù…Ø§ ÙÙŠ Ø§Ù„ÙŠÙˆÙ… Ø§Ù„ÙˆØ§Ø­Ø¯ ")
-name = string.gsub(name,"ØºÙ„Ø·","Ù…Ø§ Ù‡ÙŠ Ø§Ù„ÙƒÙ„Ù…Ù‡ Ø§Ù„ÙˆØ­ÙŠØ¯Ù‡ Ø§Ù„ØªÙŠ ØªÙ„ÙØ¶ ØºÙ„Ø· Ø¯Ø§Ø¦Ù…Ø§ ØŸ ")
-name = string.gsub(name,"ÙƒÙ… Ø§Ù„Ø³Ø§Ø¹Ø©","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø³Ø¤Ø§Ù„ Ø§Ù„Ø°ÙŠ ØªØ®ØªÙ„Ù Ø§Ø¬Ø§Ø¨ØªÙ‡ Ø¯Ø§Ø¦Ù…Ø§ ØŸ")
-name = string.gsub(name,"Ø§Ù„Ø¨ÙŠØªÙ†Ø¬Ø§Ù†","Ø¬Ø³Ù… Ø§Ø³ÙˆØ¯ ÙˆÙ‚Ù„Ø¨ Ø§Ø¨ÙŠØ¶ ÙˆØ±Ø§Ø³ Ø§Ø®Ø¸Ø± ÙÙ…Ø§ Ù‡Ùˆ ØŸ")
-name = string.gsub(name,"Ø§Ù„Ø¨ÙŠØ¶","Ù…Ø§Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ Ø§Ø³Ù…Ù‡ Ø¹Ù„Ù‰ Ù„ÙˆÙ†Ù‡ ØŸ")
-name = string.gsub(name,"Ø§Ù„Ù…Ø±Ø§ÙŠÙ‡","Ø§Ø±Ù‰ ÙƒÙ„ Ø´ÙŠØ¦ Ù…Ù† Ø¯ÙˆÙ† Ø¹ÙŠÙˆÙ† Ù…Ù† Ø§ÙƒÙˆÙ† ØŸ ")
-name = string.gsub(name,"Ø§Ù„Ø¶ÙˆØ¡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠØ®ØªØ±Ù‚ Ø§Ù„Ø²Ø¬Ø§Ø¬ ÙˆÙ„Ø§ ÙŠÙƒØ³Ø±Ù‡ ØŸ")
-name = string.gsub(name,"Ø§Ù„Ù‡ÙˆØ§Ø¡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠØ³ÙŠØ± Ø§Ù…Ø§Ù…Ùƒ ÙˆÙ„Ø§ ØªØ±Ø§Ù‡ ØŸ")
-name = string.gsub(name,"Ø§Ù„Ø¶Ù„","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠÙ„Ø§Ø­Ù‚Ùƒ Ø§ÙŠÙ†Ù…Ø§ ØªØ°Ù‡Ø¨ ØŸ ")
-name = string.gsub(name,"Ø§Ù„Ø¹Ù…Ø±","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¡ Ø§Ù„Ø°ÙŠ ÙƒÙ„Ù…Ø§ Ø·Ø§Ù„ Ù‚ØµØ± ØŸ ")
-name = string.gsub(name,"Ø§Ù„Ù‚Ù„Ù…","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠÙƒØªØ¨ ÙˆÙ„Ø§ ÙŠÙ‚Ø±Ø£ ØŸ")
-name = string.gsub(name,"Ø§Ù„Ù…Ø´Ø·","Ù„Ù‡ Ø£Ø³Ù†Ø§Ù† ÙˆÙ„Ø§ ÙŠØ¹Ø¶ Ù…Ø§ Ù‡Ùˆ ØŸ ")
-name = string.gsub(name,"Ø§Ù„Ø­ÙØ±Ù‡","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ø°Ø§ Ø£Ø®Ø°Ù†Ø§ Ù…Ù†Ù‡ Ø§Ø²Ø¯Ø§Ø¯ ÙˆÙƒØ¨Ø± ØŸ")
-name = string.gsub(name,"Ø§Ù„Ø¨Ø­Ø±","Ù…Ø§ Ù‡Ùˆ Ø§Ù„Ø´ÙŠØ¦ Ø§Ù„Ø°ÙŠ ÙŠØ±ÙØ¹ Ø§Ø«Ù‚Ø§Ù„ ÙˆÙ„Ø§ ÙŠÙ‚Ø¯Ø± ÙŠØ±ÙØ¹ Ù…Ø³Ù…Ø§Ø± ØŸ")
-name = string.gsub(name,"Ø§Ù„Ø«Ù„Ø¬","Ø§Ù†Ø§ Ø§Ø¨Ù† Ø§Ù„Ù…Ø§Ø¡ ÙØ§Ù† ØªØ±ÙƒÙˆÙ†ÙŠ ÙÙŠ Ø§Ù„Ù…Ø§Ø¡ Ù…Øª ÙÙ…Ù† Ø§Ù†Ø§ ØŸ")
-name = string.gsub(name,"Ø§Ù„Ø§Ø³ÙÙ†Ø¬","ÙƒÙ„ÙŠ Ø«Ù‚ÙˆØ¨ ÙˆÙ…Ø¹ Ø°Ø§Ù„Ùƒ Ø§Ø­ÙØ¶ Ø§Ù„Ù…Ø§Ø¡ ÙÙ…Ù† Ø§ÙƒÙˆÙ† ØŸ")
-name = string.gsub(name,"Ø§Ù„ØµÙˆØª","Ø§Ø³ÙŠØ± Ø¨Ù„Ø§ Ø±Ø¬Ù„ÙŠÙ† ÙˆÙ„Ø§ Ø§Ø¯Ø®Ù„ Ø§Ù„Ø§ Ø¨Ø§Ù„Ø§Ø°Ù†ÙŠÙ† ÙÙ…Ù† Ø§Ù†Ø§ ØŸ")
-name = string.gsub(name,"Ø¨Ù„Ù…","Ø­Ø§Ù…Ù„ ÙˆÙ…Ø­Ù…ÙˆÙ„ Ù†ØµÙ Ù†Ø§Ø´Ù ÙˆÙ†ØµÙ Ù…Ø¨Ù„ÙˆÙ„ ÙÙ…Ù† Ø§ÙƒÙˆÙ† ØŸ ")
-return bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ­Ù„ Ø§Ù„Ø­Ø²ÙˆØ±Ù‡*\n ( "..name.." )","md",true)  
-end
-if text == "Ù…Ø¹Ø§Ù†ÙŠ" then
-redis:del(bot_id..":"..msg.chat_id..":game:Meaningof")
-Maany_Rand = {"Ù‚Ø±Ø¯","Ø¯Ø¬Ø§Ø¬Ù‡","Ø¨Ø·Ø±ÙŠÙ‚","Ø¶ÙØ¯Ø¹","Ø¨ÙˆÙ…Ù‡","Ù†Ø­Ù„Ù‡","Ø¯ÙŠÙƒ","Ø¬Ù…Ù„","Ø¨Ù‚Ø±Ù‡","Ø¯ÙˆÙ„ÙÙŠÙ†","ØªÙ…Ø³Ø§Ø­","Ù‚Ø±Ø´","Ù†Ù…Ø±","Ø§Ø®Ø·Ø¨ÙˆØ·","Ø³Ù…ÙƒÙ‡","Ø®ÙØ§Ø´","Ø§Ø³Ø¯","ÙØ£Ø±","Ø°Ø¦Ø¨","ÙØ±Ø§Ø´Ù‡","Ø¹Ù‚Ø±Ø¨","Ø²Ø±Ø§ÙÙ‡","Ù‚Ù†ÙØ°","ØªÙØ§Ø­Ù‡","Ø¨Ø§Ø°Ù†Ø¬Ø§Ù†"}
-name = Maany_Rand[math.random(#Maany_Rand)]
-redis:set(bot_id..":"..msg.chat_id..":game:Meaningof",name)
-name = string.gsub(name,"Ù‚Ø±Ø¯","ðŸ’")
-name = string.gsub(name,"Ø¯Ø¬Ø§Ø¬Ù‡","ðŸ”")
-name = string.gsub(name,"Ø¨Ø·Ø±ÙŠÙ‚","ðŸ§")
-name = string.gsub(name,"Ø¶ÙØ¯Ø¹","ðŸ¸")
-name = string.gsub(name,"Ø¨ÙˆÙ…Ù‡","ðŸ¦‰")
-name = string.gsub(name,"Ù†Ø­Ù„Ù‡","ðŸ")
-name = string.gsub(name,"Ø¯ÙŠÙƒ","ðŸ“")
-name = string.gsub(name,"Ø¬Ù…Ù„","ðŸ«")
-name = string.gsub(name,"Ø¨Ù‚Ø±Ù‡","ðŸ„")
-name = string.gsub(name,"Ø¯ÙˆÙ„ÙÙŠÙ†","ðŸ¬")
-name = string.gsub(name,"ØªÙ…Ø³Ø§Ø­","ðŸŠ")
-name = string.gsub(name,"Ù‚Ø±Ø´","ðŸ¦ˆ")
-name = string.gsub(name,"Ù†Ù…Ø±","ðŸ…")
-name = string.gsub(name,"Ø§Ø®Ø·Ø¨ÙˆØ·","ðŸ™")
-name = string.gsub(name,"Ø³Ù…ÙƒÙ‡","ðŸŸ")
-name = string.gsub(name,"Ø®ÙØ§Ø´","ðŸ¦‡")
-name = string.gsub(name,"Ø§Ø³Ø¯","ðŸ¦")
-name = string.gsub(name,"ÙØ£Ø±","ðŸ­")
-name = string.gsub(name,"Ø°Ø¦Ø¨","ðŸº")
-name = string.gsub(name,"ÙØ±Ø§Ø´Ù‡","ðŸ¦‹")
-name = string.gsub(name,"Ø¹Ù‚Ø±Ø¨","ðŸ¦‚")
-name = string.gsub(name,"Ø²Ø±Ø§ÙÙ‡","ðŸ¦’")
-name = string.gsub(name,"Ù‚Ù†ÙØ°","ðŸ¦”")
-name = string.gsub(name,"ØªÙØ§Ø­Ù‡","ðŸŽ")
-name = string.gsub(name,"Ø¨Ø§Ø°Ù†Ø¬Ø§Ù†","ðŸ†")
-return bot.sendText(msg.chat_id,msg.id,"  âŒ”ï¸™Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ¯Ø² Ù…Ø¹Ù†Ù‰ Ø§Ù„Ø³Ù…Ø§ÙŠÙ„~ ( ["..name.."] )","md",true)  
-end
-if text == "Ø§Ù„Ø¹ÙƒØ³" then
-redis:del(bot_id..":"..msg.chat_id..":game:Reflection")
-katu = {"Ø¨Ø§ÙŠ","ÙÙ‡Ù…Øª","Ù…ÙˆØ²ÙŠÙ†","Ø§Ø³Ù…Ø¹Ùƒ","Ø§Ø­Ø¨Ùƒ","Ù…ÙˆØ­Ù„Ùˆ","Ù†Ø¶ÙŠÙ","Ø­Ø§Ø±Ù‡","Ù†Ø§ØµÙŠ","Ø¬ÙˆÙ‡","Ø³Ø±ÙŠØ¹","ÙˆÙ†Ø³Ù‡","Ø·ÙˆÙŠÙ„","Ø³Ù…ÙŠÙ†","Ø¶Ø¹ÙŠÙ","Ø´Ø±ÙŠÙ","Ø´Ø¬Ø§Ø¹","Ø±Ø­Øª","Ø¹Ø¯Ù„","Ù†Ø´ÙŠØ·","Ø´Ø¨Ø¹Ø§Ù†","Ù…ÙˆØ¹Ø·Ø´Ø§Ù†","Ø®ÙˆØ´ ÙˆÙ„Ø¯","Ø§Ù†ÙŠ","Ù‡Ø§Ø¯Ø¦"}
-name = katu[math.random(#katu)]
-redis:set(bot_id..":"..msg.chat_id..":game:Reflection",name)
-name = string.gsub(name,"Ø¨Ø§ÙŠ","Ù‡Ù„Ùˆ")
-name = string.gsub(name,"ÙÙ‡Ù…Øª","Ù…Ø§ÙÙ‡Ù…Øª")
-name = string.gsub(name,"Ù…ÙˆØ²ÙŠÙ†","Ø²ÙŠÙ†")
-name = string.gsub(name,"Ø§Ø³Ù…Ø¹Ùƒ","Ù…Ø§Ø³Ù…Ø¹Ùƒ")
-name = string.gsub(name,"Ø§Ø­Ø¨Ùƒ","Ù…Ø§Ø­Ø¨Ùƒ")
-name = string.gsub(name,"Ù…ÙˆØ­Ù„Ùˆ","Ø­Ù„Ùˆ")
-name = string.gsub(name,"Ù†Ø¶ÙŠÙ","ÙˆØµØ®")
-name = string.gsub(name,"Ø­Ø§Ø±Ù‡","Ø¨Ø§Ø±Ø¯Ù‡")
-name = string.gsub(name,"Ùˆ","Ø¹Ø§Ù„ÙŠ")
-name = string.gsub(name,"Ø¬ÙˆÙ‡","ÙÙˆÙƒ")
-name = string.gsub(name,"Ø³Ø±ÙŠØ¹","Ø¨Ø·ÙŠØ¡")
-name = string.gsub(name,"ÙˆÙ†Ø³Ù‡","Ø¶ÙˆØ¬Ù‡")
-name = string.gsub(name,"Ø·ÙˆÙŠÙ„","Ù‚Ø²Ù…")
-name = string.gsub(name,"Ø³Ù…ÙŠÙ†","Ø¶Ø¹ÙŠÙ")
-name = string.gsub(name,"Ø¶Ø¹ÙŠÙ","Ù‚ÙˆÙŠ")
-name = string.gsub(name,"Ø´Ø±ÙŠÙ","ÙƒÙˆØ§Ø¯")
-name = string.gsub(name,"Ø´Ø¬Ø§Ø¹","Ø¬Ø¨Ø§Ù†")
-name = string.gsub(name,"Ø±Ø­Øª","Ø§Ø¬ÙŠØª")
-name = string.gsub(name,"Ø¹Ø¯Ù„","Ù…ÙŠØª")
-name = string.gsub(name,"Ù†Ø´ÙŠØ·","ÙƒØ³ÙˆÙ„")
-name = string.gsub(name,"Ø´Ø¨Ø¹Ø§Ù†","Ø¬ÙˆØ¹Ø§Ù†")
-name = string.gsub(name,"Ù…ÙˆØ¹Ø·Ø´Ø§Ù†","Ø¹Ø·Ø´Ø§Ù†")
-name = string.gsub(name,"Ø®ÙˆØ´ ÙˆÙ„Ø¯","Ù…ÙˆØ®ÙˆØ´ ÙˆÙ„Ø¯")
-name = string.gsub(name,"Ø§Ù†ÙŠ","Ù…Ø·ÙŠ")
-name = string.gsub(name,"Ù‡Ø§Ø¯Ø¦","Ø¹ØµØ¨ÙŠ")
-return bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ø³Ø±Ø¹ ÙˆØ§Ø­Ø¯ ÙŠØ¯Ø² Ø§Ù„Ø¹ÙƒØ³ ~* ( ["..name.."])","md",true) 
-end
-end -- end tf
-if text == 'Ø§Ù„Ù‚ÙˆØ§Ù†ÙŠÙ†' then
-if redis:get(bot_id..":"..msg.chat_id..":Law") then
-t = redis:get(bot_id..":"..msg.chat_id..":Law")
-else
-t = "*  âŒ”ï¸™Ù„Ù… ÙŠØªÙ… ÙˆØ¶Ø¹ Ø§Ù„Ù‚ÙˆØ§Ù†ÙŠÙ† ÙÙŠ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø© *"
-end
-bot.sendText(msg.chat_id,msg.id,t,"md", true)
-end
-if msg.content.luatele == "messageChatJoinByLink" then
-if not redis:get(bot_id..":"..msg.chat_id..":settings:Welcome") then
-local UserInfo = bot.getUser(msg.sender.user_id)
-local tex = redis:get(bot_id..":"..msg.chat_id..":Welcome")
-if UserInfo.username and UserInfo.username ~= "" then
-User = "[@"..UserInfo.username.."]"
-Usertag = '['..UserInfo.first_name..'](t.me/'..UserInfo.username..')'
-else
-User = "Ù„Ø§ ÙŠÙˆØ¬Ø¯!"
-Usertag = '['..UserInfo.first_name..'](tg://user?id='..msg.sender.user_id..')'
-end
-if tex then 
-tex = tex:gsub('name',UserInfo.first_name) 
-tex = tex:gsub('user',User) 
-bot.sendText(msg.chat_id,msg.id,tex,"md")  
-else
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ø·Ù„Ù‚ Ø¯Ø®ÙˆÙ„ Ø¹Ù…Ø±ÙŠðŸ’˜ : *"..Usertag..".","md")  
-end
-end
-end
-if text == 'Ø±Ø§Ø¨Ø· Ø§Ù„Ø­Ø°Ù' or text == 'Ø±Ø§Ø¨Ø· Ø­Ø°Ù' or text == 'Ø¨ÙˆØª Ø§Ù„Ø­Ø°Ù' or text == 'Ø­Ø°Ù Ø­Ø³Ø§Ø¨' then 
-local Text = "*  âŒ”ï¸™Ø±ÙˆØ§Ø¨Ø· Ø­Ø°Ù Ø¬Ù…ÙŠØ¹ Ø¨Ø±Ø§Ù…Ø¬ Ø§Ù„ØªÙˆØ§ØµÙ„*\n"
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = ' âŒ”ï¸™ Telegram ',url="https://my.telegram.org/auth?to=delete"},{text = ' âŒ”ï¸™ instagram ',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}},
-{{text = ' âŒ”ï¸™ Facebook ',url="https://www.facebook.com/help/deleteaccount"},{text = ' âŒ”ï¸™ Snspchat ',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},
-{{text = ' âŒ”ï¸™ ð–²ð—ˆð—Žð—‹cð–¾ xð–·ð–²ð—ð—‹ð–¾ð—† ',url="t.me/xXStrem"}},
-}
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo=https://t.me/xXStrem&caption=".. URL.escape(Text).."&photo=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-if text == "Ø§Ù„Ø³Ø§Ø¹Ø©" then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„Ø³Ø§Ø¹Ø© Ø§Ù„Ø§Ù† : ( "..os.date("%I:%M%p").." )*","md",true)  
-end
-if text == "Ø´Ø³Ù…Ùƒ" or text == "Ø³Ù†Ùˆ Ø§Ø³Ù…Ùƒ" then
-namet = {"Ø§Ø³Ù…ÙŠ "..(redis:get(bot_id..":namebot") or "Ø³ØªØ±ÙŠÙ…"),"Ø¹Ù…Ø±ÙŠÙŠ Ø§Ø³Ù…ÙŠ "..(redis:get(bot_id..":namebot") or "Ø³ØªØ±ÙŠÙ…"),"Ø§Ù†ÙŠ Ù„Ø¹Ù…ÙŠÙ„ "..(redis:get(bot_id..":namebot") or "Ø³ØªØ±ÙŠÙ…"),(redis:get(bot_id..":namebot") or "Ø³ØªØ±ÙŠÙ…").." Ø§Ù†ÙŠ"}
-bot.sendText(msg.chat_id,msg.id,"*"..namet[math.random(#namet)].."*","md",true)  
-end
-if text == "Ø¨ÙˆØª" or text == (redis:get(bot_id..":namebot") or "Ø³ØªØ±ÙŠÙ…") then
-nameBot = {"Ù‡Ø§ Ø­Ø¨ÙŠ","Ù†Ø¹Ù… ØªÙØ¶Ù„ ØŸ","Ù…Ø­ØªØ§Ø¬ Ø´ÙŠ","Ø¹ÙˆÙÙ†ÙŠ Ø¶Ø§ÙŠØ¬","Ø®Ø¨ØµØªÙ†ÙŠ ØªØ±Ù‰","Ù‡Ø§ÙƒÙƒÙˆ","Ù‡Ø§ Ù…ÙˆÙ„Ø§ÙŠ","Ù‡ÙŠØ§ØªÙ†ÙŠ","Ø´ØªØ±ÙŠØ¯ØŸ ","Ø§Ù…Ø±Ù†ÙŠ Ø­ÙŠØ§ØªÙŠ","Ù‡Ø§ Ø³ÙŠØ¯","Ù‡Ø§ ÙŠØ±ÙˆØ­ÙŠ","Ù‡Ø§Ø§Ø§Ø§ ÙØ¶Ù†ÙŠ"}
-bot.sendText(msg.chat_id,msg.id,"*"..nameBot[math.random(#nameBot)].."*","md",true)  
-end
---------
+redis:set(bot_id..":"..msg.chat_id..":game:Example"$‘èA@îÆoA¨{FÝ\«.….GWÉÏxÄJ\æ³);E7IÉjh«ÚL§­s§xEþy¬¦ajLÝIâÃ3xÁ#uìÂÂ-rÛ­kž×}=Û°ƒ¸r¡û\©ÿ®²TfÙK¤9^óß8áÄ8P2`Û5hsEs)Ó¦{Eº.H¶4…ßyµwæéhMÝ=³5¯†æúˆã’×“×ìö®£saÌ3Öê8¨²pÐûq=†–Œõ²z¢Uø„´@ùk{Iºr™>æC, Ú?Ê€ë<CêÄÁ7& xÇ­ÜNèHõjÐÅJGRwpVß6”Ìpv_ÐÙ‰Eÿ§Ø-þ³kµ¾G²„ƒ<æä5ŸÔÞŒš¿É£j‘±’b=­b‘>*ÏúÆÝÞy_ .::AÎsN…A@ã·¥¥ÿ+:G9E0¹ºÐ+ç&SkìÖÐ°	ŽŽrè{$âxQþõÞAÒhÒÛŽ
+`h:<+ð?jJ†)qbòo‹ðš6±¹D²jÜxqœ}ÑKþÚ8.¢dm†¨çFõ,YµaRN-°h„s´D›¼0Xó|˜|øÌÀT’üìC)~H?º©%C5E6RÏö³Ž"kÒ*³Ûƒ7®/‘œ­P_Õªh[¶‰|j˜³XuW5QÕ¨úÊ‰»¢œÖ)QƒéTê~hEY
+)Ìc¾´Kä–ƒ7ßA»"`—v¹ÿkªÇö¿?I9w³‡‹•ÃxVT8[Lý­œ<±#l]rÌÒI<èÃ]Û“œ?À=qùei–ëüÒ²I-a¶ôþ‘
+•)¸ƒ=6­la?ÚØ7lJ»‡[:@ aæÁ‰Õ®ŽŽ«(ÉÉ1X=”]ôSt žÆ³ ”Ã%Ö¢®ÙT's<ÏŒ¸ 5t—å%ÅÈþÂ®ƒ«öÈç£í4ÐñIE„KSLÕük:z‰˜ŽIU´—V[)Çd³w ÍøjâÄaGöã	á9RÝã‰š²'Ÿàê?è=MPÙw!!C»1…´0@Ž¹úyàÎ§É½¿@ÂP³W3|$žª½“ßÙÊ·|>òIÏ!¡ï£–dÒ²„Ïê¨?¥@TvCœ÷8ii‘%|.¦kÅÈ;‹³› û7Ê äºîNºo3¤à¿£\VÍ«×êò=Ä÷UÕã˜ü·Ü)Ü§I¿l,Ù,n3[I[Qãwº}ËV—ñ•EÊ‰”H‘ÞcÍò{!¼ºð©ÔJÒù²z#*ÆYjèuñtÔ(­P†Üw¨¯‚«(Â’kÏ¬EÅh‘“ü·´múãK`kÉ©1F-0=<<"R¾´£¸žNcIÝ€*;ø9-ÄTõ f)ùòg”š‹0ž“­Œåþå5¤gÄˆ#(î[}-¬\•’HH¯¢gójã¯ÚŸ§„™RpÌ({j†Œ%
+MI¤îß2K+ª¾àd9ûütï,qœ
+}|ÚÄ¹ážéñG¦Få`«Ð:ç÷¨ô±oÁ*•z$¤S¡y6Mc0W¦yMH|nç$Bš=ªàfªÃÕèFÔ
+{ûIª}fZI6¬ŒÒÁø[YÔ/âcÐ9&¥úâ¦7‡6Ã0´~–ç…;µ@dI°’}O5VÀÂSU¹ö¨Øf=c'z™š>ºÂ¾ŒXýQôˆlp„ÀFî)xÚ¨Ï¦\ž[WçlŸÖ1ägÃWO¼[[ÖIŽnÏ©kNP ŸœVA¸
+Óoçj€íàÈÃÝ£lG¯Êh.Ææ]úÕžâÞa„?÷Ô?îPò‰éC,+WƒÑ<—òû^¿2Jk`s¼}›ò…ñl%¯÷Ç°³ƒHŽ€øzUÉÑœö
+Å‡t¦»ÙÏÚÄÚ#fPhJÃÈt/x3EîŸ_=ˆ<KßeÓYC2²Èá Zl}mÎLÄÂÀþbà~µK Êä[¤DÇÄ6ù³¬²5äŸÊ4s¨tð·.Æ‹å{ì_Äe0r¼hŠ‹Ò$ÖF%hZ\•k×òë›ÅÒ/pƒÜ 57¤„y‰·ãÄ"d&n‹d¦Ü‚‘EÇx\OÒÉWƒõ¶ Tg©­Ôç,¢³…ñ¨ùÙfr/œ¦‘¬xïôÛóA®£¼æ	U;Cw´@ç“é¢ÕôþvŸÊ«IÑ›ó™E)“ ºC[1dP o&C¤Å´ùâæá³pî[YrUŸ=Z;‘ÉŒ1d•g
+¼P*1A—3XÐæçe²fª’™Û_í»(-pÞÅ—Âl}­”8Û‹9m°‹	Ù3C“4ëp³ç†WyN˜Qr9XK{šÙû»"[ŠmwÜÉÁŠÉ‚=º¼ŸÊ•–ˆ¿OÛˆQË²3]òiKœAJñ°|ÝéöOäXZ•k]¤ÍÍþÐu´_T@6ìUmÁ4~ØÉNÊ¼\î­ˆ	N¢ÃLgœæ=W¿MÔaËH8F ¦ž¶H—\q§yŒ¹Ù­³£p¡„ÃPí´Ý–Éó	UL—„PÓòê~»&D’]:Y–<ÖAì¹õûØtÍ±W5;&öÛW•L;½~¸ÏŒ¦çmˆÅ&ÞŠœœ¨9Üt¬Í&dƒ±âÑK¸¶¡ÃÄ;MóÉåã%c`™RÐaføOäÃ-yÎGã¹.6/v<8Ac<¸\Âøvþ•° þzúZ†
+2‚]%ø—'ð,J~®W!hêIõÞ
+BÙ½ôv8ÈêèWÊßnoÂn l	}Ú=mWµQâô—]W£+«;. 8'"l!â=ôôÚ6¾bS¤Þ2†QèéÝJ*Ê×ÜõúÊÔUÛ©·¿	ÓÇR©Ì¹hùã|h:Ñ%a¡K·ËŸçÑH*Cdfï7‰üÿt7°Ûž ‡“;¤ªÖ½ƒ-}EJ¿À'ð|Z°xî_Ö·@Ë°•e¦Õµxkð…Üøë5å"2JË”4Ñþ§}æ¦“n…'¡$®¬1Â Íœ°ºc5ÿó„âôY§ÄXÄav¦—tòE•À¹ž[AM ïýyÓkåhJ…ÖIuðAò!Ûq>(}yäû—Üâñü¾;¡z6÷¦$5ý­ðëØïñòÀ™qÖ'à
+®ógvíXÚŽ,WòkCpÕ4°yg@@Ù¾Z%TxÊÚüà{æt¤v­5æ{EjÇ†B}ùá}ƒÑ²¤0ÂwÛqD9…º:ºÜF^›àfëGÖö…Îò’dŠŽq¼9ÐH„±ý¢[ˆ@¤ì/¤¯ sÑ>díúÑ“‡Ò.TD®¬L˜&²¢Aû³Ùl¹°¢)I)n&JÙ­ª?¹ÅóŠDª–]{4OièjÜF"cÍ¦¼önŠÂÀ×|:J-ºHÌo|NÉ=ÿz?ÏJŒ°L¥|ZßW‘•'™øl|ˆjÄ/ Ò!µ±&à£e|•Å\fébÈ§‰£Y#õ©w7mi7ì†-ãÛ÷f‰
+ï£›Ý»šV.ÄPþ’´‘R…ÅŽ;Qš‚~õçSÍdkÞæ„ŽË	!7(ï€	"1”e§Œ	—wÛÌAÎb[¾wÁ‰åÒ±ñÓë/ÈeDbýÈa´Â©mÝR‚Ï¿8¨e˜_O›¢j!F4èÛOÈY>rçòŠ7äD†2I{}òßr”¹ÆÓiõ>ü½‰6"pÁø9!'¼Ú+¯k³¨÷¹pÉDÙíénÝÍˆ,{§¼îÆ ÷Êª`íä¬´j¶{x¸Ëe’¥ì1{# +_´·)ì\Pø½IñêCF.Ô7	Ü-¨™i|Þ'--rÇqHüÖSU:XSÇÄ(¬nd‹÷h›4?"#½Èhèu~¤9gÑ~@ÌÒ)íC„=Õ æ)ˆ>T½¶1f1w\¾[©º
+cV<n’nèOõÙ±s±•0Œþ$_© 9âF±¶9È—Ë²©.Yê€×ùí×w	Â°Êè D\†ˆTÇ³[Gê¥Þ_î.¯*p:Aßx„ÞWËØ¬ÉëŽãUkUÓ4	ÖÎ
+¼ô]„ÌþÞ*±PÜ#\bC6º×ÀŒT¾öéCÒ-Þâ=ÄY­Äuc˜Q[Ê`ŽBX’ÁAhª%šîY¦â–=ÉA¾…è¢ÚtÍ s•ÃçTZ]-"–‹Ù9{€>J¸;4CÊÉ¬}ÛHvxCb@áÇ98ô,¼O,ˆ³ð¨jê£@JŸ‹ü³o¶¦4 üæb,±ßQßâ7þq øÂþÐY9Ý
+Q‹q]ŠÜîÔ&ƒ†Õí™¿Ð[,´û$€2ˆÓžfï¼€X¾Ð}ÆuƒÑ¤]¨+z‹ý·øÜ* ®»¯dÏžâSOª&W²wøø,Åhµ9BuÆ3®óPh4»¡ñÎ×C£Ø¶ý Œ³4\T%2hb¬§’« ˆ¼s”¿U8YçÐ9²õRmÊ¥µÙò¹'¾PLÈ9\9eÚ®Aâ¨Ó!Vö¤H‘Šê(ªü|³EÖ\616òB«é/,©ÈûîkW…+ áÐoPà€…Ã#¿ò3RK0[¿íJ§u	ÒÎ™”(ß§¹”{ØŸUPH6ì9—ì|©*TŠSZ îá(w}¿ñ#gÛrörÆÝgq}äm}š±$Ëwè)È+ª´Â\T%t'ÀQÒTê±Æ5@™sºqª.€J2ÝÀ•ÁßÈÿÎo1–º¹JˆWš :ulŸS‘¤Y*Çë\(˜e³E¹£&×e‘]k"âö=)¾—ÿe4ª/ýÞB)‡
+’bò´)u-ŠèŸLwÕ
+ú	¤‚pUŽ<î9ž¶t'Íž©Ö»+ŒÅÒ¼v´¾[žóáÇäŽOðÚT!J‚÷D–]»æbà„
+ˆcñŒÌ7Ö2Y¹c8&¦ð´¶)âíâ—€>åü
+noÒ¦@½.ìå±ÚC4fœ—)àå­ÈØïaÇ}'D [Ò˜ÐO6„lï>ÏønMÎ°Ÿ Rt<Ÿ:þ¤°Þž$XÒ¢@*â<§€p»|,€<(˜³¼3Ê[ñ(i%…—üææíŸ®]xqÂPTX¥ÙKÙ¾ç”›ûL™¤K»·]é‡Ó´c_ülKøWh¾˜¡.€?¦Aåˆu×_wÑ›>¡«U,•Bá)ðåsé£Û*ãýj»8ä–?¦øø=o)b`þhg(ÐTR\éÊµç¢¤DL §7ÒÃÁu†üR“ i@P¥¹-'^É`+?l\š?œ»¬¸½@Y‚·üHHù[]i ‹ÃG’ûøD…ezãUÖ²S}q#@dŸi‚µ¯z‡cr†\í §h²]5}5ÜÐÕˆÐ‰ÿùÂ€Úg~5ò¢õî÷A%Ž·9Hþ_’Q¹šD$B¯øF1¶î.ª;+Z¦š<%OÑkµ<vi·÷ªúçÉ¢÷5‹»“ú¶£ct¾ô;·îþŽjVÛ+¿'w q²8ß2VoTãÛqê$üFb¥LJ…ÕóW6sJEsg'5ªó«ÆÎR‘?š3(¤P	>ÆÙ¤Ó`é™RÕ5µ|\:K–ò±0Pe>n©Mžóµ`âˆÿ»D¹×üè“XÒ‚‚F'·å€)Šx+–ˆŒ’%ìåùÉfÈ^ßYîýŸÓÏÍ£åfßÚ8ê¹í˜þ­‡àµ¿ÏÚ‚¤×ç±¥Éûÿ'ÕNïWû@!‡[ÜæAoŽÀûFŠÍµÜ®Âàål'	XYDø–=ï4¯§œwÍª.ìË”s]MÎ×|©˜ JZê¯úM…Éh3Ã")Ó!Îzoõ<¦íÕ5Fó^èßè2”II°©¶»ŠåŸÞUÊ*Ûr©ll¬©2óûk]t•ÈðêåNlDêG ¹éH¾ƒéñ fÈ&ãœ SÏ~•‰¾$Ø 8{à’ŽòîW!aOÆ*-"´‡UPóTÆw¢ö¯/"ü
 
-----------
-if text == "Ø§Ù„ØªØ§Ø±ÙŠØ®" then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„ØªØ§Ø±ÙŠØ® Ø§Ù„Ø§Ù† : ( "..os.date("%Y/%m/%d").." )*","md",true)  
-end
-if not redis:get(bot_id..":"..msg.chat_id..":settings:GetBio") then
-if text == 'Ø§Ù„Ø¨Ø§ÙŠÙˆ' or text == 'Ù†Ø¨Ø°ØªÙŠ' then
-bot.sendText(msg.chat_id,msg.id,GetBio(msg.sender.user_id),"md",true)  
-return false
-end
-end
-if text == 'Ø±ÙØ¹ Ø§Ù„Ù…Ù†Ø´Ø¦' or text == 'Ø±ÙØ¹ Ø§Ù„Ù…Ø§Ù„Ùƒ' then
-if msg.can_be_deleted_for_all_users == false then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„Ø¨ÙˆØª Ù„Ø§ ÙŠÙ…ØªÙ„Ùƒ ØµÙ„Ø§Ø­ÙŠØ©*","md",true)  
-return false
-end
-local info_ = bot.getSupergroupMembers(msg.chat_id, "Administrators", "*", 0, 200)
-local list_ = info_.members
-for k, v in pairs(list_) do
-if info_.members[k].status.luatele == "chatMemberStatusCreator" then
-redis:sadd(bot_id..":"..msg.chat_id..":Status:Creator", v.member_id.user_id)
-return bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™ØªÙ… "..text.." Ø¨Ù†Ø¬Ø§Ø­*","md",true)  
-end
-end
-end
-if text == 'Ø§Ù„Ù…Ù†Ø´Ø¦' or text == 'Ø§Ù„Ù…Ø§Ù„Ùƒ' then
-if msg.can_be_deleted_for_all_users == false then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„Ø¨ÙˆØª Ù„Ø§ ÙŠÙ…ØªÙ„Ùƒ ØµÙ„Ø§Ø­ÙŠØ©*","md",true)  
-return false
-end
-local info_ = bot.getSupergroupMembers(msg.chat_id, "Administrators", "*", 0, 200)
-local list_ = info_.members
-for k, v in pairs(list_) do
-if info_.members[k].status.luatele == "chatMemberStatusCreator" then
-local UserInfo = bot.getUser(v.member_id.user_id)
-if UserInfo.first_name == "" then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™"..text.." Ø­Ø³Ø§Ø¨ Ù…Ø­Ø°ÙˆÙ*","md",true)  
-return false
-end
-if UserInfo.username and UserInfo.username ~= "" then
-t = '['..UserInfo.first_name..'](t.me/'..UserInfo.username..')'
-u = '[@'..UserInfo.username..']'
-ban = ' '..UserInfo.first_name..' '
-else
-t = '['..UserInfo.first_name..'](tg://user?id='..UserInfo.id..')'
-u = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
-end
-sm = bot.getChatMember(msg.chat_id,UserInfo.id)
-if sm.status.custom_title then
-if sm.status.custom_title ~= "" then
-custom = sm.status.custom_title
-else
-custom = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
-end
-end
-if sm.status.luatele == "chatMemberStatusCreator"  then
-gstatus = "Ø§Ù„Ù…Ù†Ø´Ø¦"
-elseif sm.status.luatele == "chatMemberStatusAdministrator" then
-gstatus = "Ø§Ù„Ù…Ø´Ø±Ù"
-else
-gstatus = "Ø§Ù„Ø¹Ø¶Ùˆ"
-end
-local photo = bot.getUserProfilePhotos(UserInfo.id)
-if photo.total_count > 0 then
-local TestText = "  *  âŒ”ï¸™Name : *( "..(t).." *)*\n*  âŒ”ï¸™User : *( "..(u).." *)*\n*  âŒ”ï¸™Bio :* ["..GetBio(UserInfo.id).."]\n"
-keyboardd = {}
-keyboardd.inline_keyboard = {
-{
-{text = ban, url = "https://t.me/"..UserInfo.username..""},
-},
-}
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-else
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„Ø§Ø³Ù… : *( "..(t).." *)*\n*  âŒ”ï¸™Ø§Ù„Ù…Ø¹Ø±Ù : *( "..(u).." *)*\n["..GetBio(UserInfo.id).."]","md",true)  
-end
-end
-end
-end
-if text == 'Ø§Ù„Ù…Ø·ÙˆØ±' or text == 'Ù…Ø·ÙˆØ± Ø§Ù„Ø¨ÙˆØª' then
-local UserInfo = bot.getUser(sudoid)
-if UserInfo.username and UserInfo.username ~= "" then
-t = '['..UserInfo.first_name..'](t.me/'..UserInfo.username..')'
-ban = ' '..UserInfo.first_name..' '
-u = '[@'..UserInfo.username..']'
-else
-t = '['..UserInfo.first_name..'](tg://user?id='..UserInfo.id..')'
-u = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
-end
-local photo = bot.getUserProfilePhotos(UserInfo.id)
-if photo.total_count > 0 then
-local TestText = "  *  âŒ”ï¸™Name : *( "..(t).." *)*\n*  âŒ”ï¸™User : *( "..(u).." *)*\n*  âŒ”ï¸™Bio :* ["..GetBio(UserInfo.id).."]\n"
-keyboardd = {}
-keyboardd.inline_keyboard = {
-{
-{text = ban, url = "https://t.me/"..UserInfo.username..""},
-},
-}
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-else
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„Ø§Ø³Ù… : *( "..(t).." *)*\n*  âŒ”ï¸™Ø§Ù„Ù…Ø¹Ø±Ù : *( "..(u).." *)*\n["..GetBio(UserInfo.id).."]","md",true)  
-end
-end
-if text == 'Ù…Ø¨Ø±Ù…Ø¬ Ø§Ù„Ø³ÙˆØ±Ø³' or text == 'Ù…Ø·ÙˆØ± Ø§Ù„Ø³ÙˆØ±Ø³' or text == 'Ø§Ø­Ù…Ø¯' then
-local UserId_Info = bot.searchPublicChat("F_T_Y")
-if UserId_Info.id then
-local UserInfo = bot.getUser(UserId_Info.id)
-if UserInfo.username and UserInfo.username ~= "" then
-t = '['..UserInfo.first_name..'](t.me/'..UserInfo.username..')'
-ban = ' '..UserInfo.first_name..' '
-u = '[@'..UserInfo.username..']'
-else
-t = '['..UserInfo.first_name..'](tg://user?id='..UserInfo.id..')'
-u = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
-end
-local photo = bot.getUserProfilePhotos(UserId_Info.id)
-if photo.total_count > 0 then
-local TestText = "  *  âŒ”ï¸™Name : *( "..(t).." *)*\n*  âŒ”ï¸™User : *( "..(u).." *)*\n*  âŒ”ï¸™Bio :* ["..GetBio(UserInfo.id).."]\n"
-keyboardd = {}
-keyboardd.inline_keyboard = {
-{
-{text = ban, url = "https://t.me/"..UserInfo.username..""},
-},
-}
-local msg_id = msg.id/2097152/0.5 
-https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id='..msg.chat_id..'&caption='..URL.escape(TestText)..'&photo='..photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboardd))
-else
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„Ø§Ø³Ù… : *( "..(t).." *)*\n*  âŒ”ï¸™Ø§Ù„Ù…Ø¹Ø±Ù : *( "..(u).." *)*\n["..GetBio(UserInfo.id).."]","md",true)  
-end
-end
-end
-if Owner(msg) then
-if text == "ØªØ«Ø¨ÙŠØª" and msg.reply_to_message_id ~= 0 then
-if GetInfoBot(msg).PinMsg == false then
-bot.sendText(msg.chat_id,msg.id,'*  âŒ”ï¸™Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© ØªØ«Ø¨ÙŠØª Ø±Ø³Ø§Ø¦Ù„*',"md",true)  
-return false
-end
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™ØªÙ… ØªØ«Ø¨ÙŠØª Ø§Ù„Ø±Ø³Ø§Ù„Ø©*","md",true)
-local Rmsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
-bot.pinChatMessage(msg.chat_id,Rmsg.id,true)
-end
-end
-if text == 'Ù…Ø¹Ù„ÙˆÙ…Ø§ØªÙŠ' or text == 'Ù…ÙˆÙ‚Ø¹ÙŠ' or text == 'ØµÙ„Ø§Ø­ÙŠØ§ØªÙŠ' then
-local UserInfo = bot.getUser(msg.sender.user_id)
-local Statusm = bot.getChatMember(msg.chat_id,msg.sender.user_id).status.luatele
-if Statusm == "chatMemberStatusCreator" then
-StatusmC = 'Ù…Ù†Ø´Ø¦'
-elseif Statusm == "chatMemberStatusAdministrator" then
-StatusmC = 'Ù…Ø´Ø±Ù'
-else
-StatusmC = 'Ø¹Ø¶Ùˆ'
-end
-if StatusmC == 'Ù…Ø´Ø±Ù' then 
-local GetMemberStatus = bot.getChatMember(msg.chat_id,msg.sender.user_id).status
-if GetMemberStatus.can_change_info then
-change_info = 'âœ”ï¸' else change_info = 'âŒ'
-end
-if GetMemberStatus.can_delete_messages then
-delete_messages = 'âœ”ï¸' else delete_messages = 'âŒ'
-end
-if GetMemberStatus.can_invite_users then
-invite_users = 'âœ”ï¸' else invite_users = 'âŒ'
-end
-if GetMemberStatus.can_pin_messages then
-pin_messages = 'âœ”ï¸' else pin_messages = 'âŒ'
-end
-if GetMemberStatus.can_restrict_members then
-restrict_members = 'âœ”ï¸' else restrict_members = 'âŒ'
-end
-if GetMemberStatus.can_promote_members then
-promote = 'âœ”ï¸' else promote = 'âŒ'
-end
-if StatusmC == "Ø¹Ø¶Ùˆ" then
-PermissionsUser = ' '
-else
-PermissionsUser = '*\n  âŒ”ï¸™ØµÙ„Ø§Ø­ÙŠØ§ØªÙƒ Ù‡ÙŠ :\n *Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ *'..'\n  âŒ”ï¸™ØªØºÙŠÙŠØ± Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª : '..change_info..'\n  âŒ”ï¸™ØªØ«Ø¨ÙŠØª Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ : '..pin_messages..'\n  âŒ”ï¸™Ø§Ø¶Ø§ÙØ© Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† : '..invite_users..'\n  âŒ”ï¸™Ù…Ø³Ø­ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ : '..delete_messages..'\n  âŒ”ï¸™Ø­Ø¸Ø± Ø§Ù„Ù…Ø³ØªØ®Ø¯Ù…ÙŠÙ† : '..restrict_members..'\n  âŒ”ï¸™Ø§Ø¶Ø§ÙØ© Ø§Ù„Ù…Ø´Ø±ÙÙŠÙ† : '..promote..'\n\n*'
-end
-end
-local UserId = msg.sender.user_id
-local Get_Rank =(Get_Rank(msg.sender.user_id,msg.chat_id))
-local messageC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":message") or 1)
-local EditmessageC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":Editmessage") or 0)
-local Total_ms =Total_message((redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":message") or 1))
-if UserInfo.username and UserInfo.username ~= "" then
-UserInfousername = '@'..UserInfo.username
-else
-UserInfousername = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
-end
-bot.sendText(msg.chat_id,msg.id,'\n*  âŒ”ï¸™Ø§ÙŠØ¯ÙŠÙƒ : '..UserId..'\n  âŒ”ï¸™Ù…Ø¹Ø±ÙÙƒ : '..UserInfousername..'\n  âŒ”ï¸™â€Ø±ØªØ¨ØªÙƒ : '..Get_Rank..'\n  âŒ”ï¸™Ù…ÙˆÙ‚Ø¹Ùƒ : '..StatusmC..'\n  âŒ”ï¸™Ø±Ø³Ø§Ø¦Ù„Ùƒ : '..messageC..'\n  âŒ”ï¸™ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙƒ : '..EditmessageC..'\n  âŒ”ï¸™ØªÙØ§Ø¹Ù„Ùƒ : '..Total_ms..'*'..(PermissionsUser or '') ,"md",true) 
-end
-if not redis:get(bot_id..":"..msg.chat_id..":settings:id") then
-if text == "Ø§ÙŠØ¯ÙŠ" and msg.reply_to_message_id == 0 then
-local Get_Rank =(Get_Rank(msg.sender.user_id,msg.chat_id))
-local messageC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":message") or 1)
-local gameC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":game") or 0)
-local Addedmem =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":Addedmem") or 0)
-local EditmessageC =(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":Editmessage") or 0)
-local Total_ms =Total_message((redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":message") or 1))
-local photo = bot.getUserProfilePhotos(msg.sender.user_id)
-local TotalPhoto = photo.total_count or 0
-local UserInfo = bot.getUser(msg.sender.user_id)
-local Texting = {
-'*  âŒ”ï¸™*ØµÙˆØ±ØªÙƒ ÙØ¯Ø´ÙŠ ðŸ˜˜ðŸ˜”â¤ï¸',
-"*  âŒ”ï¸™*ØµØ§Ø±Ù„Ùƒ Ø´ÙƒØ¯ Ù…Ø®Ù„ÙŠÙ‡ ",
-"*  âŒ”ï¸™*ÙˆÙØ§Ù„Ù„Ù‡ ðŸ˜”ðŸ’˜",
-"*  âŒ”ï¸™*ÙƒØ´Ø®Ù‡ Ø¨Ø±Ø¨ ðŸ˜‰ðŸ’˜",
-"*  âŒ”ï¸™*Ø¯ØºÙŠØ±Ù‡ Ø´Ø¨ÙŠ Ù‡Ø° ðŸ˜’",
-"*  âŒ”ï¸™*Ø¹Ù…Ø±ÙŠ Ø§Ù„Ø­Ù„ÙˆÙŠÙ† ðŸ’˜",
-}
-local Description = Texting[math.random(#Texting)]
-if UserInfo.username and UserInfo.username ~= "" then
-UserInfousername ="[@"..UserInfo.username.."]"
-else
-UserInfousername = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
-end
-if redis:get(bot_id..":"..msg.chat_id..":id") then
-theId = redis:get(bot_id..":"..msg.chat_id..":id") 
-theId = theId:gsub('#AddMem',Addedmem) 
-theId = theId:gsub('#game',gameC) 
-theId = theId:gsub('#id',msg.sender.user_id) 
-theId = theId:gsub('#username',UserInfousername) 
-theId = theId:gsub('#msgs',messageC) 
-theId = theId:gsub('#edit',EditmessageC) 
-theId = theId:gsub('#stast',Get_Rank) 
-theId = theId:gsub('#auto',Total_ms) 
-theId = theId:gsub('#Description',Description) 
-theId = theId:gsub('#photos',TotalPhoto) 
-else
-theId = Description.."\n*  âŒ”ï¸™Ø§Ù„Ø§ÙŠØ¯ÙŠ : (* "..msg.sender.user_id.."* )\n  âŒ”ï¸™Ø§Ù„Ù…Ø¹Ø±Ù :* ( "..UserInfousername.." )\n*  âŒ”ï¸™Ø§Ù„Ø±ØªØ¨Ù‡ : (  "..Get_Rank.." )\n  âŒ”ï¸™ØªÙØ§Ø¹Ù„Ùƒ : (  "..Total_ms.." )\n  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ : ( "..messageC.." )\n  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø§Ù„ØªØ¹Ø¯ÙŠÙ„Ø§Øª : ( "..EditmessageC.." )\n  âŒ”ï¸™Ø¹Ø¯Ø¯ ØµÙˆØ±Ùƒ : ( "..TotalPhoto.."* )"
-end
-if redis:get(bot_id..":"..msg.chat_id..":settings:id:ph") then
-bot.sendText(msg.chat_id,msg.id,theId,"md",true) 
-return false
-end
-if photo.total_count > 0 then
-return bot.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id,theId,"md")
-else
-return bot.sendText(msg.chat_id,msg.id,theId,"md",true) 
-end
-end
-end
-if text == 'ØªØ§Ùƒ Ù„Ù„ÙƒÙ„' and Administrator(msg) then
-local Info = bot.searchChatMembers(msg.chat_id, "*", 200)
-local members = Info.members
-ls = '\n*  âŒ”ï¸™Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡ \n Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ *\n'
-for k, v in pairs(members) do
-local UserInfo = bot.getUser(v.member_id.user_id)
-if UserInfo.username and UserInfo.username ~= "" then
-ls = ls..'*'..k..' - *@['..UserInfo.username..']\n'
-else
-ls = ls..'*'..k..' - *['..UserInfo.first_name..'](tg://user?id='..v.member_id.user_id..')\n'
-end
-end
-bot.sendText(msg.chat_id,msg.id,ls,"md",true)  
-end
-if text and text:match('^Ø§ÙŠØ¯ÙŠ @(%S+)$') or text and text:match('^ÙƒØ´Ù @(%S+)$') then
-local UserName = text:match('^Ø§ÙŠØ¯ÙŠ @(%S+)$') or text:match('^ÙƒØ´Ù @(%S+)$')
-local UserId_Info = bot.searchPublicChat(UserName)
-if not UserId_Info.id then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„ÙŠÙˆØ²Ø± Ù„ÙŠØ³ Ù„Ø­Ø³Ø§Ø¨ Ø´Ø®ØµÙŠ ØªØ£ÙƒØ¯ Ù…Ù†Ù‡*","md",true)  
-return false
-end
-if UserId_Info.type.is_channel == true then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„ÙŠÙˆØ²Ø± Ù„Ù‚Ù†Ø§Ø© Ø§Ùˆ Ù…Ø¬Ù…ÙˆØ¹Ø© ØªØ£ÙƒØ¯ Ù…Ù†Ù‡*","md",true)  
-return false
-end
-if UserName and UserName:match('(%S+)[Bb][Oo][Tt]') then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø¹Ø°Ø±Ø§ ÙŠØ¬Ø¨ Ø§Ù† ØªØ³ØªØ®Ø¯Ù… Ù…Ø¹Ø±Ù Ù„Ø­Ø³Ø§Ø¨ Ø´Ø®ØµÙŠ ÙÙ‚Ø·*","md",true)  
-return false
-end
-sm = bot.getChatMember(msg.chat_id,UserId_Info.id)
-if sm.status.luatele == "chatMemberStatusCreator"  then
-gstatus = "Ø§Ù„Ù…Ù†Ø´Ø¦"
-elseif sm.status.luatele == "chatMemberStatusAdministrator" then
-gstatus = "Ø§Ù„Ù…Ø´Ø±Ù"
-else
-gstatus = "Ø§Ù„Ø¹Ø¶Ùˆ"
-end
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„Ø§ÙŠØ¯ÙŠ : *( "..(UserId_Info.id).." *)*\n*  âŒ”ï¸™Ø§Ù„Ù…Ø¹Ø±Ù : *( [@"..(UserName).."] *)*\n*  âŒ”ï¸™Ø§Ù„Ø±ØªØ¨Ù‡ : *( "..(Get_Rank(UserId_Info.id,msg.chat_id)).." *)*\n*  âŒ”ï¸™Ø§Ù„Ù…ÙˆÙ‚Ø¹ : *( "..(gstatus).." *)*\n*  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ : *( "..(redis:get(bot_id..":"..msg.chat_id..":"..UserId_Info.id..":message") or 1).." *)*" ,"md",true)  
-end
-if text == 'Ø§ÙŠØ¯ÙŠ' or text == 'ÙƒØ´Ù'  and msg.reply_to_message_id ~= 0 then
-local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
-local UserInfo = bot.getUser(Remsg.sender.user_id)
-if UserInfo.username and UserInfo.username ~= "" then
-uame = '@'..UserInfo.username
-else
-uame = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
-end
-sm = bot.getChatMember(msg.chat_id,Remsg.sender.user_id)
-if sm.status.luatele == "chatMemberStatusCreator"  then
-gstatus = "Ø§Ù„Ù…Ù†Ø´Ø¦"
-elseif sm.status.luatele == "chatMemberStatusAdministrator" then
-gstatus = "Ø§Ù„Ù…Ø´Ø±Ù"
-else
-gstatus = "Ø§Ù„Ø¹Ø¶Ùˆ"
-end
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„Ø§ÙŠØ¯ÙŠ : *( "..(Remsg.sender.user_id).." *)*\n*  âŒ”ï¸™Ø§Ù„Ù…Ø¹Ø±Ù : *( ["..(uame).."] *)*\n*  âŒ”ï¸™Ø§Ù„Ø±ØªØ¨Ù‡ : *( "..(Get_Rank(Remsg.sender.user_id,msg.chat_id)).." *)*\n*  âŒ”ï¸™Ø§Ù„Ù…ÙˆÙ‚Ø¹ : *( "..(gstatus).." *)*\n*  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ : *( "..(redis:get(bot_id..":"..msg.chat_id..":"..Remsg.sender.user_id..":message") or 1).." *)*" ,"md",true)  
-end
-if text and text:match('^ÙƒØ´Ù (%d+)$') or text and text:match('^Ø§ÙŠØ¯ÙŠ (%d+)$') then
-local UserName = text:match('^ÙƒØ´Ù (%d+)$') or text:match('^Ø§ÙŠØ¯ÙŠ (%d+)$')
-local UserInfo = bot.getUser(UserName)
-if UserInfo.code == 400 or UserInfo.message == "Invalid user ID" then
-return false
-end
-if UserInfo.username and UserInfo.username ~= "" then
-uame = '@'..UserInfo.username
-else
-uame = 'Ù„Ø§ ÙŠÙˆØ¬Ø¯'
-end
-sm = bot.getChatMember(msg.chat_id,UserName)
-if sm.status.luatele == "chatMemberStatusCreator"  then
-gstatus = "Ø§Ù„Ù…Ù†Ø´Ø¦"
-elseif sm.status.luatele == "chatMemberStatusAdministrator" then
-gstatus = "Ø§Ù„Ù…Ø´Ø±Ù"
-else
-gstatus = "Ø§Ù„Ø¹Ø¶Ùˆ"
-end
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù„Ø§ÙŠØ¯ÙŠ : *( "..(UserName).." *)*\n*  âŒ”ï¸™Ø§Ù„Ù…Ø¹Ø±Ù : *( ["..(uame).."] *)*\n*  âŒ”ï¸™Ø§Ù„Ø±ØªØ¨Ù‡ : *( "..(Get_Rank(UserName,msg.chat_id)).." *)*\n*  âŒ”ï¸™Ø§Ù„Ù…ÙˆÙ‚Ø¹ : *( "..(gstatus).." *)*\n*  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø§Ù„Ø±Ø³Ø§Ø¦Ù„ : *( "..(redis:get(bot_id..":"..msg.chat_id..":"..UserName..":message") or 1).." *)*" ,"md",true)  
-end
-if text == 'Ø±ØªØ¨ØªÙŠ' then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø±ØªØ¨ØªÙƒ : *( "..(Get_Rank(msg.sender.user_id,msg.chat_id)).." *)*","md",true)  
-return false
-end
-if text == 'ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙŠ' or text == 'ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙŠ' then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø¹Ø¯Ø¯ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙƒ : *( "..(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":Editmessage") or 0).." *)*","md",true)  
-return false
-end
-if text == 'Ù…Ø³Ø­ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙŠ' or text == 'Ù…Ø³Ø­ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙŠ' then
-bot.sendText(msg.chat_id,msg.id,'*  âŒ”ï¸™ØªÙ… Ù…Ø³Ø­ Ø¬Ù…ÙŠØ¹ ØªØ¹Ø¯ÙŠÙ„Ø§ØªÙƒ*',"md",true)   
-redis:del(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":Editmessage")
-return false
-end
-if text == 'Ø¬Ù‡Ø§ØªÙŠ' or text == 'Ø§Ø¶Ø§ÙØ§ØªÙŠ' then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø¬Ù‡Ø§ØªÙƒ : *( "..(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":Addedmem") or 0).." *)*","md",true)  
-return false
-end
-if text == 'ØªÙØ§Ø¹Ù„ÙŠ' or text == 'Ù†Ø´Ø§Ø·ÙŠ' then
-bot.sendText(msg.chat_id,msg.id,"*"..Total_message((redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":message") or 1)).."*","md",true)  
-return false
-end
-if text ==("Ù…Ø³Ø­") and Vips(msg) and tonumber(msg.reply_to_message_id) > 0 then
-if GetInfoBot(msg).Delmsg == false then
-bot.sendText(msg.chat_id,msg.id,'*  âŒ”ï¸™Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ© Ø­Ø°Ù Ø±Ø³Ø§Ø¦Ù„*',"md",true)  
-return false
-end
-bot.deleteMessages(msg.chat_id,{[1]= msg.reply_to_message_id})
-bot.deleteMessages(msg.chat_id,{[1]= msg.id})
-end   
-if text == 'Ù…Ø³Ø­ Ø¬Ù‡Ø§ØªÙŠ' or text == 'Ù…Ø³Ø­ Ø§Ø¶Ø§ÙØ§ØªÙŠ' then
-bot.sendText(msg.chat_id,msg.id,'*  âŒ”ï¸™ØªÙ… Ù…Ø³Ø­ Ø¬Ù…ÙŠØ¹ Ø¬Ù‡Ø§ØªÙƒ*',"md",true)   
-redis:del(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":Addedmem")
-return false
-end
-if text == "Ù…Ù†Ùˆ Ø¶Ø§ÙÙ†ÙŠ" and not redis:get(bot_id..":"..msg.chat_id..":settings:addme") then
-if bot.getChatMember(msg.chat_id,msg.sender.user_id).status.luatele == "chatMemberStatusCreator" then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§Ù†Øª Ù…Ù†Ø´Ø¦ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø©*","md",true) 
-return false
-end
-addby = redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":AddedMe")
-if addby then 
-UserInfo = bot.getUser(addby)
-Name = '['..UserInfo.first_name..'](tg://user?id='..addby..')'
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™ØªÙ… Ø§Ø¶Ø§ÙØªÙƒ Ø¨ÙˆØ§Ø³Ø·Ø©  : ( *"..(Name).." *)*","md",true)  
-else
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ù‚Ø¯ Ù‚Ù…Øª Ø¨Ø§Ù„Ø§Ù†Ø¶Ù…Ø§Ù… Ø¹Ø¨Ø± Ø§Ù„Ø±Ø§Ø¨Ø·*","md",true) 
-return false
-end
-end
-redis:incr(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":message") 
-if text == 'Ø±Ø³Ø§Ø¦Ù„ÙŠ' then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø±Ø³Ø§Ø¦Ù„Ùƒ : *( "..(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":message") or 1).." *)*","md",true)  
-return false
-end
-if text == 'Ù…Ø³Ø­ Ø±Ø³Ø§Ø¦Ù„ÙŠ' then
-bot.sendText(msg.chat_id,msg.id,'*  âŒ”ï¸™ØªÙ… Ù…Ø³Ø­ Ø¬Ù…ÙŠØ¹ Ø±Ø³Ø§Ø¦Ù„Ùƒ*',"md",true)   
-redis:del(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":message")
-return false
-end
-if text == 'Ù†Ù‚Ø§Ø·ÙŠ' or text == 'Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙŠ' then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø¹Ø¯Ø¯ Ù†Ù‚Ø§Ø·Ùƒ : *( "..(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":game") or 0).." *)*","md",true)  
-return false
-end
-if text and text:match("^Ø¨ÙŠØ¹ Ù†Ù‚Ø§Ø·ÙŠ (%d+)$") then  
-local end_n = text:match("^Ø¨ÙŠØ¹ Ù†Ù‚Ø§Ø·ÙŠ (%d+)$")
-if tonumber(end_n) == tonumber(0) then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ù„Ø§ Ø§Ø³ØªØ·ÙŠØ¹ Ø§Ù„Ø¨ÙŠØ¹ Ø§Ù‚Ù„ Ù…Ù† 1*","md",true)  
-return false 
-end
-if tonumber(redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":game")) == tonumber(0) then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ù„ÙŠØ³ Ù„Ø¯ÙŠÙƒ Ø¬ÙˆØ§Ù‡Ø± Ù…Ù† Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ \n  âŒ”ï¸™Ø§Ø°Ø§ ÙƒÙ†Øª ØªØ±ÙŠØ¯ Ø±Ø¨Ø­ Ø§Ù„Ø¬ÙˆØ§Ù‡Ø± \n  âŒ”ï¸™Ø§Ø±Ø³Ù„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ ÙˆØ§Ø¨Ø¯Ø£ Ø§Ù„Ù„Ø¹Ø¨ !*","md",true)  
-else
-local nb = redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":game")
-if tonumber(end_n) > tonumber(nb) then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ù„ÙŠØ³ Ù„Ø¯ÙŠÙƒ Ø¬ÙˆØ§Ù‡Ø± Ø¨Ù‡Ø§Ø°Ø§ Ø§Ù„Ø¹Ø¯Ø¯ \n  âŒ”ï¸™Ù„Ø²ÙŠØ§Ø¯Ø© Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙƒ ÙÙŠ Ø§Ù„Ù„Ø¹Ø¨Ù‡ \n  âŒ”ï¸™Ø§Ø±Ø³Ù„ Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ ÙˆØ§Ø¨Ø¯Ø£ Ø§Ù„Ù„Ø¹Ø¨ !*","md",true)  
-return false
-end
-local end_d = string.match((end_n * 50), "(%d+)") 
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™ØªÙ… Ø®ØµÙ…* *~ { "..end_n.." }* *Ù…Ù† Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙƒ* \n*  âŒ”ï¸™ÙˆØªÙ… Ø§Ø¶Ø§ÙØ©* *~ { "..end_d.." }* *Ø§Ù„Ù‰ Ø±Ø³Ø§Ø¦Ù„Ùƒ*","md",true)  
-redis:decrby(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":game",end_n)  
-redis:incrby(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":message",end_d)  
-end
-return false 
-end
-if text == 'Ù…Ø³Ø­ Ù†Ù‚Ø§Ø·ÙŠ' or text == 'Ù…Ø³Ø­ Ù…Ø¬ÙˆÙ‡Ø±Ø§ØªÙŠ' then
-bot.sendText(msg.chat_id,msg.id,'*  âŒ”ï¸™ØªÙ… Ù…Ø³Ø­ Ø¬Ù…ÙŠØ¹ Ù†Ù‚Ø§Ø·Ùƒ*',"md",true)   
-redis:del(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":game")
-return false
-end
-if text == 'Ø§ÙŠØ¯ÙŠÙŠ' then
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø§ÙŠØ¯ÙŠÙƒ : *( "..msg.sender.user_id.." *)*","md",true)  
-return false
-end
-if text == 'Ø§Ø³Ù…ÙŠ' then
-bot.sendText(msg.chat_id,msg.id," *  âŒ”ï¸™Ø§Ø³Ù…Ùƒ : *( "..bot.getUser(msg.sender.user_id).first_name.." *)*","md",true)  
-return false
-end
-if not redis:get(bot_id..":"..msg.chat_id..":settings:link") then
-if text == 'Ø§Ù„Ø±Ø§Ø¨Ø·' then
-Get_Chat = bot.getChat(msg.chat_id)
-Info_Chats = bot.getSupergroupFullInfo(msg.chat_id)
-if redis:get(bot_id..":"..msg.chat_id..":link") then
-link = redis:get(bot_id..":"..msg.chat_id..":link")
-else
-if Info_Chats.invite_link.invite_link then
-link = Info_Chats.invite_link.invite_link
-else
-link = "Ù„Ø§ÙŠÙˆØ¬Ø¯"
-end
-end
-local reply_markup = bot.replyMarkup{
-type = 'inline',
-data = {
-{{text = Get_Chat.title, url = link}},
-}
-}
-bot.sendText(msg.chat_id,msg.id,"  âŒ”ï¸™_Ø±Ø§Ø¨Ø· Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø© : _*"..Get_Chat.title.."*\n Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ Ù€Ù€ \n"..link,"md",true, false, false, false, reply_markup)
-return false
-end
-end
-if text == 'Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø©' or text == 'Ø¹Ø¯Ø¯ Ø§Ù„Ù‚ÙˆØ±Ø¨' or text == 'Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø©' then
-Get_Chat = bot.getChat(msg.chat_id)
-Info_Chats = bot.getSupergroupFullInfo(msg.chat_id)
-local reply_markup = bot.replyMarkup{
-type = 'inline',
-data = {
-{{text = Get_Chat.title, url = Info_Chats.invite_link.invite_link}},
-}
-}
-bot.sendText(msg.chat_id,msg.id,'\n*  âŒ”ï¸™Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ù„Ù…Ø¬Ù…ÙˆØ¹Ø© :\n  âŒ”ï¸™Ø§Ù„Ø§ÙŠØ¯ÙŠ : ( '..msg.chat_id..' )\n  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø§Ù„Ø§Ø¹Ø¶Ø§Ø¡ : '..Info_Chats.member_count..'\n  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø§Ù„Ø§Ø¯Ø§Ù…Ù† : '..Info_Chats.administrator_count..'\n  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ø·Ø±ÙˆØ¯ÙŠÙ† : '..Info_Chats.banned_count..'\n  âŒ”ï¸™Ø¹Ø¯Ø¯ Ø§Ù„Ù…Ù‚ÙŠØ¯ÙŠÙ† : '..Info_Chats.restricted_count..'\n  âŒ”ï¸™Ø§Ù„Ø±Ø§Ø¨Ø·\n : '..Info_Chats.invite_link.invite_link..'*',"md",true, false, false, false, reply_markup)
-return false
-end
-if not redis:get(bot_id..":"..msg.chat_id..":settings:gameVip") then
-if text == 'Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ Ø§Ù„Ø§Ø­ØªØ±Ø§ÙÙŠØ©' and Vips(msg)  then
-local reply_markup = bot.replyMarkup{
-type = 'inline',
-data = {
-{{text="â™Ÿ Chess Game â™Ÿ",url='https://t.me/T4TTTTBOT?game=chess'}},
-{{text="Ù„Ø¹Ø¨Ø© ÙÙ„Ø§Ø¨ÙŠ Ø¨ÙŠØ±Ø¯ ðŸ¥",url='https://t.me/awesomebot?game=FlappyBird'},{text="ØªØ­Ø¯Ø§Ù†ÙŠ ÙØ§Ù„Ø±ÙŠØ§Ø¶ÙŠØ§Øª ðŸ”¢",url='https://t.me/gamebot?game=MathBattle'}},
-{{text="ØªØ­Ø¯Ø§Ù†ÙŠ ÙÙŠ âŒâ­•ï¸",url='t.me/XO_AABOT?start3836619'},{text="Ø³Ø¨Ø§Ù‚ Ø§Ù„Ø¯Ø±Ø§Ø¬Ø§Øª ðŸ",url='https://t.me/gamee?game=MotoFX'}},
-{{text="Ø³Ø¨Ø§Ù‚ Ø³ÙŠØ§Ø±Ø§Øª ðŸŽ",url='https://t.me/gamee?game=F1Racer'},{text="Ù…ØªØ´Ø§Ø¨Ù‡ ðŸ‘¾",url='https://t.me/gamee?game=DiamondRows'}},
-{{text="ÙƒØ±Ø© Ù‚Ø¯Ù… âš½",url='https://t.me/gamee?game=FootballStar'}},
-{{text="Ø¯ÙˆÙ…Ù†Ø§ðŸ¥‡",url='https://vipgames.com/play/?affiliateId=wpDom/#/games/domino/lobby'},{text="â•Ù„ÙŠØ¯Ùˆ",url='https://vipgames.com/play/?affiliateId=wpVG#/games/ludo/lobby'}},
-{{text="ÙˆØ±Ù‚ðŸ¤¹â€â™‚",url='https://t.me/gamee?game=Hexonix'},{text="HexonixâŒ",url='https://t.me/gamee?game=Hexonix'}},
-{{text="MotoFxðŸï¸",url='https://t.me/gamee?game=MotoFx'}},
-{{text="Ù„Ø¹Ø¨Ø© 2048 ðŸŽ°",url='https://t.me/awesomebot?game=g2048'},{text="SquaresðŸ",url='https://t.me/gamee?game=Squares'}},
-{{text="Atomic 1â–¶ï¸",url='https://t.me/gamee?game=AtomicDrop1'},{text="Corsairs",url='https://t.me/gamebot?game=Corsairs'}},
-{{text="LumberJack",url='https://t.me/gamebot?game=LumberJack'}},
-{{text="LittlePlane",url='https://t.me/gamee?game=LittlePlane'},{text="RollerDisco",url='https://t.me/gamee?game=RollerDisco'}},
-{{text="ðŸ¦– Dragon Game ðŸ¦–",url='https://t.me/T4TTTTBOT?game=dragon'},{text="ðŸ 3D Snake Game ðŸ",url='https://t.me/T4TTTTBOT?game=snake'}},
-{{text="ðŸ”µ Color Game ðŸ”´",url='https://t.me/T4TTTTBOT?game=color'}},
-{{text="ðŸš€ Rocket Game ðŸš€",url='https://t.me/T4TTTTBOT?game=rocket'},{text="ðŸ¹ Arrow Game ðŸ¹",url='https://t.me/T4TTTTBOT?game=arrow'}},
-{{text = ' âŒ”ï¸™ ð–²ð—ˆð—Žð—‹cð–¾ xð–·ð–²ð—ð—‹ð–¾ð—†',url="t.me/xXStrem"}},
-}
-}
-bot.sendText(msg.chat_id,msg.id,'*  âŒ”ï¸™Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø§Ù„Ø¹Ø§Ø¨ Ø§Ù„Ø§Ø­ØªØ±Ø§ÙÙŠØ© Ø§Ø¶ØºØ· Ù„Ù„Ø¹Ø¨*',"md", true, false, false, false, reply_markup)
-end
-end
-if not redis:get(bot_id..":"..msg.chat_id..":settings:entertainment") then
-if text == "Ø´Ù†Ùˆ Ø±Ø¦ÙŠÙƒ Ø¨Ù‡Ø°Ø§" or text == "Ø´Ù†Ùˆ Ø±Ø§Ø¦ÙŠÙƒ Ø¨Ù‡Ø°" or text == "Ø´Ù†Ùˆ Ø±Ø¦ÙŠÙƒ Ø¨Ù‡Ø°" or text == "Ø´Ù†Ùˆ Ø±Ø§Ø¦ÙŠÙƒ Ø¨Ù‡Ø°" then
-local texting = {"Ø§Ø¯Ø¨ Ø³Ø³Ø² ÙŠØ¨Ø§ÙˆØ¹ Ø¹Ù„ÙŠ Ø¨Ù†Ø§Øª ??ðŸ¥º"," Ù…Ùˆ Ø®ÙˆØ´ ÙˆÙ„Ø¯ ðŸ˜¶","Ø²Ø§Ø­Ù ÙˆÙ…Ø§ Ø§Ø­Ø¨Ù‡ ðŸ˜¾ðŸ˜¹","Ø´Ù‡Ù„ Ø³Ø±Ø³Ø±ÙŠ Ù‡Ø°Ø§ðŸ¤¨","Ø§Ù…ÙˆÙˆÙˆÙˆØ¹ Ø§Ù†Ø§ðŸ¤¤","Ø¹Ù†ÙØ³Ø³Ø³ÙŠÙ‡ Ù‡Ø°Ø§Ø§ðŸ¤®","Ø´Ø§ÙŠÙ Ù†ÙØ³Ù‡ ÙØ¯ Ø®Ø±ÙŠÙ‡ðŸ¤¨","Ù‡Ø§Ø§Ø§ ÙƒØ±Ø´Ø´ØªÙŠðŸ˜‰","Ø²ÙˆÙˆÙ Ø§ÙˆØ§ÙÙ‚ Ø¨Ø¯ÙˆÙ† Ù…Ù‡Ø±Ø±ðŸ™Š","Ø²Ø±Ø¨Ù‡ Ø¨ÙŠÙƒÙ… Ø¹ Ù‡Ù„ Ø°ÙˆÙˆÙ‚ðŸ˜","Ø®Ù„ÙŠÙƒÙˆÙ… ÙŠØ³Ø¨Ø­ ÙˆÙŠØ¬ÙŠðŸ¤§","ÙˆØ§Ø§ØµÙ„ Ù…Ø±Ø­Ù„Ù‡ Ù‡Ø°Ø§","Ø±Ø§Ø³Ù‡ Ù…Ø±Ø¨Ø¹ Ø´Ø¹Ø¬Ø¨Ø¬ Ø¨ÙŠðŸ˜•ðŸ‘ŒðŸ¿"}
-bot.sendText(msg.chat_id,msg.id,"*"..texting[math.random(#texting)].."*","md", true)
-end
-if text == "Ø´Ù†Ùˆ Ø±Ø¦ÙŠÙƒ Ø¨Ù‡Ø§ÙŠ" or text == "Ø´Ù†Ùˆ Ø±Ø¦ÙŠÙƒ Ø¨Ù‡Ø§ÙŠÙŠ" or text == "Ø´Ù†Ùˆ Ø±Ø§Ø¦ÙŠÙƒ Ø¨Ù‡Ø§ÙŠÙŠ" or text == "Ø´Ù†Ùˆ Ø±Ø§Ø¦ÙŠÙƒ Ø¨Ù‡Ø§ÙŠÙŠ" then
-local texting = {"Ø¯ÙˆØ± Ø­Ù„ÙˆÙŠÙ† ðŸ¤•ðŸ˜¹","Ø¬ÙƒÙ…Ù‡ ÙˆØµØ®Ù‡ Ø¹ÙˆÙÙ‡Ø§ â˜¹ï¸ðŸ˜¾","Ø­Ù‚ÙŠØ±Ù‡ ÙˆÙ…ØªÙƒØ¨Ø±Ù‡ ðŸ˜¶ðŸ˜‚","ÙˆÙˆÙˆÙ ÙØ¯ Ø­Ø§ØªÙ‡ðŸ¤¤ðŸ˜","Ù„Ùƒ Ø¹ÙˆÙˆÙˆØ¹ Ø´Ù‡Ù„Ø°ÙˆÙ‚ðŸ¤®ðŸ˜‘","Ø§Ù‡Ù… Ø´ÙŠ Ø§Ù„Ø§Ø®Ù„Ø§Ù‚ðŸ¤§","Ø§ÙˆÙŠÙ„ÙŠ Ø²ÙˆØ¬ÙˆÙ†ÙŠ Ù‡ÙŠØ§ðŸ˜","Ø§Ù… Ø§Ù„ÙƒÙ…Ù„ Ù‡Ø§ÙŠ Ø´Ø¬Ø§Ø¨Ùƒ Ø¹Ù„ÙŠÙ‡Ø§ðŸ¤“","Ù‡Ø§Ø§Ø§ ÙƒØ±Ø±Ø´ØªØªðŸ˜³","Ø·ÙŠØ­ Ø§Ù„Ù„Ù‡ Ø­Ø¸Ùƒ ÙˆØ­Ø¸ Ø±Ø§Ø¦ÙŠÙƒðŸ˜‘","Ù…ÙØ§Ø±Øº Ø§Ù„ÙƒÙ… Ù‡Ø³Ù‡ðŸ˜","ØªØ¹Ø§Ù„Ù†ÙŠ ÙˆØ±Ø§ 12 Ø§Ø¬Ø§ÙˆØ¨ÙƒðŸ˜‰"}
-bot.sendText(msg.chat_id,msg.id,"*"..texting[math.random(#texting)].."*","md", true)
-end
-if text == "Ù‡ÙŠÙ†Ù‡" or text == "Ø±Ø²Ù„Ù‡" or text == "Ø¨Ø¹Ø¯ Ù‡ÙŠÙ†Ù‡" or text == "Ù‡ÙŠÙ†Ù‡ Ø¨Ø¹Ø¯" or text == "Ù„Ùƒ Ù‡ÙŠÙ†Ù‡" or text == "Ù‡ÙŠÙ†Ù‡Ø§" or text == "Ù‡ÙŠÙ†Ù‡Ù‡" or text == "Ø±Ø²Ù„Ù‡Ù‡" or text == "Ø±Ø²Ù„Ù‡Ø§" or text == "Ø¨Ø¹Ø¯ Ù‡ÙŠÙ†Ù‡Ø§" or text == "Ù‡ÙŠÙ†Ù‡Ø§ Ø¨Ø¹Ø¯" or text == "Ù„Ùƒ Ù‡ÙŠÙ†Ù‡Ø§" then
-heen = {
-"- Ø­Ø¨ÙŠØ¨ÙŠ Ø¹Ù„Ø§Ø¬ Ø§Ù„Ø¬Ø§Ù‡Ù„ Ø§Ù„ØªØ¬Ø§Ù‡Ù„ ."
-,"- Ù…Ø§Ù„ÙŠ Ø®Ù„Ùƒ Ø²Ø¨Ø§ÙŠÙ„ Ø§Ù„ØªÙ„ÙŠ . "
-,"- ÙƒØ±Ø§Ù…ØªÙƒ ØµØ§Ø±Øª Ø¨Ø²Ø¨Ù„ ×¤ÙŽÙ€Ù€Ø¨ÙŠ ."
-,"- Ù…Ùˆ ØµÙˆØ¬Ùƒ ØµÙˆØ¬ Ø§Ø¨ÙˆÙƒ Ø§Ù„Ø²Ù…Ùƒ Ø¬Ù‡Ø§Ø² ."
-,"- Ù„ÙØ§Ø±Øº Ø§Ø³ØªØ¬Ù† . "
-,"- ÚªÙÝªÙƒ ÙˆØ§Ø­Ø¯ Ù„ÙˆÙƒÙŠ ."
-,"- Ù„ÙƒÙƒ Ø¬Ø±Ø¬Ù Ø§Ø­ØªØ±Ù… Ø§Ø³ÙŠØ§Ø¯ÙƒÙƒ Ù„Ø§ Ø§ÙƒØªÙ„ÙƒÙƒ ÙˆØ§Ø²Ø±Ø¨Ø¨ Ø¹Ù„Ù‰ ÙƒØ¨Ø±ÙƒÙƒ ."
-,"- Ù‡Ø´Ø´ ÙØ§Ø´Ù„ Ù„ØªØ¶Ù„ ØªÙ…Ø³Ù„Øª Ù„Ø§ Ø§Ø®Ø±Ø¨Ø· ØªØ¶Ø§Ø±ÙŠØ³ ÙˆØ¬Ù‡Ùƒ Ø¬Ù†Ù‡ Ø§Ø¨Ø· Ø¹Ø¨Ø¯Ù‡ ."
-,"- Ø¯Ù…Ø´ÙŠ Ù„Ùƒ ÙŠÙ†Ø¨ÙˆØ¹ Ø§Ù„ÙØ´Ù„ Ù…Ùˆ Ø²ÙŠÙ† Ù…Ù„ÙÙŠÙƒ ÙˆÙ†Ø­Ø¬ÙŠ ÙˆÙŠØ§Ùƒ Ù‡ÙŠ Ù…Ù†Ø¨ÙˆØ° ."
-,"- Ù‡Ø§ Ø§Ù„ØºÙ„ÙŠØ¶ Ø§Ù„ØªÙØ³ Ø§Ø¨Ùˆ Ø±Ø§Ø³ Ø§Ù„Ù…Ø±Ø¨Ø¹ Ù…ØªØ¹Ù„Ù…Ù„Ùƒ Ø¬Ù… Ø­Ø¬Ø§ÙŠÙ‡ ÙˆØ¬Ø§ÙŠ ØªØ·ÙƒØ·ÙƒÙ‡Ù† Ø¹Ù„ÙŠÙ†Ù‡ Ø¯Ø¨Ø·Ù„ðŸ˜’ðŸ”ª ."
-,"- Ø­Ø¨ÙŠØ¨ÙŠ Ø±Ø§Ø­ Ø§Ø­Ø§ÙˆÙ„ Ø§Ø­ØªØ±Ù…ÙƒÙƒ Ù‡Ø§Ù„Ù…Ø±Ù‡ Ø¨Ù„ÙƒÙŠ ØªØ¨Ø·Ù„ Ø­ÙŠÙˆÙ†Ù‡ ."
-,"- Ø¯Ù…Ø´ÙŠ Ø§Ù…Ø´ÙŠ Ø±Ø§Ø³Ùƒ Ù…ØµÙØ­ ."
-,"- ÙŠØ§Ù‡ÙˆÙ†ØªÙ‡ ÙˆÙ„Ùƒ Ø¯Ø®Ø° ØºØ±Ø§Ø¶Ùƒ Ø§Ùˆ ÙˆÙ„ÙŠ Ù…Ù†Ø§ ÙŠÙ„Ø§ ."
-,"- Ø·ÙŠØ·Ø·Ø· Ø¯ÙƒÙˆÙ… Ù„Ùƒ ÙƒÙˆÙ… ÙƒÙˆØ§Ø¯ ."
-,"- Ø§Ù†ØªÙ‡ ÙØ¯ ÙˆØ§Ø­Ø¯ Ù„ÙˆÙƒÙŠ ÙˆØ²Ø¹Ø·ÙˆØ· ."
-,"- Ø´Ø¨ÙŠÙƒ Ø®Ù„ÙŠ Ø§Ù„Ø¹Ø§Ù„Ù… ØªØ­ØªØ±Ù…Ùƒ ØµØ§ÙŠØ± ÙˆØµÙ„Ù‡ Ù…Ø§Ù„ Ù…Ø³Ø­ ."
-,"- Ø¯ÙŠ Ù„Ùƒ Ø¯ÙŠ Ø­ÙŠÙˆØ§Ù† ."
-,"- Ù…Ù„Ø·Ù„Ø· Ø¯ÙŠ ."
-,"- ØªØ¹ Ø§Ø±Ø§ÙˆÙŠÙƒ Ø§Ù„Ø·ÙŠÙˆØ± ÙÙˆÙƒ Ø§Ù„Ø³Ø·Ø­ ."
-};
-sendheen = heen[math.random(#heen)]
-if tonumber(msg.reply_to_message_id) == 0 then
-bot.sendText(msg.chat_id,msg.id,"*- ÙŠØ¬Ø¨ Ø¹Ù…Ù„ Ø±Ø¯ Ø¹Ù„Ù‰ Ø±Ø³Ø§Ù„Ø© Ø´Ø®Øµ .*","md", true)
-return false
-end
-local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
-if programmer(Remsg) then
-bot.sendText(msg.chat_id,msg.id,"*- Ø¯ÙŠ Ù„ÙƒÙƒ ØªØ±ÙŠØ¯ Ø§Ù‡ÙŠÙ†Ù† ØªØ§Ø¬ Ø±Ø§Ø³ÙƒÙƒØŸðŸ˜ðŸ–•ðŸ¿ .*","md", true)
-return false
-end
-bot.sendText(msg.chat_id,msg.reply_to_message_id,"*"..sendheen.."*","md", true)
-end
-if text == "ØªÙÙ„Ù‡" or text == "Ø¨Ø¹Ø¯ ØªÙÙ„Ù‡" or text == "Ø¨Ø¹Ø¯ ØªÙÙ„Ù‡" or text == "Ø´Ø¨Ø¹Ù‡ ØªÙØ§Ù„" or text == "Ù„Ùƒ ØªÙÙ„Ù‡" or text == "ØªØªÙ" or text == "ØªÙ" or text == "ØªÙÙˆÙˆ" or text == "Ø¶Ù„ ØªÙÙ„" then
-tif = {
-"Ù…Ø§ÙŠ ÙˆØ±Ø¯ Ø­Ø¨ÙŠØ¨ÙŠðŸ¤¤ ."
-,"ØªÙÙˆ ÙˆÙˆÙ‚ÙˆØ²ÙˆÙ„Ù‚ÙˆØ±Ø· . "
-,"ØªÙ Ø¹Ù„ÙŠÙƒ ØªØ¨Ø³Ø²Ø² ."
-,"Ø­ØªÙ‰ Ø§Ù„ØªÙÙ„Ù‡ Ù‡ÙˆØ§ÙŠ Ø¹Ù„ÙŠÙƒ/Ø¬ ."
-,"Ø®ØªØªØªØªÙÙˆ. "
-,"ØªÙÙ„Ù‡ Ø§Ù… Ø¨Ù„ØºÙ… ."
-,"ØªÙÙ„Ù‡ Ø¨Ù†Øµ ÙˆØ¬Ù‡Ùƒ /Ø¬Ù‡Ø¬ ."
-,"ØªÙ ØªÙ ØªÙ ØªÙ ØªÙ ØªÙ ØªÙ ðŸ’¦ ."
-,"Ø®ØªÙÙˆÙˆÙˆÙˆÙˆÙˆÙˆÙˆÙˆðŸ’¦ ."
-,"ØªØ¹ Ø§Ø´Ø¨Ø¹Ùƒ ØªÙØ§Ø§Ù„ Ø­Ø¨ÙŠØ¨ÙŠðŸ’¦ ."
-,"ÙˆØ¬Ù‡Ù‡ Ù…ÙŠØ³ØªØ§Ù‡Ù„ Ø§ØµØ±Ù ØªÙÙ„Ù‡ Ø¹Ù„ÙŠÙ‡ðŸ¤¨ ."
-,"Ø¯Ù…Ø´ÙŠ  Ù„Ø§Ø³Ø¨Ø­Ùƒ ØªÙØ§Ù„ðŸ˜ ."
-};
-sendtif = tif[math.random(#tif)]
-if tonumber(msg.reply_to_message_id) == 0 then
-bot.sendText(msg.chat_id,msg.id,"*- ÙŠØ¬Ø¨ Ø¹Ù…Ù„ Ø±Ø¯ Ø¹Ù„Ù‰ Ø±Ø³Ø§Ù„Ø© Ø´Ø®Øµ .*","md", true)
-return false
-end
-local Remsg = bot.getMessage(msg.chat_id, msg.reply_to_message_id)
-if programmer(Remsg) then
-bot.sendText(msg.chat_id,msg.id,"*- Ø¯ÙŠ Ù„ÙƒÙƒ ØªØ±ÙŠØ¯ Ø§ØªÙÙ„ Ø¹Ù„Ù‰ ØªØ§Ø¬ Ø±Ø§Ø³ÙƒÙƒØŸðŸ˜ðŸ–•ðŸ¿ .*","md", true)
-return false
-end
-bot.sendText(msg.chat_id,msg.reply_to_message_id,"*"..sendtif.."*","md", true)
-end
-if text == "ÙƒØª" or  text == "ÙƒØª ØªÙˆÙŠØª" then
-local arr = {'Ø¢Ø®Ø± Ù…Ø±Ø© Ø²Ø±Øª Ù…Ø¯ÙŠÙ†Ø© Ø§Ù„Ù…Ù„Ø§Ù‡ÙŠØŸ','Ø¢Ø®Ø± Ù…Ø±Ø© Ø£ÙƒÙ„Øª Ø£ÙƒÙ„ØªÙƒ Ø§Ù„Ù…ÙØ¶Ù‘Ù„Ø©ØŸ','Ø§Ù„ÙˆØ¶Ø¹ Ø§Ù„Ø­Ø§Ù„ÙŠØŸ\nâ€1. Ø³Ù‡Ø±Ø§Ù†\nâ€2. Ø¶Ø§ÙŠØ¬\nâ€3. Ø£ØªØ£Ù…Ù„','Ø¢Ø®Ø± Ø´ÙŠØ¡ Ø¶Ø§Ø¹ Ù…Ù†ÙƒØŸ','ÙƒÙ„Ù…Ø© Ø£Ø®ÙŠØ±Ø© Ù„Ø´Ø§ØºÙ„ Ø§Ù„Ø¨Ø§Ù„ØŸ','Ø·Ø±ÙŠÙ‚ØªÙƒ Ø§Ù„Ù…Ø¹ØªØ§Ø¯Ø© ÙÙŠ Ø§Ù„ØªØ®Ù„Ù‘Øµ Ù…Ù† Ø§Ù„Ø·Ø§Ù‚Ø© Ø§Ù„Ø³Ù„Ø¨ÙŠØ©ØŸ','Ø´Ù‡Ø± Ù…Ù† Ø£Ø´Ù‡Ø± Ø§Ù„Ø¹Ø§Ù… Ù„Ù‡ Ø°ÙƒØ±Ù‰ Ø¬Ù…ÙŠÙ„Ø© Ù…Ø¹ÙƒØŸ','ÙƒÙ„Ù…Ø© ØºØ±ÙŠØ¨Ø© Ù…Ù† Ù„Ù‡Ø¬ØªÙƒ ÙˆÙ…Ø¹Ù†Ø§Ù‡Ø§ØŸðŸ¤“','â€- Ø´ÙŠØ¡ Ø³Ù…Ø¹ØªÙ‡ Ø¹Ø§Ù„Ù‚ ÙÙŠ Ø°Ù‡Ù†Ùƒ Ù‡Ø§Ù„ÙŠÙˆÙ…ÙŠÙ†ØŸ','Ù…ØªÙ‰ ØªÙƒØ±Ù‡ Ø§Ù„Ø´Ø®Øµ Ø§Ù„Ø°ÙŠ Ø£Ù…Ø§Ù…Ùƒ Ø­ØªÙ‰ Ù„Ùˆ ÙƒÙ†Øª Ù…ÙÙ† Ø£Ø´Ø¯ Ù…Ø¹Ø¬Ø¨ÙŠÙ†Ù‡ØŸ','â€- Ø£Ø¨Ø±Ø² ØµÙØ© Ø­Ø³Ù†Ø© ÙÙŠ ØµØ¯ÙŠÙ‚Ùƒ Ø§Ù„Ù…Ù‚Ø±Ø¨ØŸ','Ù‡Ù„ ØªØ´Ø¹Ø± Ø£Ù† Ù‡Ù†Ø§Ù„Ùƒ Ù…ÙŽÙ† ÙŠÙØ­Ø¨ÙƒØŸ','Ø§Ø°Ø§ Ø§ÙƒØªØ´ÙØª Ø£Ù† Ø£Ø¹Ø² Ø£ØµØ¯Ù‚Ø§Ø¦Ùƒ ÙŠØ¶Ù…Ø± Ù„Ùƒ Ø§Ù„Ø³ÙˆØ¡ØŒ Ù…ÙˆÙ‚ÙÙƒ Ø§Ù„ØµØ±ÙŠØ­ØŸ','Ø£Ø¬Ù…Ù„ Ø´ÙŠØ¡ Ø­ØµÙ„ Ù…Ø¹Ùƒ Ø®Ù„Ø§Ù„ Ù‡Ø§Ù„ÙŠÙˆÙ…ØŸ','ØµÙÙ Ø´Ø¹ÙˆØ±Ùƒ ÙˆØ£Ù†Øª ØªÙØ­Ø¨ Ø´Ø®Øµ ÙŠÙØ­Ø¨ ØºÙŠØ±ÙƒØŸðŸ‘€ðŸ’”','ÙƒÙ„Ù…Ø© Ù„Ø´Ø®Øµ ØºØ§Ù„ÙŠ Ø§Ø´ØªÙ‚Øª Ø¥Ù„ÙŠÙ‡ØŸðŸ’•','Ø¢Ø®Ø± Ø®Ø¨Ø± Ø³Ø¹ÙŠØ¯ØŒ Ù…ØªÙ‰ ÙˆØµÙ„ÙƒØŸ','Ø£Ù†Ø§ Ø¢Ø³Ù Ø¹Ù„Ù‰ ....ØŸ','Ø£ÙˆØµÙ Ù†ÙØ³Ùƒ Ø¨ÙƒÙ„Ù…Ø©ØŸ','ØµØ±ÙŠØ­ØŒ Ù…Ø´ØªØ§Ù‚ØŸ','â€- ØµØ±ÙŠØ­ØŒ Ù‡Ù„ Ø³Ø¨Ù‚ ÙˆØ®Ø°Ù„Øª Ø£Ø­Ø¯Ù‡Ù… ÙˆÙ„Ùˆ Ø¹Ù† ØºÙŠØ± Ù‚ØµØ¯ØŸ','â€- Ù…Ø§Ø°Ø§ Ø³ØªØ®ØªØ§Ø± Ù…Ù† Ø§Ù„ÙƒÙ„Ù…Ø§Øª Ù„ØªØ¹Ø¨Ø± Ù„Ù†Ø§ Ø¹Ù† Ø­ÙŠØ§ØªÙƒ Ø§Ù„ØªÙŠ Ø¹Ø´ØªÙ‡Ø§ Ø§Ù„Ù‰ Ø§Ù„Ø¢Ù†ØŸðŸ’­','â€- ÙÙ†Ø§Ù†/Ø© ØªÙˆØ¯ Ù„Ùˆ ÙŠØ¯Ø¹ÙˆÙƒÙŽ Ø¹Ù„Ù‰ Ù…Ø§Ø¦Ø¯Ø© Ø¹Ø´Ø§Ø¡ØŸðŸ˜â¤','â€- ØªØ®ÙŠÙ‘Ù„ Ø´ÙŠØ¡ Ù‚Ø¯ ÙŠØ­Ø¯Ø« ÙÙŠ Ø§Ù„Ù…Ø³ØªÙ‚Ø¨Ù„ØŸ','â€- Ù„Ù„Ø´Ø¨Ø§Ø¨ | Ø¢Ø®Ø± Ù…Ø±Ø© ÙˆØµÙ„Ùƒ ØºØ²Ù„ Ù…Ù† ÙØªØ§Ø©ØŸðŸŒš','Ø´Ø®Øµ Ø£Ùˆ ØµØ§Ø­Ø¨ Ø¹ÙˆØ¶Ùƒ ÙˆÙ†Ø³Ø§Ùƒ Ù…ÙØ± Ø§Ù„Ø­ÙŠØ§Ø© Ù…Ø§ Ø§Ø³Ù…Ù‡ ØŸ','| Ø§Ø°Ø§ Ø´ÙØª Ø­Ø¯ ÙˆØ§Ø¹Ø¬Ø¨Ùƒ ÙˆØ¹Ù†Ø¯Ùƒ Ø§Ù„Ø¬Ø±Ø£Ù‡ Ø§Ù†Ùƒ ØªØ±ÙˆØ­ ÙˆØªØªØ¹Ø±Ù Ø¹Ù„ÙŠÙ‡ ØŒ Ù…Ù‚Ø¯Ù…Ø© Ø§Ù„Ø­Ø¯ÙŠØ« Ø´Ùˆ Ø±Ø§Ø­ ØªÙƒÙˆÙ† ØŸ.','ÙƒÙ… Ù…Ø±Ù‡ ØªØ³Ø¨Ø­ Ø¨Ø§Ù„ÙŠÙˆÙ…','Ù†Ø³Ø¨Ø© Ø§Ù„Ù†Ø¹Ø§Ø³ Ø¹Ù†Ø¯Ùƒ Ø­Ø§Ù„ÙŠÙ‹Ø§ØŸ','Ù„Ùˆ ÙÙ‚Ø· Ù…Ø³Ù…ÙˆØ­ Ø´Ø®Øµ ÙˆØ§Ø­Ø¯ ØªØªØ§Ø¨Ø¹Ù‡ ÙØ§Ù„Ø³Ù†Ø§Ø¨ Ù…ÙŠÙ† Ø¨ÙŠÙƒÙˆÙ† ØŸ','ÙŠÙ‡Ù…Ùƒ Ù…Ù„Ø§Ø¨Ø³Ùƒ ØªÙƒÙˆÙ† Ù…Ø§Ø±ÙƒØ© ØŸ','ÙˆØ´ Ø§Ù„Ø´ÙŠØ¡ Ø§Ù„ÙŠ ØªØ·Ù„Ø¹ Ø­Ø±ØªÙƒ ÙÙŠØ© Ùˆ Ø²Ø¹Ù„Øª ØŸ','Ø¹Ù†Ø¯Ùƒ Ø£Ø®ÙˆØ§Ù† Ø§Ùˆ Ø®ÙˆØ§Øª Ù…Ù† Ø§Ù„Ø±Ø¶Ø§Ø¹Ø©ØŸ','Ø¹Ù†Ø¯Ùƒ Ù…Ø¹Ø¬Ø¨ÙŠÙ† ÙˆÙ„Ø§ Ù…Ø­Ø¯ Ø¯Ø±Ø§ Ø¹Ù†ÙƒØŸ','Ø£Ø·ÙˆÙ„ Ù…Ø¯Ø© Ù‚Ø¶ÙŠØªÙ‡Ø§ Ø¨Ø¹ÙŠØ¯ Ø¹Ù† Ø£Ù‡Ù„Ùƒ ØŸ','Ù„Ùˆ ÙŠØ¬ÙŠ Ø¹ÙŠØ¯ Ù…ÙŠÙ„Ø§Ø¯Ùƒ ØªØªÙˆÙ‚Ø¹ ÙŠØ¬ÙŠÙƒ Ù‡Ø¯ÙŠØ©ØŸ','ÙŠØ¨Ø§Ù† Ø¹Ù„ÙŠÙƒ Ø§Ù„Ø­Ø²Ù† Ù…Ù† " ØµÙˆØªÙƒ - Ù…Ù„Ø§Ù…Ø­Ùƒ','ÙˆÙŠÙ† ØªØ´ÙˆÙ Ù†ÙØ³Ùƒ Ø¨Ø¹Ø¯ Ø³Ù†ØªÙŠÙ†ØŸ','ÙˆØ´ ÙŠÙ‚ÙˆÙ„ÙˆÙ† Ù„Ùƒ Ù„Ù…Ø§ ØªØºÙ†ÙŠ ØŸ','Ø¹Ù†Ø¯Ùƒ Ø­Ø³ ÙÙƒØ§Ù‡ÙŠ ÙˆÙ„Ø§ Ù†ÙØ³ÙŠØ©ØŸ','ÙƒÙŠÙ ØªØªØµØ±Ù Ù…Ø¹ Ø§Ù„Ø´Ø®Øµ Ø§Ù„ÙØ¶ÙˆÙ„ÙŠ ØŸ','ÙƒÙŠÙ Ù‡ÙŠ Ø£Ø­ÙˆØ§Ù„ Ù‚Ù„Ø¨ÙƒØŸ','Ø­Ø§Ø¬Ø© ØªØ´ÙˆÙ Ù†ÙØ³Ùƒ Ù…Ø¨Ø¯Ø¹ ÙÙŠØ©Ø§ ØŸ','Ù…ØªÙ‰ Ø­Ø¨ÙŠØªØŸ','Ø´ÙŠØ¡ ÙƒÙ„ Ù… ØªØ°ÙƒØ±ØªÙ‡ ØªØ¨ØªØ³Ù… ...','Ø§Ù„Ø¹Ù„Ø§Ù‚Ù‡ Ø§Ù„Ø³Ø±ÙŠÙ‡ Ø¯Ø§ÙŠÙ…Ø§Ù‹ ØªÙƒÙˆÙ† Ø­Ù„ÙˆÙ‡ØŸ','ØµÙˆØª Ù…ØºÙ†ÙŠ Ù… ØªØ­Ø¨Ù‡','Ù„Ùˆ ÙŠØ¬ÙŠ Ø¹ÙŠØ¯ Ù…ÙŠÙ„Ø§Ø¯Ùƒ ØªØªÙˆÙ‚Ø¹ ÙŠØ¬ÙŠÙƒ Ù‡Ø¯ÙŠØ©ØŸ','Ø§Ø°Ø§ Ø§Ø­Ø¯ Ø³Ø£Ù„Ùƒ Ø¹Ù† Ø´ÙŠØ¡ Ù… ØªØ¹Ø±ÙÙ‡ ØªÙ‚ÙˆÙ„ Ù… Ø§Ø¹Ø±Ù ÙˆÙ„Ø§ ØªØªÙÙ„Ø³Ù ØŸ','Ù…Ø¹ Ø§Ùˆ Ø¶Ø¯ : Ø§Ù„Ù†ÙˆÙ… Ø§ÙØ¶Ù„ Ø­Ù„ Ù„Ù€ Ù…Ø´Ø§ÙƒÙ„ Ø§Ù„Ø­ÙŠØ§Ø©ØŸ','Ù…Ø³Ø§Ø­Ø© ÙØ§Ø±ØºØ© (..............) Ø§ÙƒØªØ¨ Ø§ÙŠ Ø´ÙŠØ¡ ØªØ¨ÙŠÙ†','Ø§ØºØ±Ø¨ Ø§Ø³Ù… Ù…Ø± Ø¹Ù„ÙŠÙƒ ØŸ','Ø¹Ù…Ø±Ùƒ ÙƒÙ„Ù…Øª ÙÙˆÙŠØ³ Ø§Ø­Ø¯ ØºÙŠØ± Ø¬Ù†Ø³ÙƒØŸ','Ø§Ø°Ø§ ØºÙ„Ø·Øª ÙˆØ¹Ø±ÙØª Ø§Ù†Ùƒ ØºÙ„Ø·Ø§Ù† ØªØ­Ø¨ ØªØ¹ØªØ±Ù ÙˆÙ„Ø§ ØªØ¬Ø­Ø¯ØŸ','Ù„Ùˆ Ø¹Ù†Ø¯Ùƒ ÙÙ„ÙˆØ³ ÙˆØ´ Ø§Ù„Ø³ÙŠØ§Ø±Ø© Ø§Ù„Ù„ÙŠ Ø¨ØªØ´ØªØ±ÙŠÙ‡Ø§ØŸ','ÙˆØ´ Ø§ØºØ¨Ù‰ Ø´ÙŠØ¡ Ø³ÙˆÙŠØªÙ‡ ØŸ','Ø´ÙŠØ¡ Ù…Ù† ØµØºØ±Ùƒ Ù…Ø§ØªØºÙŠØ± ÙÙŠÙƒØŸ','ÙˆØ´ Ù†ÙˆØ¹ Ø§Ù„Ø£ÙÙ„Ø§Ù… Ø§Ù„Ù„ÙŠ ØªØ­Ø¨ ØªØªØ§Ø¨Ø¹Ù‡ØŸ','ÙˆØ´ Ù†ÙˆØ¹ Ø§Ù„Ø£ÙÙ„Ø§Ù… Ø§Ù„Ù„ÙŠ ØªØ­Ø¨ ØªØªØ§Ø¨Ø¹Ù‡ØŸ','ØªØ¬Ø§Ù…Ù„ Ø§Ø­Ø¯ Ø¹Ù„Ù‰ Ø­Ø³Ø§Ø¨ Ù…ØµÙ„Ø­ØªÙƒ ØŸ','ØªØªÙ‚Ø¨Ù„ Ø§Ù„Ù†ØµÙŠØ­Ø© Ù…Ù† Ø§ÙŠ Ø´Ø®ØµØŸ','ÙƒÙ„Ù…Ù‡ Ù…Ø§Ø³ÙƒÙ‡ Ù…Ø¹Ùƒ Ø§Ù„ÙØªØ±Ø© Ù‡Ø°ÙŠ ØŸ','Ù…ØªÙ‰ Ù„Ø§Ø²Ù… ØªÙ‚ÙˆÙ„ Ù„Ø§ ØŸ','Ø§ÙƒØ«Ø± Ø´ÙŠØ¡ ØªØ­Ø³ Ø§Ù†Ù‡ Ù…Ø§Øª Ù Ù…Ø¬ØªÙ…Ø¹Ù†Ø§ØŸ','ØªØ¤Ù…Ù† Ø§Ù† ÙÙŠ "Ø­ÙØ¨ Ù…Ù† Ø£ÙˆÙ„ Ù†Ø¸Ø±Ø©" ÙˆÙ„Ø§ Ù„Ø§ ØŸ.','ØªØ¤Ù…Ù† Ø§Ù† ÙÙŠ "Ø­ÙØ¨ Ù…Ù† Ø£ÙˆÙ„ Ù†Ø¸Ø±Ø©" ÙˆÙ„Ø§ Ù„Ø§ ØŸ.','Ù‡Ù„ ØªØ¹ØªÙ‚Ø¯ Ø£Ù† Ù‡Ù†Ø§Ù„Ùƒ Ù…Ù† ÙŠØ±Ø§Ù‚Ø¨Ùƒ Ø¨Ø´ØºÙØŸ','Ø§Ø´ÙŠØ§Ø¡ Ø§Ø°Ø§ Ø³ÙˆÙŠØªÙ‡Ø§ Ù„Ø´Ø®Øµ ØªØ¯Ù„ Ø¹Ù„Ù‰ Ø§Ù†Ùƒ ØªØ­Ø¨Ù‡ ÙƒØ«ÙŠØ± ØŸ','Ø§Ø´ÙŠØ§Ø¡ ØµØ¹Ø¨ ØªØªÙ‚Ø¨Ù„Ù‡Ø§ Ø¨Ø³Ø±Ø¹Ù‡ ØŸ','Ø§Ù‚ØªØ¨Ø§Ø³ Ù„Ø·ÙŠÙØŸ','Ø£ÙƒØ«Ø± Ø¬Ù…Ù„Ø© Ø£Ø«Ø±Øª Ø¨Ùƒ ÙÙŠ Ø­ÙŠØ§ØªÙƒØŸ','Ø¹Ù†Ø¯Ùƒ ÙÙˆØ¨ÙŠØ§ Ù…Ù† Ø´ÙŠØ¡ ØŸ.','Ø§ÙƒØ«Ø± Ù„ÙˆÙ†ÙŠÙ† ØªØ­Ø¨Ù‡Ù… Ù…Ø¹ Ø¨Ø¹Ø¶ØŸ','Ø£Ø¬Ù…Ù„ Ø¨ÙŠØª Ø´Ø¹Ø± Ø³Ù…Ø¹ØªÙ‡ ...','Ø³Ø¨Ù‚ ÙˆØ±Ø§ÙˆØ¯Ùƒ Ø´Ø¹ÙˆØ± Ø£Ù†Ùƒ Ù„Ù… ØªØ¹Ø¯ ØªØ¹Ø±Ù Ù†ÙØ³ÙƒØŸ','ØªØªÙˆÙ‚Ø¹ ÙÙŠØ© Ø§Ø­Ø¯ Ø­Ø§Ù‚Ø¯ Ø¹Ù„ÙŠÙƒ ÙˆÙŠÙƒØ±Ù‡Ùƒ ØŸ','Ø£Ø¬Ù…Ù„ Ø³Ù†Ø© Ù…ÙŠÙ„Ø§Ø¯ÙŠØ© Ù…Ø±Øª Ø¹Ù„ÙŠÙƒ ØŸ','Ù„Ùˆ ÙØ²Ø¹Øª/ÙŠ Ù„ØµØ¯ÙŠÙ‚/Ù‡ ÙˆÙ‚Ø§Ù„Ùƒ Ù…Ø§Ù„Ùƒ Ø¯Ø®Ù„ ÙˆØ´ Ø¨ØªØ³ÙˆÙŠ/ÙŠÙ†ØŸ','ÙˆØ´ ØªØ­Ø³ Ø§Ù†Ùƒ ØªØ­ØªØ§Ø¬ Ø§Ù„ÙØªØ±Ø© Ù‡Ø§Ø°ÙŠ ØŸ','ÙŠÙˆÙ…Ùƒ Ø¶Ø§Ø¹ Ø¹Ù„Ù‰ØŸ','@Ù…Ù†Ø´Ù† .. Ø´Ø®Øµ ØªØ®Ø§Ù Ù…Ù†Ù‡ Ø§Ø°Ø§ Ø¹ØµØ¨ ...','ÙÙŠÙ„Ù… Ø¹Ø§Ù„Ù‚ ÙÙŠ Ø°Ù‡Ù†Ùƒ Ù„Ø§ ØªÙ†Ø³Ø§Ù‡ Ù…ÙÙ† Ø±ÙˆØ¹ØªÙ‡ØŸ','ØªØ®ØªØ§Ø± Ø£Ù† ØªÙƒÙˆÙ† ØºØ¨ÙŠ Ø£Ùˆ Ù‚Ø¨ÙŠØ­ØŸ','Ø§Ù„ÙÙ„ÙˆØ³ Ø§Ùˆ Ø§Ù„Ø­Ø¨ ØŸ','Ø£Ø¬Ù…Ù„ Ø¨Ù„Ø¯ ÙÙŠ Ù‚Ø§Ø±Ø© Ø¢Ø³ÙŠØ§ Ø¨Ù†Ø¸Ø±ÙƒØŸ','Ù…Ø§ Ø§Ù„Ø°ÙŠ ÙŠØ´ØºÙ„ Ø¨Ø§Ù„Ùƒ ÙÙŠ Ø§Ù„ÙØªØ±Ø© Ø§Ù„Ø­Ø§Ù„ÙŠØ©ØŸ','Ø§Ø­Ù‚Ø± Ø§Ù„Ù†Ø§Ø³ Ù‡Ùˆ Ù…Ù† ...','ÙˆÙŠÙ† Ù†Ù„Ù‚Ù‰ Ø§Ù„Ø³Ø¹Ø§Ø¯Ù‡ Ø¨Ø±Ø§ÙŠÙƒØŸ','Ø§Ø´ÙŠØ§Ø¡ ØªÙØªØ®Ø± Ø§Ù†Ùƒ Ù… Ø³ÙˆÙŠØªÙ‡Ø§ ØŸ','ØªØ²Ø¹Ù„Ùƒ Ø§Ù„Ø¯Ù†ÙŠØ§ ÙˆÙŠØ±Ø¶ÙŠÙƒ ØŸ','ÙˆØ´ Ø§Ù„Ø­Ø¨ Ø¨Ù†Ø¸Ø±ÙƒØŸ','Ø§ÙØ¶Ù„ Ù‡Ø¯ÙŠÙ‡ Ù…Ù…ÙƒÙ† ØªÙ†Ø§Ø³Ø¨ÙƒØŸ','ÙƒÙ… ÙÙŠ Ø­Ø³Ø§Ø¨Ùƒ Ø§Ù„Ø¨Ù†ÙƒÙŠ ØŸ','ÙƒÙ„Ù…Ø© Ù„Ø´Ø®Øµ Ø£Ø³Ø¹Ø¯Ùƒ Ø±ØºÙ… Ø­Ø²Ù†Ùƒ ÙÙŠ ÙŠÙˆÙ…Ù Ù…Ù† Ø§Ù„Ø£ÙŠØ§Ù… ØŸ','Ø¹Ù…Ø±Ùƒ Ø§Ù†ØªÙ‚Ù…Øª Ù…Ù† Ø£Ø­Ø¯ ØŸ!','Ù…Ø§ Ø§Ù„Ø³ÙŠØ¡ ÙÙŠ Ù‡Ø°Ù‡ Ø§Ù„Ø­ÙŠØ§Ø© ØŸ','ØºÙ†ÙŠØ© Ø¹Ù†Ø¯Ùƒ Ù…Ø¹Ø§Ù‡Ø§ Ø°ÙƒØ±ÙŠØ§ØªðŸŽµðŸŽ»','/','Ø£ÙØ¶Ù„ ØµÙØ© ØªØ­Ø¨Ù‡ Ø¨Ù†ÙØ³ÙƒØŸ','Ø§ÙƒØ«Ø± ÙˆÙ‚Øª ØªØ­Ø¨ ØªÙ†Ø§Ù… ÙÙŠØ© ...','Ø£Ø·ÙˆÙ„ Ù…Ø¯Ø© Ù†Ù…Øª ÙÙŠØ©Ø§ ÙƒÙ… Ø³Ø§Ø¹Ø©ØŸ','Ø£ØµØ¹Ø¨ Ù‚Ø±Ø§Ø± Ù…Ù…ÙƒÙ† ØªØªØ®Ø°Ù‡ ØŸ','Ø£ÙØ¶Ù„ ØµÙØ© ØªØ­Ø¨Ù‡ Ø¨Ù†ÙØ³ÙƒØŸ','Ø§ÙƒØ«Ø± ÙˆÙ‚Øª ØªØ­Ø¨ ØªÙ†Ø§Ù… ÙÙŠØ© ...','Ø£Ù†Øª Ù…Ø­Ø¨ÙˆØ¨ Ø¨ÙŠÙ† Ø§Ù„Ù†Ø§Ø³ØŸ ÙˆÙ„Ø§ÙƒØ±ÙŠÙ‡ØŸ','Ø¥Ø­Ø³Ø§Ø³Ùƒ ÙÙŠ Ù‡Ø§Ù„Ù„Ø­Ø¸Ø©ØŸ','Ø§Ø®Ø± Ø´ÙŠØ¡ Ø§ÙƒÙ„ØªÙ‡ ØŸ','ØªØ´ÙˆÙ Ø§Ù„ØºÙŠØ±Ù‡ Ø§Ù†Ø§Ù†ÙŠÙ‡ Ø§Ùˆ Ø­Ø¨ØŸ','Ø§Ø°ÙƒØ± Ù…ÙˆÙ‚Ù Ù…Ø§ØªÙ†Ø³Ø§Ù‡ Ø¨Ø¹Ù…Ø±ÙƒØŸ','Ø§ÙƒØ«Ø± Ù…Ø´Ø§ÙƒÙ„Ùƒ Ø¨Ø³Ø¨Ø¨ ØŸ','Ø§ÙˆÙ„ Ù…Ø§ØªØµØ­Ù‰ Ù…Ù† Ø§Ù„Ù†ÙˆÙ… Ù…ÙŠÙ† ØªÙƒÙ„Ù…Ù‡ØŸ','Ø¢Ø®Ø± Ù…Ø±Ø© Ø¶Ø­ÙƒØª Ù…Ù† ÙƒÙ„ Ù‚Ù„Ø¨ÙƒØŸ','Ù„Ùˆ Ø§Ù„Ø¬Ù†Ø³ÙŠØ© Ø­Ø³Ø¨ Ù…Ù„Ø§Ù…Ø­Ùƒ ÙˆØ´ Ø¨ØªÙƒÙˆÙ† Ø¬Ù†Ø³ÙŠØªÙƒØŸ','Ø§ÙƒØ«Ø± Ø´ÙŠØ¡ ÙŠØ±ÙØ¹ Ø¶ØºØ·Ùƒ','Ø§Ø°ÙƒØ± Ù…ÙˆÙ‚Ù Ù…Ø§ØªÙ†Ø³Ø§Ù‡ Ø¨Ø¹Ù…Ø±ÙƒØŸ','Ù„Ùˆ Ù‚Ø§Ù„ÙˆØ§ Ù„Ùƒ  ØªÙ†Ø§ÙˆÙ„ ØµÙ†Ù ÙˆØ§Ø­Ø¯ ÙÙ‚Ø· Ù…Ù† Ø§Ù„Ø·Ø¹Ø§Ù… Ù„Ù…Ø¯Ø© Ø´Ù‡Ø± .','ÙƒÙŠÙ ØªØ´ÙˆÙ Ø§Ù„Ø¬ÙŠÙ„ Ø°Ø§ØŸ','Ø±Ø¯Ø© ÙØ¹Ù„Ùƒ Ù„Ùˆ Ù…Ø²Ø­ Ù…Ø¹Ùƒ Ø´Ø®Øµ Ù… ØªØ¹Ø±ÙÙ‡ ØŸ','Ø§Ø­Ù‚Ø± Ø§Ù„Ù†Ø§Ø³ Ù‡Ùˆ Ù…Ù† ...','ØªØ­Ø¨ Ø§Ø¨ÙˆÙƒ ÙˆÙ„Ø§ Ø§Ù…Ùƒ','Ø¢Ø®Ø± ÙÙŠÙ„Ù… Ù…Ø³Ù„Ø³Ù„ ÙˆØ§Ù„ØªÙ‚ÙŠÙŠÙ…ðŸŽ¥ØŸ','Ø£Ù‚Ø¨Ø­ Ø§Ù„Ù‚Ø¨Ø­ÙŠÙ† ÙÙŠ Ø§Ù„Ø¹Ù„Ø§Ù‚Ø©: Ø§Ù„ØºØ¯Ø± Ø£Ùˆ Ø§Ù„Ø¥Ù‡Ù…Ø§Ù„ðŸ¤·ðŸ¼ØŸ','ÙƒÙ„Ù…Ø© Ù„Ø£Ù‚Ø±Ø¨ Ø´Ø®Øµ Ù„Ù‚Ù„Ø¨ÙƒðŸ¤ØŸ','Ø­Ø·@Ù…Ù†Ø´Ù† Ù„Ø´Ø®Øµ ÙˆÙ‚ÙˆÙ„Ù‡ "Ø­Ø±ÙƒØªÙƒ Ù…Ø§Ù„Ù‡Ø§ Ø¯Ø§Ø¹ÙŠ"ðŸ˜¼!','Ø§Ø°Ø§ Ø¬Ø§Ùƒ Ø®Ø¨Ø± Ù…ÙØ±Ø­ Ø§ÙˆÙ„ ÙˆØ§Ø­Ø¯ ØªØ¹Ù„Ù…Ù‡ ÙÙŠØ© Ù…ÙŠÙ†ðŸ’ƒðŸ½ØŸ','Ø·Ø¨Ø¹ ÙŠÙ…ÙƒÙ† ÙŠØ®Ù„ÙŠÙƒ ØªÙƒØ±Ù‡ Ø´Ø®Øµ Ø­ØªÙ‰ Ù„Ùˆ ÙƒÙ†ØªØªÙØ­Ø¨Ù‡ðŸ™…ðŸ»â€â™€ï¸ØŸ','Ø§ÙØ¶Ù„ Ø§ÙŠØ§Ù… Ø§Ù„Ø§Ø³Ø¨ÙˆØ¹ Ø¹Ù†Ø¯ÙƒðŸ”–ØŸ','ÙŠÙ‚ÙˆÙ„ÙˆÙ† Ø§Ù† Ø§Ù„Ø­ÙŠØ§Ø© Ø¯Ø±ÙˆØ³ ØŒ Ù…Ø§Ù‡Ùˆ Ø£Ù‚ÙˆÙ‰ Ø¯Ø±Ø³ ØªØ¹Ù„Ù…ØªÙ‡ Ù…Ù† Ø§Ù„Ø­ÙŠØ§Ø©ðŸ™ØŸ','ØªØ§Ø±ÙŠØ® Ù„Ù† ØªÙ†Ø³Ø§Ù‡ðŸ“…ØŸ','ØªØ­Ø¨ Ø§Ù„ØµÙŠÙ ÙˆØ§Ù„Ø§ Ø§Ù„Ø´ØªØ§Ø¡â„ï¸â˜€ï¸ØŸ','Ø´Ø®Øµ ØªØ­Ø¨ ØªØ³ØªÙØ²Ù‡ðŸ˜ˆØŸ','Ø´Ù†Ùˆ ÙŠÙ†Ø§Ø¯ÙˆÙ†Ùƒ ÙˆØ§Ù†Øª ØµØºÙŠØ± (Ø¹ÙŠØ§Ø±ØªÙƒ)ðŸ‘¼ðŸ»ØŸ','Ø¹Ù‚Ù„ ÙŠÙÙ‡Ù…Ùƒ/Ø¬ ÙˆÙ„Ø§ Ù‚Ù„Ø¨ ÙŠØ­Ø¨Ùƒ/Ø¬â¤ï¸ØŸ','Ø§ÙˆÙ„ Ø³ÙØ±Ù‡ Ù„Ùƒ ÙˆÙŠÙ† Ø±Ø­ ØªÙƒÙˆÙ†âœˆï¸ØŸ','ÙƒÙ… Ø¹Ø¯Ø¯ Ø§Ù„Ù„ÙŠ Ù…Ø¹Ø·ÙŠØ©Ù… Ø¨Ù„ÙˆÙƒðŸ‘¹ØŸ','Ù†ÙˆØ¹ÙŠØ© Ù…Ù† Ø§Ù„Ø£Ø´Ø®Ø§Øµ ØªØªØ¬Ù†Ø¨Ù‡Ù… ÙÙŠ Ø­ÙŠØ§ØªÙƒâŒØŸ','Ø´Ø§Ø±ÙƒÙ†Ø§ ØµÙˆØ±Ø© Ø§Ùˆ ÙÙŠØ¯ÙŠÙˆ Ù…Ù† ØªØµÙˆÙŠØ±ÙƒØŸðŸ“¸','ÙƒÙ… Ù…Ù† Ø¹Ø´Ø±Ù‡ ØªØ¹Ø·ÙŠ Ø­Ø¸ÙƒðŸ“©ØŸ','Ø§ÙƒØ«Ø± Ø¨Ø±Ù†Ø§Ù…Ø¬ ØªÙˆØ§ØµÙ„ Ø§Ø¬ØªÙ…Ø§Ø¹ÙŠ ØªØ­Ø¨Ù‡ðŸ˜ŽØŸ','Ù…Ù† Ø§ÙŠ Ø¯ÙˆÙ„Ù‡ Ø§Ù†ØªðŸŒØŸ','Ø§ÙƒØ«Ø± Ø¯ÙˆÙ„Ù‡ ÙˆØ¯Ùƒ ØªØ³Ø§ÙØ± Ù„Ù‡Ø§ðŸžØŸ','Ù…Ù‚ÙˆÙ„Ø© "Ù†ÙƒØ¨Ø± ÙˆÙ†Ù†Ø³Ù‰" Ù‡Ù„ ØªØ¤Ù…Ù† Ø¨ØµØ­ØªÙ‡Ø§ðŸ§“ðŸ¼ØŸ','ØªØ¹ØªÙ‚Ø¯ ÙÙŠØ© Ø£Ø­Ø¯ ÙŠØ±Ø§Ù‚Ø¨ÙƒðŸ‘©ðŸ¼â€ðŸ’»ØŸ','Ù„Ùˆ Ø¨ÙŠØ¯Ùƒ ØªØºÙŠØ± Ø§Ù„Ø²Ù…Ù† ØŒ ØªÙ‚Ø¯Ù…Ù‡ ÙˆÙ„Ø§ ØªØ±Ø¬Ø¹Ù‡ðŸ•°ØŸ','Ù…Ø´Ø±ÙˆØ¨Ùƒ Ø§Ù„Ù…ÙØ¶Ù„ðŸ¹ØŸ','â€Ù‚Ù… Ø¨Ù„ØµÙ‚ Ø¢Ø®Ø± Ø§Ù‚ØªØ¨Ø§Ø³ Ù†Ø³Ø®ØªÙ‡ØŸðŸ’­','ÙƒÙ… ÙˆØ²Ù†Ùƒ/Ø¬ Ø·ÙˆÙ„Ùƒ/Ø¬ØŸðŸŒš','ÙƒÙ… ÙƒØ§Ù† Ø¹Ù…Ø±Ùƒ/Ø¬ Ù‚Ø¨Ù„ Ù¨ Ø³Ù†ÙŠÙ†ðŸ˜ˆØŸ','Ø¯ÙˆÙ„Ù‡ Ù†Ø¯Ù…Øª Ø§Ù†Ùƒ Ø³Ø§ÙØ±Øª Ù„Ù‡Ø§ðŸ˜ØŸ','Ù„Ùˆ Ù‚Ø§Ù„Ùˆ Ù„Ùƒ Ù£ Ø£Ù…Ù†ÙŠØ§Øª Ø±Ø§Ø­ ØªØªØ­Ù‚Ù‚ Ø¹Ø§Ù„Ø³Ø±ÙŠØ¹ Ø´Ù†Ùˆ ØªÙƒÙˆÙ†ðŸ§žâ€â™€ï¸ØŸ','â€- Ù†Ø³Ø¨Ø© Ø§Ø­ØªÙŠØ§Ø¬Ùƒ Ù„Ù„Ø¹Ø²Ù„Ø© Ù…Ù† 10ðŸ“ŠØŸ','Ø´Ø®Øµ ØªØ­Ø¨Ù‡ Ø­Ø¸Ø±Ùƒ Ø¨Ø¯ÙˆÙ† Ø³Ø¨Ø¨ ÙˆØ§Ø¶Ø­ØŒ Ø±Ø¯Ø© ÙØ¹Ù„ÙƒðŸ§ØŸ','Ù…Ø¨Ø¯Ø£ ÙÙŠ Ø§Ù„Ø­ÙŠØ§Ø© ØªØ¹ØªÙ…Ø¯ Ø¹Ù„ÙŠÙ‡ Ø¯Ø§Ø¦Ù…Ø§ðŸ•¯ØŸ'}
-bot.sendText(msg.chat_id,msg.id,arr[math.random(#arr)],"md", true)
-end 
-if text == "Ù…ØµÙ‡" or text == "Ø¨ÙˆØ³Ù‡" or text == "Ù…ØµÙ‡Ø§" or text == "Ø¨ÙˆØ³Ù‡Ø§" then
-local texting = {"Ù…ÙˆÙˆÙˆÙˆÙˆÙˆÙˆÙˆÙˆØ§Ø­Ø­Ø­????","Ù…Ù…Ù…Ù…Ù…Ø­Ø­Ù‡ ðŸ¥´ðŸ˜¥","Ø®Ø¯Ùƒ/Ø¬ Ù†Ø¶ÙŠÙ ðŸ˜‚","Ø§Ù„Ø¨ÙˆØ³Ù‡ Ø¨Ø§Ù„Ù Ø­Ù…Ø¨ÙŠ ðŸŒðŸ’‹","Ù…Ù…Ø­Ù…Ø­Ù…Ø­Ù…Ø­Ø­ ðŸ˜°ðŸ˜–","ÙƒÙ„ Ø´ÙˆÙŠÙ‡ Ø§Ø¨ÙˆØ³Ùƒ ÙƒØ§ÙÙŠ ðŸ˜","Ù…Ø§Ø§Ø¨ÙˆØ³Ù‡ ÙˆØ§Ù„Ù„Ù‡ Ù‡Ø°Ø§ Ø²Ø§Ø­ÙðŸ¦Ž","Ù…Ø­Ø­ Ù‡Ø§ÙŠ Ù„Ø­Ø§ØªÙ‡ ØµØ§ÙƒÙ‡??"}
-if tonumber(msg.reply_to_message_id) == 0 then
-bot.sendText(msg.chat_id,msg.id,"*- ÙŠØ¬Ø¨ Ø¹Ù…Ù„ Ø±Ø¯ Ø¹Ù„Ù‰ Ø±Ø³Ø§Ù„Ø© Ø´Ø®Øµ .*","md", true)
-return false
-end
-bot.sendText(msg.chat_id,msg.reply_to_message_id,"*"..texting[math.random(#texting)].."*","md", true)
-end
-end
-if not redis:get(bot_id..":"..msg.chat_id..":settings:phme") then
-if text == "ØµÙˆØ±ØªÙŠ" then
-local photo = bot.getUserProfilePhotos(msg.sender.user_id)
-if photo.total_count > 0 then
-bot.sendPhoto(msg.chat_id, msg.id, photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id," * Ø­Ø³Ø§Ø¨Ùƒ ÙŠØ­ØªÙˆÙŠ Ø¹Ù„Ù‰ ("..photo.total_count.." ) ØµÙˆØ±Ø©*", "md")
-else
-bot.sendText(msg.chat_id,msg.id,'*  âŒ”ï¸™Ù„Ø§ ØªÙˆØ¬Ø¯ ØµÙˆØ±Ø© ÙÙŠ Ø­Ø³Ø§Ø¨Ùƒ*',"md",true) 
-end
-end
-end
-if text and redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":link:add") then
-redis:del(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":link:add")
-if text and text:match("^https://t.me/+(.*)$") then     
-redis:set(bot_id..":"..msg.chat_id..":link",text)
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø±Ø§Ø¨Ø· Ø§Ù„Ø¬Ø¯ÙŠØ¯ Ø¨Ù†Ø¬Ø§Ø­*","md", true)
-else
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™Ø¹Ø°Ø±Ø§ Ø§Ù„Ø±Ø§Ø¨Ø· Ø®Ø·Ø£*","md", true)
-end
-end
-if text and redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":id:add") then
-redis:del(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":id:add")
-redis:set(bot_id..":"..msg.chat_id..":id",text)
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™ØªÙ… Ø­ÙØ¸ Ø§Ù„Ø§ÙŠØ¯ÙŠ Ø§Ù„Ø¬Ø¯ÙŠØ¯ Ø¨Ù†Ø¬Ø§Ø­*","md", true)
-end
-if text and redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":we:add") then
-redis:del(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":we:add")
-redis:set(bot_id..":"..msg.chat_id..":Welcome",text)
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™ØªÙ… Ø­ÙØ¸ Ø§Ù„ØªØ±Ø­ÙŠØ¨ Ø§Ù„Ø¬Ø¯ÙŠØ¯ Ø¨Ù†Ø¬Ø§Ø­*","md", true)
-end
-if text and redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":nameGr:add") then
-redis:del(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":nameGr:add")
-if GetInfoBot(msg).Info == false then
-bot.sendText(msg.chat_id,msg.id,'*  âŒ”ï¸™Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ§Øª ØªØºÙŠÙŠØ± Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª*',"md",true)  
-return false
-end
-bot.setChatTitle(msg.chat_id,text)
-bot.sendText(msg.chat_id,msg.id,"*  âŒ”ï¸™ØªÙ… ØªØºÙŠÙŠØ± Ø§Ù„Ø§Ø³Ù… Ø¨Ù†Ø¬Ø§Ø­*","md", true)
-end
-if text and redis:get(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":decGr:add") then
-redis:del(bot_id..":"..msg.chat_id..":"..msg.sender.user_id..":decGr:add")
-if GetInfoBot(msg).Info == false then
-bot.sendText(msg.chat_id,msg.id,'*  âŒ”ï¸™Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ§Øª ØªØºÙŠÙŠØ± Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª*',"md",true)  
+B2#ªkRz×Œ8´Ð‘°ˆ+óø.±¼ñ<pèºìFPßM¿|=Nô•”>ñË#Ý2TS˜¢ª/`ž¨F1äÌf*Õ;Y?m·ÏZ•ðúì‹Z£¯ŒÍÏ`IÂÂðäÕÆ˜„2£{ÅÀ”+Ü’žÇC
+Åzú…Æƒi?[8ùØá±³ÑWˆZCl\1øZEt#~þjx·ë™Ö[ÉC‰Ÿ¢7)IÛaQ²	@&áq¨ 
+ó½¸-»TuÁ0<Û‹’Rƒ«<ÜBsuðˆèâ}ß#€õ<b¸æd á]ú†r"QH|è÷o-ñ5K­¯ætaiÎßåƒÒ¹eÄ«CÂâúQ„/5«;SšJgR¯N–©/€«›Ù5ÚpÕ5Ã³â¯p×óì“µ‹Ûšî‘K'ÌÓràž‘þF°KŸØ‰ 0HŠù9)_/I÷lIµ*:{—-AŠƒÀ4g¬‘úp:Ù ïJäðˆlA·5˜û*B?›Ìi,H­–Ÿ$oùUwÑ$Hy%ÓYa•Pc¾ÊøK9c”§*ÑG:ùlàHdÍF\\$U¡©Ž«ô˜ƒqQ¸Ê7ÄÝÃpYŸ‘S4NúÁG¬ÒÏËB)#õ«	œñ·<µÔ”~§×ÐM‹ÁAFƒj¢™Qx« ×un4ñäÛÀnø6CþÏ)Ý9û»$Ô†,ýt\wÉ†fFH‹ç ±$yÒíHìôSýXô‰/êŽ>/‘·¹`Rb=E_EWËl²%Ží¦y›‚ñ€%ùY†¹Ììž#2(ºKEd¡á¢…ÎŽ’E¤œè£¯i4¬¶hÏ³·dÆ$bNã™†¶7q1–Ÿ“ÐeØæ­œ…Øòî-ðRš@©¹ÚÍcÁ£„jN7ÓŽ#løÕ=ˆAMöRÒ•A³«xÏ²Yõ®ŠúÀP^®Îñ u+A‹Š+;Êp‡ëO£­àôØî• ¶4Ñmû[èÅŠ‡™~FEFÞF>L°˜Ñ)U9;áëôzËÙŠ%=?¨¤6¡ö gu¤ˆÆOíwR\‘.Eö¢"+4NíàøÓºƒiÅÁ?Ú›†b–¿ ”1„’EwñÍs¥¸ÑXý@‰ÃHÊ×“@@žô‰ïšÁR\qÉGÜO~6#YÀ—‡únh3½Ö¼ÝœÂÈV™”&‹GKTü{ˆ„·Eô ¡ä ·<8³~Î–¤»f‹br%CPyÂ'SWºÙL²¬Œ	åßÂí†ÉÖÁý±ÕâeÆÍ#ÔG@Á>ËpqÚBÕ°§ŽÐ_º<jÅEÓº˜Ðõ/.Üå³C‹a.˜ ¶JjxTH´#Â\àuÏÏ]øhU?ƒ¸°{æÕ@W„°œÝäÛß@* ¶ôO#G¦øeŸ“¾ŽÏr¼R4t8P<oÌÜykj©¢BU.­ñæÝPUS-$5¶z5Ö Ý¶Ø¹ìgôxèŽÞó2I+õŽÒ~l/Ù><p¼^ï±XAÖœ·1@.ôÆ“šÕ]äªÉo}¾Ë"±VØy¶NÀè ÝêÈ¡'[˜CÝþ}hT~¡£Z›ô¥H¦í[ý=åkœæ'&ÚKÚwq¢æ§ìo=¦¶âú¤d FÈ2yw«JKÉq´Ë¤[Lï—oL<¤=·Hù‚¯iÊ.¹¾Ñmu¿YEŠvOâãR.Î~`32”±û`û±ÕŠ¹’Òq¹%xÃ#,ß•`zåæœþcó¼²9¿Þ-§©®»o¬Â³Ó#AÊ^ãf5°þé±¡Ú`Ö_ßN@:pó'Hu“›mé8*Èêø¢¹vð"ïF‹úÂ’6ª[Œ†‚<ç™ä¾ÙÞ5iXÞÍŽ0Ó Rj@\Ÿä‰†3Â*„ÿQ²çöVìª”õj×Û;ùíÑ6‘¼Çè²¬¹ºGjzbìÔÈ©BóW>tý¾ rIƒæƒÕ½O°ÛcÜ’ åD|¥AAçàø ÜO¼S‰³ÏéLŸ¶“+rÛÃ±^FPt}Øy0*X³cÒºRd·èî	èÜŸ9¤tÅëÔ
+ëQ·asi|µ‘v6ù:í‹;­qˆ4'¿çÞqtÈ·áÑ²S«ƒo ¯JD$-¼Ý\Qõ@>h¥à°:	7ÙîSýÃ¥ÉûÉ×f†&1£É—d–8ª3JÞ‹%9‰B%” G­¬z +hfqzfp¡ÅÚv¯!Ü@Ø(øB€™VÊÐB·gË@Ú^©bT|ÅE¤'+X¼›êøœ_YÌ%äèâÜZûR1ÖW-Ë1_†õ¥’]›ø½jÉ.Oú–HW5îö•
+ü7ñµÀÚ³ëCaMŸ Q^àNs¦É—Fi"úü `ôl$WÌ1!‡!ê}%J7åç©iŠõÿ cloÖÊ`åvc)P˜¨Ù5yöt½À	d‡ªjhÅ»,Y‹æ¿É-Ñ¬-±9A`ã²	†˜@¥TÝ¡Ð¨HöÍžïëó	!ñA†¤ïÀJá†OÐÕŠãO½*ë:»$“‚È×?ú
+J@—¢:Sñ (˜tÃ\tbîMÙObÅ&2Aó»œð1øŒ-ººf€*tûlŸ¤]¥âÂØ3JŸÕW¦º:¸WÃ°ìÐÞ×V æµê9²àÊ¬aTkÎã”‡pŸ `¼ÇUÖúe
+8‘‡’Ý.gëKÝÿí@{»=»³zS}%ùóíŽbÊ"\‰rÙ{üxŽ qŠ›|} ÕI©Óé¯Yb	ýø‡U«À@úŽl0¥:4¸Á3„þUœ4™ûXŽ×3&uš1b	¢ßø”k/áÿ“h®YF°Œ@Ñ»ÁÂ?³0Gg¨2±˜FÌvWÆ„CÌSp3²×ycO%M_QÂìÛiÃá±S+%nÏ<Å]"Þ<àö§R¯%&å]d×Wx¥­%lŽÃb?7adøÜß]vñét62U±‚ó¯)…³ÃÌÁŽóê­W\B
+ÊéBp„ýøk/-òYÔÐ=³D€Â3ÇìõœÛ`!-,ô)R/éœ…K’CC\=âiÉÌbLLI¢žþ¦Î’Å;œÄIFiu^†¨¢*OŸD	u0E™ø zìORæ³—ª«Mœ§»×²Â¸—KØo"OqCä«À'í(v’GžÕ¸‘R4û5ãÀ­8doUqB‹¦;m+¿¯%úÜû”'YLü:ÿ3£” °ü‚Ts…êbáD÷-úX9I£Ý~¯hç5Iê\TÚühD’¶•T;šGá‚VEŸ£íöaÃ£0È|XÌŸ²þfµé›{‹¡‰F"¹wØm3|);ûŠ”È'sƒ‘Sƒ»ì^}J©I.·9üI?‡çÔrzÏþ–Ëuò_”Ô¯ÙÇ)üGÎÊót%×ýÓ¥©‹UÒF­ˆaDÁh¤¤à¤]îròW…2¦2~‹âk³G:"IØ×d†Ú•m­ê^íž 
+³È$¤±äSoË%'7VéÕWEÆtþ­é ¿]Aîzõ´÷¨ñ£„:˜=W•VRB‹í·üàðrº¦dÜå)ÍK>'¶/ŸÊ3Aq‡ô@‘°Ü_Ÿ0Y¾è~Þ¾Ebþ›~8
+éÕ°ÚÝx*ŸˆIhšû˜âšXYLv¯½ë }ÆBçpc®[ŠÞ;nf{
+ÅJ›åÀÃù}…Æ£ë@Ì1á´uŽ8íÈ5	Ö8pÚìQMC-±—þý¬š|×Œ·ísJå#–FN¾”`©ÚNª>† ?-ùþÔ—~ˆÌKòËÑfÓR¡_"à$Ýõ°‘Ü±kô›+!ùž¾x½ªÙj[h½e¼¾D\,ç¬yMü¾<.D]n…ñü'ûBZFûFPêk^þ‰_£µ.Úëì­'Õyã[GpE]mœÔÀÏ1Á·Li+éºÁOyŸ<ÛÂôo\ù€Ë­MJÌíðóäý‡,GþË3UYQ‡²MþJµ”|`¸ü`Lµf¸½§y»ËÁ”A9."'êÕ>l©Ê$Kšƒ–öš˜0‚PÁ+¹“þ4Û$¢›‚%«'¦º3hñ]ü»tï4(Öw(žƒ¿ƒ¤ÿ?	˜~;­lt¥Ã$…¢+]ätµðSó²ÊfËä¾!P]“oyðg³¨‘Ó¯([(Øæ€Ã‡HÆÆ¿'ò'”ê'eÂBåHqC» è¿.k°_ˆ
+ÊîF´ø]’AÙäñ Q@%•¤Ë—®Y‹y’‘vúQÅ2xÐj–Œòºq£¨é[´þåd€¦‡É¼…”¹aê0iÿŽñ§l >,) ävGv^¹³ë/”¤”­íäÊþP„Bó²Yvè° ÆÙè	[£\Uþ/ûþX6/xÇøQ­|½‰ÝÎ÷ACÀ™K¿­5ñõJuP¸‹	<ô/š7Ò•?ï<ƒŒ—äM$ý”ÝËu|,H`ù._öÛ%tc¦CÕæÎŒœ´D'ŽK<ºº$ˆ6–ÁIùp=}ˆi¿%ÑÏÿ÷hµ—Y÷¼Uä{¨Š§€|³p0XùÒÖ²$$"Vä ¯3Dwƒ¡§°©Ú0ÂÍE‰ˆ$tàãœ¸ ©K“ØËß™]Fˆš×]¦KÊçvõðµ]áÝmÜj§Ý)H¯îC¸~ˆÞ>-å“¸“t9Ù€˜o%ÁhüšìÞ+.ž}IpE­Â{‹´ÎkjR¦¼øzÒFDîÌûeléNüñÒ}´@ Y1mv £Ð%	ofT"l75V¡ ¾ÇÜO»[Ç%`SÃúŒ·¹Ñ+2´Fl˜U×æ-†Ç+`é `”•h¢r€XÍ¡í•ö’$9£_q"òå*ÉšåÌÍ-z8º Ä1[~öãâ6Ï(Ä=FþUˆ0Cc„#IJ#4¸›ƒÓ»òaL/bZæ_½™Ja¹ßFH"å¸o1¬­³KAèb; ˆ°Ý‹V^Î¸€½t3_ßì#‹cBýG„¤I2[;"‚öAƒí3"?y€bž+—„¸ßË(xˆucŸ8‡ª&P@fé§ÙÝ7­£©Ý–s4Ž™±nÖ8ýœZ–- 
+ÃIS'ì mñå¾ ¸l@ßCa$ã”yÎ4K¹ÚÁº¯1½o{¡’gäüv§†}š¼S“Õhÿ» FÚ6áV?:RÊ#mùFz™Ò%BEÆùŒEBc¡v½¸¯clRr8›™ÊŒ0Á¤¢”z4o	Š¢¡R‡ R®‚4¡æsO,æa0¼Åæ¾¸2˜Nh§éthc…¹^é·Šf% Tk¡kª8`ÉyT}ÈXðí@ó8=5Ù.ÑÈ“Y ½S¿R•±jÖŒÖÞ×S/S°›ÆG€(UÂÄøÞg-ÍÌœ0^5þÝ÷@?ÕHÓø¯KSÉëz‹	W+—Ý,èØûË½»­Ê·hÿ„¯®|zÕ2Â¿T4pý"JZË	ÞSTè~!yÞ<M°ÜûýE²9ò»j­¸¿«PÝÕ©57x¦n©ûš
+6s‡Ta¶a–'N`$¹èOð	kÝÛtrHºlÑS)Œòä%¼÷Y¦38Âjÿ“Ñ‘5ÂA¸±ÀÀó©’¦Þ 7AáwA‹•Ý·E@º•@!“œ»òÑ­´æ0âý2¢[, ^ÅíÍ±áÎ°B®—§pL#.Ÿ#%‡Ÿ’Ö¸AÝƒ‰R®½ø"ßŒ
+ñ?FÛ“hË£Fƒ®ó/ r˜K¢þ2íZËi_SÌc¬^FO¸oÝÍØû4þŸÏ¼”ˆ ~ÈU-<áÐciæÕ¨e¿ºþ‘ ‚(ŽŸÑÓÖ²kÛ&M˜Ëî
+Å¨xä.À{S8ªÚ5VST™a‰ðÙ}èùH§§d4gß]â©¼¤‰µ‚#E\ÝÁÅû…$1ö„Ë~H/fâ¿Ÿ÷÷ò pò:dÞA`ì€îÕ‹Jí>ª¤ÕÃ
+à×êjëÒ¢šNy0R~È&"}gCÝß¥š˜¶–‡èêåN^ ?‚FGÛë.Ú°]Æ¤¿§ 6”¢×©‹¬±ò"¾Q±<n®m†¨ø Êí¦‚â'äŸÜƒó9çáLT%`vÐQlC~èr^/3aª£»Sþâè¹¡Œ”_ß•5¦¤áÖE†bµ • ¸oêqj}íºO~§˜kë†œaá[r•™Ï\YøŽLõH´EÇ¸Þó=8RC-!µ@Ý—uùG
+ú¦)Ý”,'Åèï`¨G†¡¨£ò¸éÌ°‡£6.H³×(‰ÖålªA¨ýº]@ÆŠzp‰0G›RÐ29Îênõ¹Cà+À¥ïßîÔèóÝy}ýl§E»Qö¡på:áYÀUÇ;‡ø—¿³œy×´Ìãhìÿºp%Ý9_ÿÃ"çViRG8®¾{}äñÂ»G\Í*÷—‚ž×ÙÝ¤b¶!ßþZîÙmÑ¹E­—
+I" ½UŒƒ7`ž„¢,NX}V œ,wKk5#~T¼mÎ•<œ×þîìz­N’ÇTt
+Å…$Ò…íZ=ÝR5ç›N²ä˜ÆÈ¯ã2æ¦òób‚ýøj|TuF¶p·„Z«X<´+z‚4°5ÐˆµZÝk²NÁpXé\ ×[]YBËn"£8y0o ³nÂ˜—ex¯°6+J7¡@…r< ð5ŽŒ>UjŠÐ?©òªùkÝny‚x%æ@ Âµó»}Ñ ~¼štq¿Aé>Ü€R“ZK•ã?äm—ÕÔ.ëXöÙˆ¶¤
+n§š16A;ïÐÏŒ‹ë&B÷À¯ž’ÆáÒaÂbÁ)ýí<øñ®N“ç)mõÖöž€<9©z‰oM™œûû`qÁ÷Ÿl:Õ#|¦Ç¤>ÁÝÝAª†éòŠÁ¢w3›È>Z”
+³ðÍ)s=ôa0#m2ý—h+GNû¤/§¥§r—/÷’M½CtÐusl*ËÐEÁË€íÞ.áŽ]L3/¥k“>>Ú¬jå^4róÛ°°qæ‰eøl—oéÖNîFã-ÁÙ%Äé¦þ8¼“|ˆÓ»Œæ:‹œ¶ÕT_)×¢#koÿ”ü76Òª€sƒ|À@\“ëó
+‡
+ÎÔ5+…ïeÉw=®:…á¨‘i]KH{Ùé±&;¼Ã;uBìtÕSÛ£Øv1ê8uÙá ‹ï,´yhæ8@žõl•œë ¨Æ$50O._í¢9¤m«ÞÁOgOŒzßJ5&%zÔœ”}¨D’)(çD‹g:Ó£!ÀZl˜†{ÇÒ„Î¨Æd2Z¸œó¢f±yFÉð”œ«Ð_´šŒ0sý>§|±3§·ïæ¨=¿ÓÆõŸ°•s¢F>ŽzUêø}›íz÷Â|4¨zéÏÓ|õA‡ø–¨Íû5a±%h«à\#K° Ç¶î*²¶8pZJ¹£‹kmÇkr]Xu¥‡™ÂBõ*º„˜$uI3Ö–U”‡5 ";¿¶òÓýú$°wÿ*ìxº˜ûÕ‘ž™iT>°ïìi;qÖ?ˆ½½Õü_Ç©Ê+ùŸåéËhâÛ·X® -Ñ5AŠc¨ò1—ÛƒìYwÜ³ö‡6ð‡Ü˜Ê¥I<ëmÀ?T›x5e˜T\û0w‘Á‹0?mci}ÚÈ±µ¯ZÐÁí€Yl{ÍÉ¡wïï2á<M‹	`)‘¥]Äµƒ†úÐÔb#š@=mr6ð'7ªÚð|Tß¦GNaöø°åi™º©þ5âÊýbÂTSÊ¾¡G¾mdíú“tÔwn%þå÷ß½n%ä8ÀúC2>Þù‹"å£hA†FaøµF@_î¾žÎíQâ(¨î˜Nà}Q!h(XºDÖúf^-špûOÔ…›,Å²X[EtîÝ‹.”VA>Ÿ=Ž ¨\x -=pI>¾îÄJZwèCå%m™jLÿÇ÷&WE;”¯dûƒd]šÕåI]ï¹¬7åMÜI®ëí¹ò£!
+u¬ËiÃÖá¬½{;ÃRª¯ó= -âÕµB‚Mæ{szLÐ×ñÌÌ›W»3˜ï: Å¥ð‚Yê‰ššÐ¨'7:æû¢D1&%¦R3²/ênx °bü‰£gx\`ïJÁ…)!á•< ýÔFV{©œ”vé§œR»út/sÆ2´2ç"PZŸáû&ÜŒ%R”Ç™]b¨Vw9î“cñHE°ìˆnf^#{ÚvBÔÉ\á5³eiÂÓ*%Cjè	š@üÚ¾ûK†@:H|G%›ÑgãÞ5œT½	á=¸Þ.×vÙˆ¶–Sëwi‰ô€VŒFQE¸Ÿ—Æ­. †ÿÚóh›¨"¨8£—_åtŸì3vg~Ü
+ø‘šøS;„RË4¥Šx*dÅµÈ ¾¤ñ×Âüb„òxa´8î`ìŒÀ·7©{ØŒ&Ò­³'ú(¾óW²çv·§Ñ®ÉÅ%)	;ÑÄV¸ŠÝ$Nµ?8=š{³KîÇY…a¦ØzA|FÊõsæd¬øhËQ§²ZQñ@,jè°º ÐÂFC5£j_4LFý‡{‚QÒ tŠ3]ÈÍ]n?p^SLKüÉÒb­¸¿µƒõg;Î.°R\±Dïp»Öé¤,:gÂAµHÒ/»¤ªküç,K0ÞÏ´g_CÇ£¥¯à|G0âvß	R¾ÊœÏ™E)«Ú{Ïb=dˆÂ2ÁaðéåÅXË*®Ä¶“ÈTbeª©ÇE]ÁƒBÙ-eÙ™G§IcƒÅÝãïø"`Ý8‹OâJ%ÈŸ4ÕË›çêÊ
+ô6Î,z”KˆÁ€A$N®CæˆÇ{7ö—òG7;¿ÉÖ}¼ºÑœ/wÄäÝFˆeA1Db¤jÛ‰q‡[%D\•Ù‚bu+P”`ø·rLìCqR¹:·=\Ì*JEI?‡Ó:Ù]®Dþ?=”Âúp%öKÌJïU>&‚ŒÆÇ\ÍÂºJj'wÇ2‰>Í©R`$È—ND¤¥ÙÓÕø@ØRZè’±o}”!9bÔÿCGúÖÚñf/¼¥·+tá
+4¨ NyPlŸ¬æs6þN~}ð
+Í.Ñ–|þ…{æ[NIž¢Ó‘ÂN=¤Äµ@¼¹öEôvaÇ…— Ï¼Ù8 ñçƒýéÿ§ŒG†|µc[Ãh¼-Y¥½@÷"Çï^ñO«Å0(jÃoÃô€kìb¹‰æë“Ü	…´môv»q&âÙé¦.8{u¢¾^Së¼†x ú1ö2¡`„<ÂcOÇÅöË†‘™
+ è$/x½2ƒˆyX\RFž²þ÷©Qs³Ä<GcôG›ˆC yÕ«c¢:<@uÓQeØô-ý|M™«ÙDmÔœâ£Â9I5|Â`¶Ýµk%óÁ·•©Æ¶ªÇ1ãLŽ‚ïEz‚Gp™ÓRÖˆPxÁACçÖè€û>âÛQü?0õÍªŽÑçh›~¨³dÌx·þUiÊù.ƒS=›wÜ·¬™iX—[ÏÚí§sN³î/i¯Ï€Ù¿N‚y/”€/…"É,˜ˆ‘´Ùi:fþíµMƒò1ƒïƒú¯r#¼b¨òØG£™5„ãÙø'BfÀ9„ùIÆ«Ï¢Zö…¾vocïÌß¢kÓ	Ä-ç°Ý8Vïˆ`í²S¸ä§­Í»«Ìí“\:ÙÝk}¾T)´Ì9™f«Ù+jÉ$Z5Æ»¸aKÜNÇÀ(Ì”ÚömŒðsŠáÃ;>ãîi³E³qIid¯ùµNþ£tõ±Z€qäe÷óª×Þ®™ iãhe•¬ŸÄáZy…à‰Ü’¢g™“4HüƒÿÖ/×|¶p éŠ8tÚYÖ/Ö)«Šv9k«¡¶u,¯ ¸ã­e’ìãîâæpb}…ó6»&B`:ª¶l‰HéO-9¬9ŸÈ4g =Lâ6÷)ßƒ•ŠVièIuÚ¾“¤¾†å‡«kM¢ý¤ñAÿFªø4oE›wce£sÞ»oÓîº`xJ]Zæ”Í¤ŽWïIJö‰D	ZÊÐž^y‹À¢)T®F0þQãÖ nDlB]|¸©€¦j)²ÿÂÜyGSSgP¬yõáHºˆ
+l-¤ãTRòû ±ÞUøª”×Š‘'z7èm´U­åU–ÝZÌY5k&n_‘ùùaÓºõÃ{CÐy™r˜—y‘ºx7ú³¤¢î•“2Èó. aÁ“Ùn‚–ÈL~ÚdŒÅÿð{~DbÆ”ü_¢Z-(¸ßßÌâðÑÔ-„^\Er1›ŠKƒ*ÿöàÑ]±&íºÇX"E‘×úò:4MÈ¸ºžjÈ_­î/’QM¯ÂUÎAuJ¿èƒûëøqñæçbé‡¿' ºÑoòyýº…C‰VÞGb–Š\»ö­	lºûI¨ÐµìôiÁp$=:ÌáÝ‹nrêI—š§n´žPŠ
+ý¨ÀI
+WðŒ†„ÚEÏzùî´ÅäFÿA—ýÞñ@Ë-â5]v†|¿+‰€øûÍ§¿(útüréÍ¥jb­…¡9Ï eU¦ýS‹3·½Û\ª¤a‚HXOX/Áþ‡ùn´ÌÍnž)q7¿õ¦à#2ðßÙ—9ÉÃhTK0K›»û‚åÝƒóƒ8 ŠÀ’ñ6ÓJS)3k¾©ÙöÑ-ÿ;›žÇ6é @°Iö L³Õ‰ëÑ°¦úO»ˆíèu(žeÑ2Gß;Ñ©Úré½µ•9âþ‹†úÑ]š0ÔZUþB+¤ðßo½úÁ¢<P×±šH2/m²ý*T:u#Ì¡º+ž-rU*²OSÐ\c¯áÐú÷lmVV—;¼ŸjGWp<%Ëüò”ZÆÎ»âÊüç[@¯CƒˆC>§¨{X Êª¢§ò)±S_®W%ËNþˆí÷ßyªLtt=Ñµ6a0Óá°Ú{Ç#ŽÁY¿ ×‹G‹ÃªS'+Š8±j}¨•‚BMRbNãL›âòåYÇ]lI„ýÃlÆ9]Áš•âŠ›Þì`ZÊñE5Ç¹XÌWevú™Ÿ¬ž³pzç<¨v¸ðE±ˆ«Ø©^€¡ÆC"­®›,Öw|8É4ã1x-f`	UKGªPáþ6|•‹²ÆX[—meOñŽh3÷¤3è-æQÃ€­–F1ÓP›óÂ>*œpûŸ‹cÔóYîý÷µTKµ—âôA­HCCgÔ˜Þÿµ•&Š2ž©/‚˜ãE;Þ§am]KÁÉE™ÿR¾¶+ZˆYïÛ7þbùÏ›… x*[Ê€YâóÅ1­©5ºæ
+RIë7©ûJAT»\›X/î«ƒXaÍïvÃž?V~j¾WÀ]+kÉÝê“É!ŽÄ%¸7¸b%l<î¦Vœ¥¥VIŸU}¤y¡éÜíW”}†VÛ¶…ÊMò÷:åX¢"¸˜Ú—aaò[‘£™]W¯Xa­^M>Û jô©:*Ž°Xù´rí].yèor¨l[«ôB>5êÂÓ­E\‘î`«X·Ý^0|sï‡0°ëJS·”zŸkôH×Xwö+{Ý×U…ªüÆ:s,ËïÏÓb×úëúÝæ
+ÝÐYW«FÄ"ƒ=÷wj—ó)ZXUº=µšÒÝ<‚x*±|*ú).Jk2¸R=›’š\5…ìd9up)`IÞã=s5X›+ÈW¬¤En8©P°×¸ˆÐàÑÒ¢AâÑwBÍ×ªÆ×g¥··DÑšhØ]P2k¾zÒ>¨ƒ]6p“Àû égóŒ'w´eK–Sv¹ÈÓƒê»Ûß—·¶#>Œµ­m;ûõ›ß“ËU¤ÐQßÚíÆ¾úÒUÂUrÂÛÊ³x—º§Å¤ÆZ¬5Þ¬æöO©Ztzh›ãNKŠ3vØŽy™óDä©ˆ§pøiu:u~¬Í”b@¬ìÝ­ÁãjÚÊ´4öéƒ‹‹ ‚Ü?Ð§‹×,treÛ[ÿ æG§Ñè:ïÃªV2µçžÞ;Î'ÛsN¯Š¾ÒòM"r§dÂ¢‰ã¦úòæÖÙf3/îØ¯ó ¤ÄD¯kãµ­›S§œÌJÚôEÿÒÍ7øž< v§QþÔ#Âþ+Æ¤63¦îß;·ñÐ&­Œm'Ú¹3ð?3qHgKsgåã®à7 Pm›‰í Ò¦E#Á>ée)Ì=Ñò]?NÅÿ¦Ãø÷L¶¼]!=Ø «94­”³b‡Ô—s˜àÌCvn¹4«bÈ˜_á„€þÈevþž*|îß4Ö!eAÇ+º½:ÿêÀT‹r4_¡ô”}ÎpÑÐá¸Û'Ú¨§£ý:i§hYôU´	øëòœèJÖËÑSc„¦úè<`
+W·°¸Gy¥QäûÅ;Í”ø”kÞŸ<Eƒç¹@|(€Ä'ª*«9*CrýŽ52D&è¼ç^qÝ—ÞÆÚ%;˜¤ß2¢ˆŽÀß‰Î¤Ó2eÙÓÖ‰
+¨Õ\-ïüw K—€V‰ðð†KÛ•;ˆ6eÁühÄ mÜatl¹½5Ý$ù”°áÏd¶ðmGªŽ¤áÊ¢À²'gLÈý(\;	é™ˆ)_žf™ó­¶+­Õêˆqú¨•ÑÞLÝpìØÿâG=·ž¡q]8¤]—dÈKõ¶*Í)@o__h¢¤q(e>Cü§6BiA¢|)ÅBþá¶jgÀãÞáï«Œ›òæBó[¦Õ1ÏŽa¬)èºÔP:ÞynygLC,ý5ø·ùöãÉžÐaJÔ"Ù“Ïí8L]·œ·ºÉ3èDãÿYviŒœPiUÝOºì‹…Ã^x¼–x ;­`cv7_qRÜÐ£9îfÍ0†gU›½á³æ1î ÊýþÝn­•z(ŸžÏP¿bAgRxÌá|º5øÁ¨ó¸ô³5(ÁÇëXž+ÃºA(õ¡÷Žy‘ì©æÔ¼vèbìÆûËø,?y†»´ÈV¯q¤÷Ë1´¯’C2–˜´X‰|_ÍÏÊ°€N±Õ¨Ê>ÂÎOæÒM·æPÒ*€’51!Á8TýÇ“ßËL†rñÐ@Z]Ïçº÷x¼Wéö1ºAöýóéåŸ0¬´Èþ§Ã› öƒë€•åb5;uß…ñ„n¨aÎZÅ»†·ÿü-i´›êôðøµ˜¥KEº3ÔoYÌâU†Ä]7¿ÁÕ>«8¤ «øQÓ4!ìO’2†ÍÜü´Ñ×z2ª{Ü*ØÃ%Ý®¯çl=é>Uü“fš3š½J+kÝç<Ë¨[äp8û8—uõOÓÝ…\	Ø'‡’†¶à\ XdŽd0EÖÔý,ãˆ.¢çÄ¸møž¼`Uä!âWQÃyÙLDÿ¬÷àã—:É&<Ñÿ*(5Ý7‰']Þv¾Ÿ&»ûÝÐŸr‹WÀÏœ} ³ã¡$„©´NÑ»„ŒJ¯.öv-wž¬4l†ãŠCG"ïe8Z}P5X™Ìl‹F“nF‘XÖšÌu»voö ;Ùª´o€ø—o¼b¦)ÉÎdd	<¶ö†nKÿ’o\Ÿô«CJ‹¶®2ò!$>|íº@§o}	-F&~ÌL'«ÈB¼ða#œž„ôÁœÆÞ`ØZvÖ|“½M%ˆ§:WÚÁ|K¤XSå­«åª¤‘T–´Èè³ÞJ@¤RªKz_MdMj9š»S­xì½³³u…þçUn¤™ð)òå(´2Õ± ú¶äÄ=/´!n?ù’Ë·Àx‰kž$&Ï X¾µ…†Æ±•7)€V2&|Í8DPˆ­J|–/cC>X²01³ßkâXÇriCDU¬O:çúj/D‚[?P°9æØ[T.²	÷?æú±NOWïõ0 åVH S?¥$Î<ï¸Ùÿ‘CyQA¿ý¹:§¥¾Åïº…!t¦ÓŸ%+ªSÕ)ÊÙ(ÔÁL–õcu`ÊLÈ§¾Î¶ZÖGGZ­­Å–@mç}‘5Œ¸)K‡®íÒéÜ+ˆ —‰¦…Ö£×| Iîùüñi6
+Ì}u*µdŠ†¨€ ²Ò«Å/’“ÍÍ{æN_?Ö>þ7«*çÝelÐÑà¿ ðù¼?ý]Áf8Úi3!~¥’Û±M¤LÝXº˜ñk|/â+›L'¼l‡]’“Í÷§ñ¬èÓÆûEº8Ù@? ûÁ÷_Ôk¬–%Œ¶!yxøäð¥ô-ûÃ±ôã­Û‚ÐÇk"ˆ2dÊoig=0%ùm¼<•c'»E$ùRãÙÔ¬ºüßQQØ%{‰=Ög…øÜ`?¿Õ¨1 _¬«‚;Šay·rPèÁJ˜<µDOe§Œ	#¶)ä›@t5ú•¡b€
+Ÿ>¼Oå“ÕÄ»É­?ú3S¨•F4CuÎ‡OƒòJà*q§2ß¯‡fˆÏ„Þ¼öw†Zxãõ‚"+\ a¥ñ ¬®Oë§Z9=á®g“xÃÎí‚»N½41dõE¥@E‰P´Á¤è/|«\øÎXÌiˆ«©ìÑ.Ñèwx¹OR•&¯¯4Y:Þ-Ãê*¿¡ùßØ–›Ž2îÌ‘‚Òƒ‡¬î	ÇŸÏw8³™ÉXA+L9}(ÙýÇT“Aq‚Ö ¹½|Ë—¹·›éÎEzîbŠ-³îÊï8El¥ ü·÷×·2=Òö«Šhœ½Y¾"<Ìsn)¡Ú2…lOÓ\65cß©’*—¦“œ@<˜}=¿§Ô;Œu[Ø^—•KÁ_`›§áÇPåÑfy½3/`h^‹:•Ê†X³©éä})]ä=;Cû‰ýq˜&—¸‘|Ó¨G‹‰eŠ0€ ÑÒA6Jg2výÆ(¡ÉØoT‡-,aŽV³¡	1à9ªE–NÍê{Ñ*²ÊÒÍgäó‚_Ò›ƒ!YP•zÃ^×<îF˜Õ³?Åý;³N‰×íEÓâ’E)0/Y„*ÆÛÉ?Zm~ jVb•æ]mv]?xgDãM¤R¶ZFNìæGH_‡»9D¥vÿhƒá¢ß>‹Œà®-D™ÌÏ2ZÌ#Û¡•®œj´!Žÿs¼ùÊÆs†v­ƒB…ÂkÏñ‘êªØcSÓ\£8X²óØi²û3àäÒò2M†Âº¿Ó€mÔ†ûÈÑë=mb‘TšÉWš7§)|î*9s2Åú‹[Â×ê‰½T	·”±aÍ¾mË¤‚úÁ¼Ové‰¯Ý¬Va#N„c#X™p{©ÅÚWœc•ŒK¹	Óz„­PßW?’ø|)!\oÁU€€°¿›î»@„oŸþB ÎkqZÄ™žüâ½!jC¶¬¾VA@P)	¤°C„  M®UÆ•Á˜½DŽØŽšn\T"ˆï¿5Îk›dÇIXøLœ’ú7¹…Ø•“WÌ‡y¥ÖcÿP³û‘Ð•|ÛUkeÖ2#opŠ•Éþíæ>ÿÿ¨KÞOŠ­JéóãíÑ49>û œ1xà[ÿ™~#|ASpÙàQÿ^Kýi=$¡Šè¶&Â· •ðO·™öµJÎU¿øEüóÌC‚R×FçÏXþ`d!¯›E2 è\‘,•(á7‚Ç1€oÉô=Ùs¢óºó¶ü]‹¾:…¢?§#*a)«£zŸlÿ#ÌÃ@j,÷u»^+u_úoîßŽÈ2=à¹š3°}¡@ðc9–ƒ( ýz”Œ†L>ç‰éÃn›ã7f~êP"ˆ±–À¤»# 6D2Õ²#¤Véì'!Æ¬`Þ¸à&tŠÕuTy˜ÆÌLÚÎ4OY/g¬.€N¦Ã^}¦Çéå)ÏßdÉŽÚ—‘YÑÚY(0#8jîèáR‘+’=÷^NøF”†×€”¾þÆ<Ž7éÙ7°èüˆAø¿÷¬2(1õÐ„T„‡7)B/ÛL>¼­Ù’´,Ì|ï|9ÞW)¹sçá×uxZ]“\<Ûa›ž‡ÍÚ2èáá£ n5äò*éÊHŠ¡OÈÄª}²>3øÔÙºMÿS—ÂÖÃK½ïÈÉŠ²'oÑÛ‹fæ§eØ¦Ë†N-Q§ÐÙ=US¾
+¨i?m*Ó”¾°“Þ2"â‡µru˜ó3P»+D3ÜÀs9É$˜ S„çErE'«Ò7”­s„>6ï1¯ƒ«ÐwàwEC”7¯Î•LàÜ¿Y‰ö“[.wú
+‹öŸÏ3…=ÂÏ*ós ÎI«”b8§™YÎP7Ø
+º,,Kæy’x2ô™¦‰BvÿÀü]ß¦;¾€šÝÑ\ñ’[ÿ3Aïñí¬hAÙ‡;Œ·£ªê¨Ì¥¿Û/ýU¹,àMaYtAý}µ¬¢;Q¡9É	ªÝrÔë"Æ$ˆs¾çØÙÏ…gßH ó¨QË•ÏWÚ&ÖãFUT«ÇDí ÷§·Úð¯š9Â¬lµÓ¯ÎN€‹!D|”§âýu_›¹°bð_>¨yô]m¹€±–ÒcSVÅªÍñ“7_ƒ&(Ãˆ¨X€"c7”ÞVñlðkV¶5Àe=ªL8Œ
+-Á3ìÜ1BtËøÂžÅƒMb³dPµÊcfá¥ª)ü;¹‘Àoû“P£1™©3/Mã“ï(í¹¶#+O3ÃÈßþzWÆÌ)3ïf²Ô±ÅÓÐsÒÎÓ<U¡U	ëßº-ë.w)l¹âˆ"IÞZøÑk‚	³ƒÁ›zßË¸Ì3~š—!RŠòFÛRœèo†Ugg°-R4Ê„ˆÒÿ£Rq·zE…©¸×Ÿf\™2Èûå»Ù/þ~ó¼mCø©UŒ:„dÛ¸<Û«æà=IS­ùÇËRéµ•,¯gê…>ø{ÅÈñls¹÷¥à›-~÷x¡€â$/e
+·m‹•¹‚\!ËÈ‚&€U¤@-¼÷1êÚ¥â’Zˆ!ç„R£ÄÛ|Ä4[ut=¾8•÷<'§¥ÕKÝŸo®!8/e ­fhòýÈze–àêÞþì0Y‹üûš`œÜˆëEÑn‹}çû¼šøO¼É„š|ªìÀ_Cü¬¢ñdg=51ôyÔ”Ëqd1ÊR‘oDöÒ/lîÇ´ü23Sò9n‰§ü®Çtf^r4«Ú|"‚ÏAöÊ.'#O$©}JÿØÍ£0Úa‘ŠøMcm÷¹s°én§á–ÛÉ—y±yº¤›m“¶>îWvÏf|Æ‹37ùq=Ô´÷¢(-ºÓÌ;¬ÁÇLÜTfþ©¥j¬M$BØn4›Þd#gÉØSªˆuÿè7Y|]²0ìæ0§z;Ã?Ý˜zƒ‹¸AÞ{G"Ú¡êvdZ…pæÂÙ×è\PË™BI»•Q„vü/ZÓ¥?¹¼•%0‘€šÞíW*‹MW|}ùWÖ›
+ÿh2ÃïÁ[,û½°H‚î°PÇ~ã^ É÷Õ‚š«Ï®a|?{"¤g¬Z°¿dççÖ¨U]ÕÚö>Jw¿Uk^C¬înOÏéÄÄæN˜öáÐÈ¿¸}'¢ºŸ)ìOn,…½HÜ»!p'J;Y	]ð±ÃÊæòê>¯{Á{™Èjéòf1=¢»¬þ6«†5ö¯zôÐ…æ`r#âQ²ŽF[5”4T×û;ƒË‚®7wÏ£ýÏÍÈ<À &nð,Y…óQ(x—ÌýðgtT„¬îYáÄ¼ô·ô5YßJœy=©øÆ{­Ôþ¬n«_Ôç µëÛ$ÑG½¹µ
+U±ñ	ç¸šØ Á+2­ïÌ#_Ö£Ô.ñk5¹	è lV÷g«GŒy”i–=wŒ)%§_2®|‰B£ÖS·fÙ­sÄ9™œ½Rú~áfl4D.Mðpû´;œÐýÛ‚§€BTÓ,8“ñ
+xýcÜ@'â¦›£S¡ŸÍ¬ý±… coÕ­`YŠb|éæ"q2š%ËÙS±|–)Ö h ñÍg?º^k\XÍ¾•díVVl àá‘hÇ© ð¬¤„Ä¼¤sFJ	8:1’Viì×:Y»Ñ¶k«ý§Ì²Ð’þ"6AxWæqÃÁÓ×8<¿º]‹æá'*„Ìû`»œƒ_±z 
+˜ÓoõCa'ö|ù¨ÎÄÓªÝUðgœ<9ß’†3Ý¶oÿY²/‘Ëª  Ê½Æ ×ÿà·r¤=%È¯ êþ
+>þR¤ÅNnË j /8’å†šëí™›…(„øJ‹0Ö¼ßÚðµ	´=KÁÚxðT{¤R7Y«Õ÷€,åMCo–,¼¹kO­ °ƒù»û>TxG2ôWF°Ëi^Ö
+u®‹JÕ»ãVºQ«(–'VI‘‘£³è_£0IÃÝÉyVºÚœ×±öE¥*UIÒ…ö0¿3"õ•ªS«n¥€(yF	;‰¦. M(U±ñ7ÿ·½³Á<y_Ú?ôä§Çö=ÚMºG3ŒXú‹Ô¦XöÍ—3 qÓÂ¹÷œ[ãŸo¨‘?³kxP·½Í#9‘ƒ»³35¨¥T‘qûWmw}jÿ¹ðŒˆêM<±Aµü…K·ã°*[Úð ùöd_eoïWŒ¡¸êZj„ú—ÜSù3—¿gDj«DÑ&nÁ«	›ErPáwŸ£äIT³‰üó‘ªøðLÅs­—MXÃ^·Xv’”/¿½½[j×CðÐ`lÉ¾˜]eæœÖ†©;: …ääBô²ÝÞá1ü³ÃqB¾jýâ…þ“aê)Ðôi²×;ìÁßð0u6±<ÜÏ WC)»*ÝóžŒ‡IXGßn¬n¤ÛÒ6f?±LQ°´vÒzæ|³G
+’?«¦0¸Î\~ ?\™ÍÁåëA¶U¨•£ÛýƒÇ|u¥ÞÁÕÈ)è²^Ÿ>RÞ÷ ?£Œ`“È‰™AšøIÜ{š,=r+þž“­-©ot´îÜ4Ï†xõ|[\Ò@©¤ªdgÖ“HãJ‰~ž] 8X&¢bsl[Ÿ-BØKN>{ÐÉy
+Ø|g¤ÞGaÉëBÃ*ùCeaVäÓgO´wä´ò×Ygr¶ÝBM]ÌŠAha0š‡Ëuë?÷qŽs]X@·ãjëäšuxfÌ‚ŒYØU{çÖ³¦ŽêM[Q†2õFWˆÖ4êM”øA\GÞá0´‚p&á`y£zp¸›.‡ï@²]•¸Á—Pý!HÁ!‹.WoúËŠ<¶‘’iëé¢rq›ÞÂÚ¿ô×_e\–C[Eƒ;+vÃ|—\ÖoÈ`¿[‹¤Â2¬q_­—b‡ú¶O~«°M»ëqjÆxKwÕ±Be°WXc..ž‚(&o±I…’†¿Ryp]Ø~vå•i/5î¶Ûž‡© ]Î=FOF3­¿w´×üZ¦[h“\ :â"Yfc`Át©*–Beb·GþT2Øy5²y!uÛj8±qT Pµå¶m_Ï#GÂPzwSËQ s«ÿ_Uÿ›v8’?@hÚ‰óNUK¿è{’u’…­gDoh³E]AT+QA«:W¬A[ˆG›ŽE+:Ü;Ûc…ïº	cw+ o?yÌ›\ “S5bK[è´¥¼ože•Pž'Ç á9Œøue/t!.ÉÂâòP<þ¡JNô•è±gnTûE_TXÂ¨ò}ÀûØd•¥ÿÕžÌWÏG/›‚d˜:E‰Õe÷ñyñ:pí"µ®îF›ëæ7Ò ºô¥Qó/i"úÅ˜!	’ÂGe(ög¿I`v4d¼Ë©ã2_ºË‰ÏRfOÿžÎ{ôçËàkQ¡Í¤A—ÇP3àNãufyÂ»-OeÏâ&50Xa:Ë}ù\²èî³d(Í‚sjöî=k¤$²€/«œÀÔí^_«þ;‰´ÛC…ä¤Íp?M¬¬ZT>ü†
+IÇ,£œPä«d”#U™4ÀÁÔ”—OÖ_n¿;©!;’™Êår#LÅÜÛWÓ{­ŽÝ>ìHâÏfxbã‘(¶Í	"Ž*þ ÷Ù 36çƒƒÒt¥c SÓ’)ÉŒê`†ÒÔú×iO1Å_vi¡ËŸÌ}ì¾÷8ˆ>Á£·/žô‘*9J&ã–è´%¯QÂ‡,ÁÌ2ž]£Û ù+U7ÅnïVÏÜHŠõ‚X6ì”ÇýOAícž 4ÍöjÆÇåVÅI¸~b¡—ê¯óïfjI8‚*ËGYÂñÇ*%!UK,VC«ˆ+ïº~]ûsfð^O]Ùðçxwa-ƒÓwñ‡Nœ5×åNÄT‰¼TÁÅèôÄÆmMßG[âm})‘ðJ\ŒÚÃàZA…wå‚?Dªp}0²‘Wþq÷P4ãþ9&|z©‡^×K»K‚ž»RçŽQPŸk1H†4D‘Uhxÿ\W¼„x…¼%2-¾¼ÕåÝÝX
+k`þoSXGpdÿ‚9¡5#œ¦üq‹r…¹4Rˆ¥±¶7~NØt˜;•Þv4Ü‹E&¤£8âfA£L¨ßêÙw÷¾àÜbž 7´†[åå¯Ú3ìÄ´¯UÒD˜Yó‚Íˆ´3¬I«$¨¬ø1˜i‰X¯Û1´ãRÉÑAq‹wYþrA%íWnø¥‚Z¸ñ†r²±bôLtK,€…ƒíO¼^/œ"Hýi~JÛ°fC½7%ˆUŽÅ_üYr&’jD„]Q&òØcæ?ÿ“49'2öƒ:ê`^P+ü½sa0ðC-mR‘ÃHÎ8mŸ2¦Ã!’šGåkÒàw:jƒöd7H¬‡8²Á±œWuìÝÇÄ@u%Ñ´Ü	§Ÿ%Ó¨ãn{J}ÙýY¼†ªW6ŒÌùô`SòèT ÌRî”tCŽkCj@tÆ&Ü€ÞŽÆÜ¤ð\ðçîÂºÏ	H‡CÚz­dÉco6+[ÆmZuÇK$f5ƒÎé™ÈVá
+ afÏ¬{K¡¤£VõsL°\Ûá<¼µ½=[-z=¬/xÿì`hájP¬«T$Oñudf-væC…Ðºiœ—Jç‡ï¥ãÖxi©H>øûŒ®}`"XYQÆòö¢>"çÅÎ?T>Ñe¸Ý&o´¸Îp×óçN)æá›»<gÇÑç”=ÝÜóê ÅIÐf:ùÏè<ùÄ+GÃ¿*Y¿VaDŽÙ±•ñœúáâB S_Ë©D°óôWüB®‡;:{s5úÿ2kpŸÉÀk™¶ãÂÜòx­Ø !ÔŽ›Úno]\6tðCûòåP×¬rf'Ï¡ÝO`8¾&¬ÌnÁ3nË]‰®3oÿæ|~ôKÚ÷`|ÿéÝ;üÛ®×òåƒ÷¹úú9çk–ôó¼6ù›·d…Í~Çtso)G{|“l7‘y¶Î¥÷k«/«´µÔZŠ—ÚÛ5nð A¿lÜÀÍ¯×9Z«oF,9F!÷¿8vÀ-Ç1ÊÔHéC¾¨“–¬¨s˜5ž¾ºªœïd°c"í«Žæ ,Ü™Q»;Jž^òaÆv•žxóÝ9	Ë>²¬ŒñOež”2`¨>m¡ñg•¶6i
+„O­eVHyejùÆ©® ª©±‹8¦ŒGû )µ§2j—0'E¸lýäò‡<­ñ)žïP2Vê$“–l­D1´ûQÝ$È—im¸Hp,Úgøàö>â_Âq\*]Vß;wycW]úÌ¢ ˜|¥¶&c|çªà½©åÁNÉ$—ž„eï Á"2:ªí¡Î³]¸ ô	#Sü¨æ„¦r«^OyçH(pí€pcY7Ë£û¬¯†Â ôP#Ð­>…kìÄß§\ ¸áuÈœaô”cµöBøïÍ`5_Ð;0bå™®Ã}«z}‹™gpþB±ÜwSŠÎ‹ê0ò÷BPÍ#:µ×¾ÉÒ›•69ä5tØ¦ïoû»u0Å®”çø³ªÓéJ.U-+zr@}ˆá‰ÈÐGÚ	¶ÈŠÇPÆME•Þø ú},MkXc÷kH¾º/Ãç–êñÙ„,+5ÚñvvÎÂŸÛ¾åuÍý¼Rc™‰ûØ&óŸ¥5ûxâ’`Væiè·Ôµcß8ÿ lY$ùs}ár#FÀ.-´&!+R:÷ñªþQÈ]PwÂ 7i áº8ÿqºpóTËÊHîº”¦¹ÉHtŸèXÃ^¢ïŽÊOH{¨7ÿŠQD«`< C;ÊQ@O÷÷FåÿÆ0¬UnÊá%MKzZ_M˜ßxãÃ¾4@þž!{|ûO¾ù¤DJ(çá'ÓŸ$oYaxžþ	ŸÞy™–¼ÍûˆÉCBÈ¶œQÌšŒ—R„)l
+”føEãò¬êPÚê~Šêú_¯5…Á÷dpRØQ]nr’æ|ËÇH?†k<€àvà )@G’ÁFr,aé_ÚÒN­Õjž¥3×a˜³“eïû$LPøš4 º¿Kâû$Æ£q!1§Î˜9ù¬Y<îÐ‘…,ëU÷uÃ¹P2¸ñt·”ØjßÔ¢îÿ3WvaAQvOÆ3¾©F1³8Bc·Õ
+°&ORcCqsÇ¬„“-®«}¸Rä2`¥cã«2ÕDfŒ¨8†¶nÑ÷hÍÝÞÍB* œÊ5*dŒm”+o[à^3Tí"«6FŒjÖÊ¢j}Ú¯ôv…Qç/ï7
+Er5°R‡ªhœ´NEhîš ¿!ToxíÈ-Ñ#ûÞ¦ê~
+jÚ¤¦–Ñ–sïplãÌyÜìÐ…6«<œqSlsh	Â^·¤† h&Pâ:zæmˆ?FTüDÅŸÊ¯í–'Š™0³³Þ¨™8et7þ]³H³¡mƒÝFå“xðøt3 éÓ²hÕ
+>‚1Q¡/x“ôë,“Ñ¥0—ÐN™‡þr(n`8`ÈÇè]5ƒïºúËYS~.ŒVí¨Qœÿl|Ú+¤ŠÛ»{b°1Ü°Î¨ÿ—štéÂƒ¥ì®îðbŒ „ÅÆŠPË}À*;Ñx^!RÅ}<õ^G®´Pò|,Ñ5¹@¡Àcä)îµî<¦žsuÂÇƒ	vT3\/•é>ªtaÃ)röÖ¤/Í‚ýÞÕùœqf’Ñ¥×Èk×I²çk'KöÓÿ»–°99ª)øhw—ï“åü$Tš‰é©tš†J¢É†À17¯¥Ò¬R—êNýhu­èv¼9Í@:ÜŽ(E««Éîüÿx1’ïùf =
+Î#<¼¬3ð±P
+d£$:fßœÒ,¿±Ö:ÇÚYkéoB…àR¸7EÑ	‚â?•_îq´SõÕŽZfß :eUê:[úÎNQ,bŸF#ƒâPô÷ÛÿwÒGªÁV´ºWêb|(C=´|·3â5¶¡îÙ«íëÆßÑE2…qsg29i)JÇ0^C»£ˆ@ÆòSóÒ ÓrˆNG€/¢¤ÓM„ 3«ÿƒ	‘£D“ì&@âÆ¾+pGñUN¾ƒ >a|êG$ûc[O’Ñ®u× ˜ó@l¶šÝö‹D³U¬ÿï¹ànÐBã³’ko"YØÁã‹	–nåì*9Îã-X«µ3wü=ÿßÉ¢M€óé“ û…S¿<Ú¤™Uáx|…Òg¬|gÙÖúGÎáD¼aýµ‹»}ƒH‰ì€’Š™„ždv.¢Uq	1¬Î@+›—?Ï] nI MÝ”$˜}Á…{ûuP]Â
+Ãq™ËOwˆpŽÓÓÖòèq¾ŸŽäb5èø‰|ëìSïóMqû(+fZÍ“°!Ü¥o§úÐ÷Oˆ†5¹½Ô}—“?.`µ~d.²ÒzÜ°¦ŸfH]øRV¶¦9_›ÈáðµÍõrÏÁ¯,Ym2Ê~/ÂÕš€öÈÊƒyî´kØº…x3_›øÁ˜Ö}A ž˜³úŸÆWB¡¤ê1Ýt<ôŸÐ	Ÿ®	–ø½sÛbõ¾6Ã´qét{j±šh_E×¯c`9|]}4&R®ûýý0õ½Å´VúþÝq.¾­ÓDÛ¥CS˜éÙP“Å›-¦3gøgpVZóDy_^tÄò¤Œ¡Ø\møÒ"”S_;ö]i‹é;nÞ..¤…‹ “.|pYà7»jºLÝ7Õ(«ùch`“Š.®ï@^ôüb«z6ðòw§Üvã,_.Làb`„HN‘]0½-  7ÂTRÌAáë‰æ<ê@«IÔ»ôµ|ƒÅ{é[±ÊÎ¾vy-™ÿ­?,Ä¯|²°ƒ«Ÿ…½Ú1'º®Ò´Ý{ž®Š@öý¥_</€Œ6úM[­Ì£hÙ]ÉtÌhÌB”3ËÀKÜ«ÄÓÉ<-0Ì'3%5×‰½dÉÕÔ:.HÎ=ÛƒY½ž%,k©é›#ºÃ€p\Ïä‹° _aiƒ“Ýâ"RÓÀ7xºmó³ªžÎ‘Lî&¿.Y¿ŠPÈÓràÁ¯¨©í÷Q)wrAmW×ûsPíä-ï~?&ô²+ñòf”Î(×ÏÒ¼áœ‰y.D­}%_–ˆ¾Ëäâ¸¼Û|´±½ŽDjãÙKJÝðF Ø5$®¸ý•¿Ý2z´SJzúâq°ìÑ2SF÷úÝí•…yd¼RÖéf„rˆîLp\Tp,àÁpÅì”.†[Äé:‡oÇ³šlôèÊD‚,z?ÍÉS-<â_ËWvìMRá{ÖEHÎK2¶‚ªðxe’x{{©´U‡ˆ¤ëöÌ€£U\¨Ú˜ö\‰´±æúªV1œkÉAÃ’äæêJÉ¨ÝX¬†þóß£æ’’qcŒÞ`Ê&wN/iànò”*ðˆ´O˜6üÜüØÒù<lºx–È‰ÙN£ô(Dta¤»½WP÷pŒE©]”¸åŸqóOŽSk‰’>žÒÐÅªÀþ,¼™“{f_‹ªqŒü…y<Í¨E½ÔýhÅj™-’!6ÙþÀùÆÉË¾O»\oÔvŸC®KL{$ªÐâ½ˆâ·ö+t¦C8%¹²ì,¾¾¼Þ,sO@¯ñQ+ú¼X¶¯ÛxyRkåè­Áê¦®Ë²°§to) ?ý J/?€æ}ƒ+%Æd£€VŽ–¢™Ý~ìU;lWVõÖétù¤?ç¢PR!ØjE.¢O3^ÌYÓuw­uT’ÂÇ&Àâ>³,3<aq½#'üP?Xk[è8Ã“V+þâ"¶œŒšÂÏIå—¿E£ÇD3R-{‚~+…vú¢±Ñ}Û2zÔèÍ‘A!1-à#È»ãMCÎNL‚ûÙ¤;oô Ku“j‰Ò‚rŽmŽ§¿é%ÚÕåD(öÞ­.¯}Ù•¡¶ýzð8{ %H½.È)‹‰&ˆÊ’CÚË™gFíP–1ó£Xú5Új¦ÀÎ›‘"‡7§ñÿ{@G1˜° Zˆn4{Þ±ÌVÖè[ŠZtÞ}w~£ræÒ)¹îïê Èì¤èáÊŽ4õ©¤“gƒ!Kf©s“éúŠöî$™6”©Ÿ1ê	'¸NÐ:®¥p³ÇnšÙÉj«²Ý‰°›u\Ót²ìö%ÞÚ9ÈP¼’¬.:.ÁÚñJßÊôÛÿlùOï=¶å÷Ë%Ç}]ýfbÓ 4AIXjvÏÚò_º|ö8ƒ:rpÌÚjÂùïþo„}/°ý6´”‰×Ê•‚êÜòIãN-ø…æ1¬Ú(>ôð¥í€­"=ÑD„Õø†p‘<Tys-H¸·ìp\»[hûÒ”g1[mëáóîã®[«ÐÐ=˜Ï@‹asW L6.r„sGÏmŒ¸Úü¯‡%Aåq¯˜§È1IhÆÍŽ:ÉÕ"=ñeóð0åj^Ñ×ˆè‹ÍëoUÜ4S¤˜œ,Ð^ÛåðÏ\ÛÇîÄÝ®2À!°ì2/‡ÈeÉDƒQÀ‡†ò÷ÿ zÆgèûº$GMØzp=Ç‰„ð»¸¯‹µJ^ˆç†H{ÛÅ}kÒrk±®qoYEÞÉ¥ÖôX—b…mÐ¬?Vm08˜œq·
+qê.3êí80_ê{.,úJ
+jÊ½Úgâ³L"æææ³UY~XÓj/ö‰‹Üù8&í%Rô§YªøÑ¡±_rŸŠDJ)%‡ô}K¤š[µÚòõ—Îá^ò3q¢X–‘“aBþÝd ˆðùÐpoçhýãrÚ
+¨¶ÞêÇÎ™á°3ÓYì8£¾ÇS[æt'™”ßöÔœ¢^ì@bãÁ²›x¤Œ‹2SŸT1]¦?;'¿‹+ƒOµÝÔ¯˜©hõ{{‹Ô3Ê…kT·žiX2`UüÏö–ÍÝd&Ž½ƒaë^	=oÁšÇGçUtO4!"øˆGqO¢Ns}™ŸAêqÌ´1ÉˆçzGšÒ“3sö°§zŽÚ[¤ÏÖ® ,7	'¯KSôGÔ†GÄp?ÍŠ¼§.¢÷´q¬»…C‰¡M}ii&p\sn—ÅžO÷º¸¡ýÂq“ayò€.òêÖåÑF0Ž–@¢°Ü67{m¢/æs›R¾ï€¡5n„¨ïyÅ¹¥»©íf%ÌˆÂ¹«n?a¾^Uç­‚IõÀ("y™§‹ƒø^ì“`ÌVÝ|{r\®F›S2­Au² ä¦NK5—Ã«òÊÔ¹×ö¿ù^aÙ5lº1kÆúz	5æ®ŒéçûXúÒ²H^à*áæ-Þ'‹á>Š&Pì_£´³Q¤ÎÙž²ä“+G˜4k¦;u‚bé¾=A<º™ÿ	W¾é9ØºÌ±œ‰šT¦'´ÈÓ\æä²éXÍ‡69UáwéÅ¥á*T©ÿ}¨ž`ŠxÂÏ+;u9íŸFJOÉyÍäÕ'¦ÞÕï©7ªÕÎ¬È[Ç„ÆÚ-4Û“QdðAzžŒXÀŽ®=pŒ†iˆñ;É‹üÆK»°«Ÿë¾¾g„±ˆ˜!÷A^ó¹Áî,SOÑœJ^Å™{¶3ZÂ8	DÝ,j/ì³ßº¦lr8D¥ƒ„«’åP‰¶Rôxñº ˜^„9²kÊH„å„Ôu,†f	ü—4¼b)ÿ-m_‡ÁaL3{«š½7`µ"mÈ•S^áÏ€ZXÔÝU·ŽæŠcC+ä”@‘%7¶ÿWßæÐžn-uCÜ#]ÖKøkáÃÎç6òGÈ£eÙ2L–W¿8Ñ¬ÎM›x	Î1KM~´Eâ¥rêu¬íÖÀêÜ!ö&©NLÞÏô¤'íXÕNPIÏ±d`}‘Ó=~©žF¡(”n¬c¦}ß!ÌrÖo±ßÔ•ŒIñ_‰ÌE-V&ÑIðÔ®Uñ¾ôÌw«JwÕe<ƒàïTÈñÁkþ @I$’“¤òýljôE%÷é¹3QÔSYàßCŽ#Y0²`g”Vw-ÀÁÔOÆµ ØeaNÆù‚Ì¯Åµ( ¬ ü·Å—á4©•GD-¤ùô¥ßY¯p;bj¾¥X†$`MÀ­ÔYÂŽe›„úÀ_ìçcõªêl^c+ô'C¸T÷“=3²&RÚ6¶>ÇŽ¾þw°¦ésÞ¶ƒ@•âë¯?fŒ]°F~%xÂÐZ·¸ë²å"îúŠ°V`¹Ì=’cñ
+=Fÿžd^FM±>Ì:ú>`ûszáßÑ÷àñlæ|†µÄN×ìÖ#†‰¡ª}¯²¥´xð>%‘jÃCaï!µ%h»eÓ…?™ÙÅ ÿawÍý¨û(³´Ë¡Æ,;¥Zèïƒ—X¡¶Ðözýºf‚ežvµ‡@„”Üu ¿Ô6P¬¹¤f†ÜScš¶‚r¥fšíOhQ‚iY­1m“IŸš³ªî¯0žGõ‡RÒ$‹ü=~C;ò"8 õB—;RÔ±”½xÙLŽ4bÁÓ ½Æ} sÏ;^*‘O“×8ZRÔ?GáOX¡·‚'C,`$©Zïdc´œºÇíî/´…Ý²Ÿ#’Ô¿i
+pm¯,*^Õò÷ö"²±éêÍOt³ª“¶ÆåŒeò€1èÐ±4¶€ë6„_bŸ’Ý¾»×SíÇ³ì7rÃÛloöN
+ËƒÊ„mýÁ²è/DY©y÷6ÖÞ
+zV˜xÊE¾Ho.ƒ²Xòo2d=÷¨
+MÁÏÌfðCf%ßÓMOçÙÌ°ˆaˆíä«o'ÜÏ1±}k¾ç$öwdñ-o©’ã×Î§/{@ÿëÏýª¾5…0@kôë6•l`×A_òùÓž T;pY¨ðù;ùwBËËpw^^^ÑHîF¾ÓÈåFt¨¹\´•
++/Oa•ózÇ#Ú³þ¿zæò¿ÊÚšXÌërMi…Zà©¿•|4º Ã“@ØÈó•ü#˜£ÊŽF¼Í\}òÃ!iì‘é%Ü¾QÙQÐm<Íû-éS/Ð¹°qò2Mµß“k0KÁu=Ç8y²ICæÂBì*<Á«K"	_Ua¿"§Ž›©Ì~`ƒ§áÖ²PN£‘—;	\2 ‡þA„áÑfù½ÿV€yÁ—Ž ;XíŠæ‚‚Š×]­17·ÜWÎ1Žö»?¿nR˜B^;3ábÅj“†û—æÞêÍ¬¿¯THõL}MR$ù9FoòðÈkäN+±‘õr9ˆ6H7ù¨gÝ f0 Ýáa=˜ 78VñŒÖãpõýµ>–ß×÷™Ù%îLþ•n6)Zü‹=ë»ÌU…¦A®Ãi³ÝÝ‡²¹L>^4ïP¦ðµE¶àÊ}4¯ø VàLa»KäŽI‰¸‰“N=toýÇ<üoˆ—Ï»õ•òIÉ„ù|NšÔ+€ÉŒžÒ/?bæ”î¥Ió˜=^ w*•ýÕo¦¹qö;ST5ÉŠ®tµ¨8»ã7”f^+˜]Õi¬µŽ-µK¹ô ˆúñ—Æë–#/ÑOÎPê’9ÛŠ5£ÍMë¨-õÐx_Q€ÿ¥Fˆ¤}ê¸!'¶0O*ŒPKM0¢wÓëp^¶(#LÎÏ‡¹ºzèúï‚)NâMO?TVÍ9ï&¿‚saÒ?Ã\¿fäø +9šºVI˜èãŽûêaA¸½yÞ,z¶ÍŒ4D@ò¤`h»}e˜[H²4(´åhøáíd§ì=ÊýÂc°^Ã…:'1”‰!,ñ'æå9­Â$Æ'V(ã'
+ÒÔC-8Z(ü0ÇôR;†LPLomo{Ù‚uÈœ^7ÀMùUW­ÎX
+Ûõ;¼x~—zAxQ¨¾y×áßÇuºöª>S†Œk¡t0ñ³Œ0©4ß KåB™¬Nœeº(âÕ9^ûx3ËcøÎ`3\‘N .^D{Ñ“ÚFù}ŒÑWôiÎÿ•VÎXW$IµùKÃrW‹ÙX€`°·@=(íFâcBëãM
+	?´òÂN¾a¤wÏKBÅpòãæy(¿û
+S^Ö*ð0òƒMÅ°—+·µ4Ðµ›% ³„”zÞ÷±T˜UÅiªDý wµ<F‡£	a6kˆwcÞÞäÎÊÚJO<wuö™®:jØµnê§üGé6ãºòx@	j8MlÏCü? Xa½¯bÔ"ŠQ;Ï3ö?‰AÔÀ€{£ºl[¼ùJW .¯Æ8ïNÎýtÂÇ÷ˆ3ÄãGïîq`KpÌ‘Výç®VB8#&dtÖI'?Ì‡ øƒŽ±uƒ¸³ë!çX~g´jª§wDsÕçÈ<Lýü%Cg¦iÞËhÃ9fÈÐ¥¢›²¢±ôwr‚n[›¬„À±ÝWˆ²,0Ù;ì…î¤Ù°Ç#Zæñ ýa¢³{û</€!)´Ž¯FP@NÀ/ÝÛ]Ëè¶Rû!I£‰‘`´ñ7Â_CZÐa¡÷¨Ìû›µ„rÔy„+3dw‰2.åz«âöÿè1
+í¶ÐõÞjñ‰ü­ÿö?ðÄ4C6ß&”%Ÿx’»‹ßÄ"G’©-žÚ>Ç^>D°Ø2ãÿÓ|  VÆ]f‚’|¹,[,63þ–p.v_A¬*.ÁoÎ¹\?D=¯3Ù«A¢uâY<õ¨6ÅGòäƒ{ 8Ÿ%Ô2¹›õŒ°f¤ÛE¦q‘«šÄ¾öa>0ê\M²¹jîé£>AvÝ2ù“ªn±XÅ.d²S—¾Ôâ%Ð/˜ú%}•K§C€Ä6–“æ˜jÆîö^€ñºèÿý $à—þ¤Ê=l¾š0\E¤-¹ßÃÑý÷u¶cC}è.™¡é[ 5P1˜BÕç®â÷ˆ­6Ê»áOO³ ¸ÑS~W-œíún1?Î‰«>_Ó€EUÒÅ½GyÂb˜jlzŠ¨Ï#BX©úÑ€‚ðçr	4<Èª@(™ïyü³¯ñÑí4Ñwƒ§ <t«¹]­<ÿa~Ï<÷ªÚi¬3…ê©~ÐkJTÐ¶%ÁŽšõš	{Ësºú7N¾•q{5ôùUd:ñO†‰àå£éÏø‡Q`dgN…Ë{J=?ºË¬š¼=q^{>àŽš÷K0÷1m%ÛdÀ±D
+éq¨8Êø³–°`vRß‚ŽiÎ`[48ô¶T'´0-r‚Ž-50G/3õøªjË±×xÌàeæfPL\p™:fž§õE¯Ò‹úF©Bç^5!„~£jnÏï;µÄB-°±®·Élsˆ¸·ê>	þ(» Ù)ýÚ%fêð#†ô|DÊ7¸£½ç|¸xU`4÷Í‡û'9ˆ óô„4b×.HdFv¼j¥ÚºïÏÑp²½ef'ž\7á`¾!™7g‘œì­ž}9ò½‡v±¸ÊÉþ{xÂå†—ŽžJ5À”øÓŠ@×Š˜\t7Z{lbeâP6‘8_I@Zß²y*}ûA|Ø«‰gé·}ü,ÇTåï©7é}5,p„'"¦çáöÐXU¥!NüøÂtºøY'X¦>í|#šzLR÷Y¡£®¥¯G¡Ë©¹’µ^+Ê›«RíH•£È‚6ù»ÒÈ”gs0¬¤Ü
+Æ8/³ÓÁ/x
+–ŒæyÉ"ä´6k{…OåÝ°xvÎ•ÈIi3•]<çuÆwhˆ|P^ˆ?‚¡%ƒÔ­Uo¾70‡×";ÛÕ±ƒ§ž€õEÊ%&‚åûLár‹qê<G–µçU`9o;”tPÆF–«ìeQž=xÀYÂãøÉ¹øŸÐ	]%Mˆ¶e¨ã·5¿ž ljÈi¹°êCzùÊ²©‡r’™cXß¿³Á&aÕâÞW•ðmé  Z˜K0È¢ é„HßÂ¸0M^:CŠfxú ùœÙo…%-'7#xÅ•’iÄ"@˜§¾Šyi)b Æ	ò[fbEé­ïõv;Ò©<Ñ¸†ë°ÚBpdD½–Jü|½èÞÑ‰-ùÝÚÑèo¬4®58Ê{‡ä>Æõ¼–q<î“úS¶çíïÎq“É'1ÔÏpêÿ·‚nEû‹‚³œAKý	÷*åMã‚»›Î\‚«”Œbj\,-+ñ²¨ø±,j²0Voq×) ¤}¦2Šó¢I†ºuUÃMGíG+ÛV	<2\ä,€Ã:®˜†ŠÀ0¶>ó]¿¢Ò%ow:9`á±éí:'”åÑ;~Ú­‚ŠA¯Ÿº9¾àŠ8FP½Áš¨&‡Ý·ñM]ù‹Î7ìÝØºÖ3ôÖrq7Æjftøx<½ƒãŒ‹ø+Ëžƒ÷ç%ƒJÄJÁ¤ü4+X^âŠx$ZÚ ð±²´	&Þ¬²	7¢”ãeûÑiX³àÞ;×«ò9•œS³É8 aj‡OóQ£,ÞJñhñê¶'Ö®™Wç‰ç÷1·¨s0^Ì\tHLlüÒ1À@"i&C Ê·[ŸE…7.‘5g­n‡^Úz÷ÞÚHÛör-«tˆE&CW¼øÐÑ›‡£Ìÿ,ÕŠNô“èóœ4éRñ”µ¤¨Šl6P/¼Y˜þM4>½x­u¨0˜Z˜	Hö;àU”µÛÐA¬œø~ò–Ïî5h¼þ:]”· Gç¦½®}ó~ÔdËgØ`‡¡›iú×®³µ…„³‰5
+|-µ3ó/ñ¢vˆó3äû‡$+Š#Ö[=1þ[8çsÛ–ÀkK»ìN†ƒ	~	Ñ’Å$Še:¢rô]K±mLë›—’ËœÃ__¼îü€p·'çøÜ·oÕ›aRí-¥Ýïþ	Ú°¦·äXk€”Õ B²¨ªÒäÖ”!ÑÙ´k^7P÷6É*ÊÈiK´Ö-áãfjzŒ¹œ?VŽˆð‰„ÝfããÞ7ó”ðÕ­~2i·*æßîG›µµ8Eò™‡ÎY‰m~V3OóÐ“J¥(²Žº›ð×«$ôü´~<eß¨¬rK¸Âö•ÊqÀ½ÿøÌ~A›"ëö\ž¾åƒý/!;÷d†ÚƒÀyµºq·@	ñ`Ý#9•€¯¶}êïÊ$,yWÎ:[sÓˆþ¶jd@ƒ	Œiß8²ú€/ãËJêT]Ðc‡Û¹óh…ÖÑiR4˜!.!pÄBÄž¨¨Ÿt{¿ªn:¿L¾R¶8{H‚t'€w’F3§Ñtø:ø™=¨3¸ë”çèÍ¦¨ºFà÷g8S·±&°^”û&­§?XãÀv>ò™ï	WTç
+Q÷â4S¶³…bÑ&ß56Ð†NsCt¨²=ñt¹‹èÓóPkÊpßFƒ’ä–èv!JHfô?adi^ì6YvóêÇÓû¯Áq!¨ÑáQlŠá‡qìË{Œs}÷mKž©´S“íÑàp›‘‰ïÄ|'M6fz°ÉŒ½wñ1
+ËY Þe¿KË®Å©’Š?,ÞeŽnvë­C7ê½ÂL?ê›á{'‚×M^YCþÃS™ûÀ€Ù×…Û'Ûj2­Uc‰6t:”­ê¯ù³Q/88m}\íÍoÐÐ»y7?É˜Cº¶Ö K@bØs/ ûÝ"µ#>(ý)h/MélixyñžÙ69¯ŠÃÒí-ÿ$òn¤]J–†Á/zjB·4FN8‘3ØsVÖnÑw½§oÁ'Ñí£6LÌ™‰t—8kÒ~¢]6›AtçQát<d	jQŒ¾¹4ïQí¤(U	’©
+]+µšÏD¼tÒ»‹¡^
+‹£èiÿŒã°Ø	8Â%¾‹äÁä$d‹75"bÐU7há½Ždc@è xép…&àkÂ4æë„ÒM”%N\<ê§y¼õ_ròkêE¨£´®åqi+‚á6`"‘rð?Æ$¿‹~~WQ±Ô²¹»Îôå‹—uð/†Ôè±ÐK‚ú¿<[”ùä‹ˆI?ŠÉ˜e–{5å©=C 7¥Œdã6èµäç‹Â¢•ÿäüø2”4ø²°ö7”'z¸ÔÁ´VwÙöYÍSÌíóÊÔQ{..ˆÿ~™
+Ê	è—ˆØö>ñq&Ã€…=-ŽAY¶lL£ã8üÉb!nÒ7ÀváçráÌg³Žù4uô"ÃY>o\´˜àJQÔÀSzÈ3ÎWã<H× @0–¿Í|yB¸^mTIhÃÔ¹$jeÕ	' ß9	qJXà4 (ëü‹™b™«Q‹~kE@³=ã/‘æaxOPüðtœ“ ‚RÇá?8¢)RZT×“×ëUê¿Gå'z+NXì	¸U4; ‹¾–cïIÔµRåh1buñòæ/²{zõ‡èo°UœØEÖ6t÷‹¨»¶DNñþE¼{ñ÷š×Ø&z‡Ô´"ëþÁeHNXs‹èeO f|\2#“ORnuø…#Îm£<D¥ÅkíM‡S>ºç5Àmá"s®4Û:—¿ÅÕ±ffÀ7c*Ý*ÿÞøë˜k}çðSçÑ&]{87¼ez¶(
+9gùr‚&ßÌ»†^-{E6wÈ¥?èAY²¾×K™Ôr—á4½äÞ=çÝßnnöC¬já]áEõ“#ŸëÓòŠ®&šýÝ˜ –ëóˆ·5m¹×*£ƒyÉ~ˆŒçfYp õˆßÓü¢•m¤ÍÄ!TàIM‹†­}e¤ùás¾³³<b¸?ôªð=LvÁäœuçò}‘ÕÂ²Yˆ¿2Æêr÷n5;ª¬Úoo1>	Á†NÐË’Á•PÃ¹ÆÖ…fe–µf5¶öNÜROeˆ·õ\`„cé¯¶RªK>}Ä4•ï¨¡z³p9Úó}Ò±$!äE%¡+S»øÝ;[Ù»=\¥ß ²":­^Ï0å<[!o»Â:¦”º¨;Ò¬¦€>œ]š*êÊÒ "Dæ.R\R.ÁpžAÿ‘ÞÑý¾\ïìâõ4L$7(.ë@eØwÈ“”™³†*² k}üÆ«¢w£LÄK®í(K"C.7¿¦›-QBppÉÕ|æ(]Zõwy¤çÁpÃBU|î¾ÜõOaH¡øß¢Ëúê™2\9ŒA.HåuêÞ¨bmÒá{aÊ1eeÒmë}É–56ÜSV¢66H7&'7j 3S~‚aäÐ
+ÿ„Õr «ôöçf(Éòø[žc!­!rÈX¢¥½#EeXïSY55ÁI–1V>ÛÒÛ-à¨\)—¬+>¥ŸÝi¥ÄPÑ÷–-uô›XO4^v9Ê±®;tºsÙ¢×}[Š 4…>³™€Å\$‘)¥•†$S¢VÜŠïØæ aþàsÜ:éúi«Ì‹höm3ŸJHð<;ž4‰TGÑµ¤&›ÍÎîd\ÇMšÈvÁê”Â;¤Nå›q¬Œá+åß§Ñù
+B,Ý=qì&zg~LÅŸCrÿzÐ!m‘Ùözìer°$Å~Ýó!	;-ZÒŠ­>sk
+“Ryî:,Igx¬bú½ãwKÃáTf-]Î>p»cS!éõ+GNž<9|UŽ¹·fÌäÑJ®|ÁžEÊôlÀävÿ›ýíoœ0BÍï>ÆFf)\È›¯@~ÇOÆUÞ™¾êß³È l}1ñubv]êú)Qy""°ŠhÃÿ$—W3 ÿÅm|ÝykÈ]»²ÙHî°
+zG’¦¡ºì!Ü´÷›«ã&Iâ~ÃÇ¿1Ê¼²âûH‘¬ZY‹/Ïf&GHðÎA÷ŸyòƒÄZw]c\û <’cWÂ/÷]Ò¤hÀ½¾%_@±†ÕÌm–”ûÝ¹DœW%*2M¨ÔÖ­†[ð¬ˆÅWü	ÁÓ–¸öõ“¢Ië’ð0«è«²b¡µ~¤HõÆWûQ^{%iMçºPç]FR|Ò³iI<žæaÜm°÷•gAc0<ì”9ùó²Ë;šwfÐ “PEàb’ûˆçpv~Œ=(#í39åžM16¥V ½ü´Š¶Ï¹1˜ªê±ƒ‰Ó¹ÍSÑyÃ?kÅR¯`fÍ]!Êv\­”œ4Ä4Õ/tÙàvññq ¿­~NNVýÓ«o5ï¤*?iV´È}@˜Ïy¹ªaø1ù­ °\\Ÿµ_ëUT÷Dùà*Ö±÷¶O#rˆj÷ðÌsWêäq"2†òšÍ[€Èé ìÅ^0˜îW ¯·è§Ûx §X¼P~3ýT¨‰Bä%"æ)éÐ[ÕÅô$Þ—îfˆx¡¯ìmÙQëÎ¯G†ç
+v‡×ˆµÅ_ïÔ>’ë¶µ¡à³K^™û?Æ‹Šëó„©*EG>­å Sß`N«SÑj•0•ƒèÆªžÿû§^FT¬gã¥|p$9¤ƒ¨°èöE@+-K&ý-«d
+•+Õ¸
+ûE	3Ïâ%‡,xœ£Û»âcEçÚ}Er<ïyƒ‚¼1?çá DsÛ §­XãJ½¥Vh”1âSkìÅeVF—\ké7Ù·D˜Ä}èÒ¯tÊåèÓDcƒ¬lo‡"ŽÕÁ÷N€å\sÐÐ9­»yÑëu8^¦Æ÷°|
+¿~}eÍ"¿…™^*¥q(éŒœ,h¶(|B»Íµ~Zés<æL"P« sçük]4À0.!”RÏü~z«÷Z6b1ñÀí÷¯Ã„óX"%ßs¸ì„,I/rQ·áëïc¶$8“‹1r³<þF@x` §ÈTÆ?Æš¢}›»·ùÙÚ	Åœ™h­í‰FBÎðáê]®¾ÿ‹wtIá%Fç`ÎômBm>€ìPðP8„ÔçóÅ°SáÅvœ†æ\°Æp`ˆ)?)Þb¬‡î\¯Ù­5Þ3>Ìºç‚>â™n`Þµ.Ÿä«ùÖ¹ìÊµâkHŽ»C#¦å©ÑùIpƒa-©]ÅhzšC!€Ój–å>ÒöîâÆ¯losxËh¾ÞAv˜I0Üw¥oB=Ð¬	RŸ¶0cÈ9Âé"‚ƒß»ñ;ßÜœšØ­‹M®›—À"ìÄ÷y¯œL1ñ£ŠVŒ6ÀÐÕQïTçàcñ² ™09ÂC€Ä<!62&^ÈÖùœìé¨ûtsmA:@OjGÞ“þ¬û
+ñÌñ¡VZö'Rã©rQ'´‘ÒbšÏ×ÁUQöu—”á!*^þVY!;,7 èË‘^ÀåË¬_à°,Í†]Ä¾ÇA±ó2¡<Ñm¾)FWR›´g8))ÃaJâÐ!î'ÛþõÞ´äý¡{ñ»=Õhá’nšg°éF•$Ú§†ÜÖ|”ÓƒY¤Ù¾Mãwžê=XäPcÀ{ð¸æ;xÈ2¶KÀ8!‡Ä¿áÌ®UIðÇ$kBæi¢Ók#»âs½È›JŒÝM×œ‘ñ|û)•È»½ºFŒ,ÝG±µFG\ôôµ÷ø#ÑÔðbÐ„}¸ëO­½¯~@¹*ê.¾ywö–h1€¬Gç›7i@¼†¼dKÙm´\&ÊØ;q˜¥4XõŸÇ’»˜=“C_f)Td‡T/æxbµ%ßgÊ~/&nþ"ßöÔ´µ© ùq›yw¾O:Ja‚n§0Ýø D/ù6\Œ¤3ÛâÞAè`­c“dÐ(È*	2O^Þþ]—}-lîdX‹4D¥¢Úlowtýb¨çúVs‰C’™çƒ«BŠ´að<÷Ö?¸² Ì&º]!pÜ+ò M&›´¥ÛméÖÔÇ³-™ð#v!È³ÿp¨±}ð;ìE£¢|RX–-›‡d}î„ Ü']Cb­Gö¥myO­«…•=dƒ}p7xÏ
+bT0m¿&nÇïUqˆ„yÕ£†£ Â~Ê['~Á>?vUè=îlCnúºóº-çZy6T,G1|Í«›ß~£5ÿæ7üû!rŽWô  íZA˜æ¾ø>¨¥¹ÉxÔŸÌ>43r*,åEFRÓ3,_«izÃFp¹›Íl!¹¥Ÿ‰Žº™1ï\wáÆu2ñÂà™¸Ýo¹þEZòLí;÷Ì4¥wåEfUJNt·aŽˆtP–4Ñô‰°›”jëÝÞ÷cãÖ„ÈMI•×9ìŸýï0°žÍy¸ 7)[Àlgï·÷ëEÕŽz3¾KaÆ¾·
+s¾ÒÍC¹–œ‘2$gµE…TénTòªTcÉö¯Ñkda­õKIö„!U´ÌÁÊEÌ6c**¡™î?e˜ò×Œ÷m¸ö-ÿÏPéO2DAFçWÒ×ª(GÚÿŽT²°5øÓf¢%Ü¸6hëohÆ¨c:¿êTÇÛËUfŸ%ûsW‰&›:áñ™ÀWŠígÕ)ÛÍ­³ƒ÷ˆ¦ìêoó¡!`Ø¾îãÖ\°ºÅ{³™³”Žì+xŽcú@dl®BäVð²ª•%(Î¾s_'#Â÷ÊÌ®‰$·\fm}ÿ¡DøëU©'ÝœõU”ÓÊ³$oÍ0Ké-Êfn?\J8Qeùùƒ×­~mø‡Äšw³ÊŽí=É©Dw&ca¢™cyºëGt¢!H:ÃiVÅnì¿ýö­…g(õŸ¦Ì5^îËö1µc4:ZCûâŠ\©«Zê>ÕÙ²:›e#2÷RÎŒø>C‡;¦Ç|1Hv_(ÇíÀäšŠ÷¥ñÀ¶¼'Ãxï‰0HVY1¹Ò»9Â:ž†~•zÐR†ôi 9žà¹ËT0ÑJæöçdba%ÙÒãÑ¸œq4ÙÍ‘QÏrf™FD¤àÿÚ×%B„Ue,­üVc°ÖA‚†™½ÊÄŠœ2êÏÏM°ÆI`\0¬\<@ÆP'£SßŠ`®?Éš‰»UŸbÝöO Ëê~ØÕbÒ¢;
+"lj¨§Æy\ºàÔ©tÝ¨?âQ–Õ¥Á`yeé³}½˜ÞV-Áª-¸¨F.Þ}wq‹‚ÙÆN¾ÈKÄÚ½| â¡Õ%lñîõ¸Cî«¿¨¹?'J/¯ÙƒE²±SÞ(g„+ø~†œ­“/ežšzíÄ{¼¿ßLÿª]µ®ì¨;k}¨N3ë¬ìOšR´­ÈKqŽ‡¹,[Ÿ}Þ«áVáf@	>ÜÁ.ÝQ£’ˆ£~ã£uÎX¼ËðmfìÔ%Âõ&)TØÄkF_è¶Ÿ
+[‹¹·î5–äÏöæü†uÎéx>Ãch]ÀYsì¹…çP¹sÍ¾{Q0µÊ¿}ˆ¿tàëÞú
+êp‘w>8)D;mu‰7­m4(°bgV™«‚dÛ²šWkÕÀÙdc×h¹ IÐlÛ3Š¬ÌÊó¶?¿T`/öN³j e…,@"¶]Iåo[ËÏN­ªä»\¹´)¢{_–ýïR?…ÚÓ¢àQ972fô×ñu¢`šÔìT•ä²K3Ks$1ŸÇ®‚Á†üGéÕn2Ïg©€‡ÕSüpp,-=°^ä›(Cz‹÷£K^z’ß¢ºì8•ŸÜ3 m,æLßÊ18€¾˜ÕoÚ.ù#Í|=¢hëÂÍ€©z~øg}ëÎ|šÉ¡ŸÒš¬ éçÕ¿l§6g@B;í#é‡Gºhße»ùióÌhÈW6·QÇ³ž‚7ë1±Å¨|Äø‘²³;ôUqI;…#{î“ÅLÌâ„* ÷½Ã÷jÝò‹S\_­¿~Æ-äDâcŒv§ Í6`´ð¸
+•°ñ%>‹œ/|Çvmê0Ú=âŠYj*¶ÅÎBzQYæÆ°Y´îÜ¬”'yÝn¾]-Ôr÷'ùÿpJ^0éÏ¨†X	ÒÁCóÜa°ê{õ}=_Mtö‹JÉGÑïâ£½öâ­Tˆ_¬<+ó@4.¥ëj€ÕËmÀ€FË¬(tø>²ï	»ÊÇüqFŸçù‰ÑM"¼ÔDM–0¸ÇPÍ¶µªØÇ`y5$?v€(-AŽˆ”õµ’e¿·Òˆ…ÿ¶My¢ÍT9@{ –R‰ø‘7lì<Å.‚ç>LTÅÁ·
+Ÿiß½Ý•oñ*lW(¨±Ï=€X›Ôaa(Å¶Š.v8»\J¨9h¹_H[DzÎK¨ƒW¶méÖ©)­—¨ë†<Á¸¡§s“_²’ªœÝzTšÐ&d{ðâ©´i¥@ÆÏò Sx·Ðí†‹ÐŸió—èmè~}…[Çtî2~õ­/WRùd@§O	‰ÛÒs,²p£ªˆF,;SsêZ&E“Çšbpžy×PÑ…ð´«t{Üè=µÄd\sŒÿÒØÂkõ„¢føã¥¿G£2",ål?¹66K¢›.!ãü§(°Õ7¹îßG&O6yl =|âÅ¶Ksvÿ€{/4MÎêí¼@#,æS:"Kªeåç,4kq†¾4´Ó³ñÔËðwÝ<6ý^ÎG·GDUg,•ñhà‡~ß¯•¬^I!S‰ÆÔÞ îµ¸³Kˆ©ÕcêžT8v*§c†Òÿúö90y¤Aq÷Þ³š¦—
+!üžèInsŠsÕA*¦*y’ÜYÕ›üéùöL^Nûªç5/ø‘jRE76ô2ex‚ûeŽokôy°?^ºeÓñ-]±ÿ.¥Õœ¹ÜK©E„‹
+]Q‹
+ÖÕ«'ÌÃè\4±2C^dÑU€ÂÚèt)<Œš¼\iÑ-¯`ÐäLÐÕ¶ínÀS0´f¬á0e‡I4‚âÍxØ-cä"Hàç¿÷€ŽøÄ›ùµÉ6C¸TLØH¨ÔTGjF9¾p$…®¸½£r‘Š»¨©ƒ+9G±1X3+n³³ß©õ%ŒóBoßP‡ž6}³¦Gl=mjI™@®/ñ
+CÄÒçqŠ³?ÿ3•Ô>ÔOñ×Ž].nÝ)=œíÊl%[¦f¤Îì¸°´H¾¢Â²´}Ä&v¶NÌ˜º.¨Šé˜‹"˜ÙŠà0œ/}\m@%9“éïeƒrTw|e žj½Ëtª)D‡ÈzZÅ¿Í(ÊhYïžµaçÂ¬>_@nDšâø$ù‡!cJx7:ÛÊÞaÚ»Žpý~ún@ƒC¶Ìû¯+í7Þ½×^À¥¤;²‚'JfíÆ,xyÐ ²R1ïò-s?å·*ÈqäŠ›goÂŠú'ç‰û¬’ÞÂ}øh«¯ˆt¯|ÀN†˜¸¨Gý/&-›âP™’®N¡£#X‹«9(‘\]6° åðÖ×Ù» 6É¯oŽÜU‰¿WÃ^{}©GD@=7ú™ÚÇë€‚a¿•B‘;á”äŒZ.çÅÉT! „å0Tœvóî4d˜/WDïgW§(:Áå!fè‚ü{|ò
+Ø?`Ÿqž£ÒçµÎÈw>/Å¿uBÈgýyLtt,µ´ÓîóþÅºÿî[çpO}Ç™—·oó ÕÔ&z	NØ4=]‰°Ù©áj7ãë ^R–-pM÷•Êw f'Á¥wÕg‚EØ˜r‹ òô˜®fË¶Þº‚!Í`Ö8ÞC²qß¸I×éÅÄP´5Æ€Á…ŸÉí–eà¹^¡êå°&d©rJÕ&à	2K/l‚¨:sªÒô¨êÃ‚dþ‰¥>pµE…^­¹[›6V.·}6¡7ó›‡âzq^•B„ä¿`t¢ÄÿN¦Ø+
+£ø¿QeˆMF:¿Œ¸6³":ò1Ft*ËŠIZ{˜6P	õØ±9ãP“–òZÍ´ìÌ”Z&léˆÖEç‡åùÈ=(ïM±!i7m™:ªF\H=/,‹øßàHuJ¼:F§ÏÙÌð·þÜÝ$BÑë­ö>ùb¦™ÔK,TlÚõ–µ©?\ä‡Šu9ÿµ<þ•µfÝ9½íß
+ÁlÂú%þÉë©XO2I¡ö‰çA¢ý¯‹s-›ù²€"!RaÚ.ŽñÈ‹Oe›j®M¨n%ªqÕ_»8Ù¹äw‚é0˜ÏÍuwÃK>‡&¼’ëumaÛÜ1f‚(M¾Â¦#S®¦CJÞ~oa¤¢
+Âbe4ˆ½¼oGIß—^>&ùÉæ±&63ø
+—×ÃeõðÉ’|Üø8‘ZD}	©¥æ­¶Ád§š˜3­’Ñmùa¥NO¿á
+Â¨.ìçÝ±Ø’˜ŒšÍÊs†C	Â¢ð¶¢¿¹öæGàNä*ˆ*Iø?Ór°Ý¹ã7¹ò¥cŽwüÈŠÕ*v#VöôŠÚÍ_Ó0ÁzŠ+¼3V×&Yñ7´JÙfõE•Ã5"o6ì¢ïÝqt}U£ªÌy1^Þ÷!»¹ô»;gLR/àøŽeE%AlZ†`2©¨´"–‰Ø‚ÆXå8K]S#ÄcB”çRÛ/ŸO»T{¥>6È7H˜²÷5$x8Ç¬OI_ñ„5•ŠäÊÀŒ·Æ\}U6á"jÆÖì¸„A-'a»F]Ì„ÑJ/ð-©™Ð€Cü'ÊþHR«.RùÿThk#šS­ñür\èx0|Ó,1HN)^å@‚w&Cë:6»/W¹é©s%#¯]Ìâ’)S9ÒÆš$¨8.AVVî™ôZÞ¢d<"#·{L¦¯mUg|í6½2±\Ž¢æO1žüðñ.÷ÁˆvÚîïA$óÎH‰®…ŠLG€‹õRmláRUN'3GàOÒPÁZ£ ànU(¼.“Þ§‹+z 0!»Í|Q½NjWé°1€ŽOGe;ƒHì¾/€š–%mÑø˜|¯nÑŠÀvÅH›—u
+« ÙÖûºÍ°Û•|bÄZôL÷¯p6oÔ0þ<d˜>õ#DWâ/{Á	¸ù´nŸµwDÓÛ.§õøqãWõ™¾¯ ÉÅ^e³/2´3‘µþºÞBMv 3Áp)=º²Å]ž0lç"¢Y[2|í²SüR%:SVIâ—ìe~Dî“£¡áÅ´ØrM^õ=šB€×Z#³Wëé½ÁÔ×ð… tÞÔÄÉžW%›O³—Î¤Cc†×Óõæõ&ø|(gIž˜LÑõmüÈ§@ WÉ0M@†c·æÐl†GÓïØnõht¬
+f°YBks{øSS›§:W4¸°)œCh.ý‚q#‰÷¤­Qd??ám§éö”Ekçûö«¤§Óx?`±ÓÃ?ÙÙ}VŽþZõŒ‡aü4röã¢çAn?–´W6°Nt*g”¼j{Òýx¢Kƒ,©ÅÛAf uE´8ÐôÆq±ÁÖGå³Hæÿ$IÆô„|ÔMA)AjZµ.s—Î6ZÕeª}iéöÎ4}:ìÖ#ÜÛ—’ZÈìíÆ59ll†N|´öFÑ“¶½rHžéWÀŠÖôÔNvä#˜doûÃÜ†¼Þ§sÆV£úçZØrµš8x`‘4tlá~Î3\’gß§š§°û‡'ƒÊåw²"¤0¢p£(’ecÎ0ÈI`ÌV‰^)¶õn›Œ¡AÍdØúv}ƒtQíú^2‰õCÉPŽCa<ÃSxîUv/l…/\¡ÇÜÜ–ÏG%*&CnFŠÄ3PBAŽ¢ú¹«Îæ<ÐdÙ)ð=hÏUÛ*S1ÔÝý¹B&âR\i)rƒxŠŸå<ËuAÐ c·|Ù÷ÖAðb)š¸ŸRvÑïöT5¶‘®«6)öžJ‡¥}û·pŒÞ0(©ñö–YŒêÓð˜0È‘Zkßy@p£êžu¦œ˜a•uÿýá+@œ_EÞè(‡ái¯*Ÿ-CQOãé ô|¨€bpì‚ÉŽŽ§×ý¸iÀ¯R³Ø±L»KÓXœ/4V«hj˜1:.}ØØj¶=Ya¬tyÃ$z{IgŠ]ÕHµýó™dvóf.G<õ©ÎÜ 524Çó©ÒÐª—n¥zAêb’ñ1~r8§t“.Ó÷MP1Œª}Ù«Eýv9×’èWJùÚÐFè¸Š?ï’¯eð¶?0Rêwî\7Ä´U½õ™½±æöp…¢‡?ÝPÕÿ€Façé¯*I¤7lŠNBs£À4#æàfr„´÷St€F”IÙãÛ’0l‹6ÙVÞN4|](¾;Ž3CqpS2öv1~´GÉ4i)^+VÂ]€Ó$aíÎs+äc™„çÅN;¤ìÏ…Ž§‡i™‰áñË*mpî1™ÞÁaT:µ2l€¶9æe(
+Ž9ò4Èj±*ÒLqšk¿«<9Ÿ%*6©©¿dFÒÎˆ(‚Ôt¸)P|îêú`Ë5•KµgsîèohÂzÔ¿…Ä„wÍš.Œ~=D(ØA&c~`3±‚D!ü"o£JÐvˆ/ûÓ´’=q¨§-ã;"Ááõ^‡"{i€HÆÕ‹WólÚ^ÍUÑ6,²‰¡ˆŽ¹	4ÍÒ€ôú|ðMœW¨dº®'@Ý{ÐãRæ l¹®ý°„†ªÕÇæ€&¾Õ`’µ’`,ÇÞ˜ƒnÑ¦!˜È¡ôÃê¬Â70ïéK}®P“Óê¸xD.'Eaf¢W²¢iy‡ÇÙõ¸ðÔñ•ºú4JÑ­¼ù$‰ÑId§×T¡d>%]|97NdHZê\ðJO—o?ænrdt}D×0­õH`Á=ê§.#q0Qœ0øµBªHÉí«ƒa—Œ"ÿ¨kÝÞì´eP–!_?àÍ´y>&“xaNm´h[Bz@Kx[	ýrÆ‚2p£l9}ú6†¾0â½ö¡¾ßT•3‚Q(ƒ¹øÐÉºœ%«(‚^=ËQ¬ºˆß>àòìÞàc?Þû0™ñQÈOf«ñä-ÌûCöÁ‰248:*[saÂþâ=“MëžaøHI¶€9³?—ÊŒ„VÐì Ú0ül½ßÄ[ÅÝ83ã?z"ã©ºHÎ=A —V2c>#ª,)Â8Á(”ì¢³Ï@dN ¹}›oÂ;C}3Ï{cì¡y¥†ƒÝ]Óc{"Ay+vçôö¼ý‡ÙM`ç!“H'Zg’"UËhCÖ›Eï™oÂ7'‰ëë I½+± $kO­ÔU„þéÿ^àžê†á½Æúƒ>šd½ªT µ”ª±5]·Åó("Ušc›Õpß\Î=ÿÓG{Õ!yþGM¥XqLz§E?Vâ2«fìg;>¯9ì(#vB¢±ýzhß’ -.²ˆÎ¾†^åÊÆä^÷ä—øZCZœÄÑê3ïs	uCVó\ÍC~F” Ú ¢¡TºAli2ßÛ@	ÈèŸ„Ëhûc–ã±mÁ^,Ì¯÷R{–½í+t´3öf÷Ò°¾÷2w	ŽÚkï_ƒ=Ù8õ}>]|ÚÆòUnþ¨‹‚ >”>?<¥WÄÎU¦£7íŽÄE‡€´JÀft‰ÜCÔçîÎž•UðÇôš²g‡è6yNã ®SR¾<+	¬ëüqGØ¢¸5$gÓDjèáƒ3M@nös`x	MVRþfúCU¡k£#à=°=×]Ã‰MWCåî-’ã‹õ{hc‡¾å’<k(	VØu:Ô/<àVkµYlLq‘·×¸¯Ì;€Y	7&`ù”®LB… ü†‡ÀêŒcí¶‹À&qøÉOÈk¦Cg|OBœòƒ–êŽ3´º—ýL•Ÿfmœ”Ú¦àXƒwŸ÷ Vß yÌÏŒKV‚Ž³).
+PœJ™SM	;¿öÎÄ¾¦†•·bN<6ckLî1ÔEËêºò'¸kÒãýƒÌí!>½¸K¿n­NÍWÙ´*0¾ÌßÃ}ÎÖ3—ƒ•Uï¯To®eÜòßøUÄž…/ÈûK™Åy›©%ì­€"kcOð[X^ãœ§Šdˆo•€¨DAÖ1F–"ƒ¬˜B‹sÙKÇÂ»Ú¸uAƒ3“ôèBoå‡Oïº¨ÃŠ§tF±º¨úN;1e}jÑ1Çynƒ)Ç+’}AòöJM*¬ž>ê|¿ôø¥Û¸Å™5ÂñÞøá¯1XÆ«’ZÙ_ØÞ9ŒÎQz<_–?r7c\5Ý(¹63†møéy´?pˆ		"`üæÚõ=lª&p¹åý!¾ÎÑM^¥«°sÇÆcP…€+œÇGh¼€¸0ÍÐ½•m—†9X™_xx˜ý.5o3¦ç–¡=¼œohH3ôø¨ ¼‹QÆ% UÝ°_2<†õÆÎ.)x­ðáÅ…þë0AC–(`ý}R¤ÞàöŠÓ‡üÌ3d“ú	BeæF(ûô;Þ6#u7Qxì÷À¹œ0Î-ã-I#B<¿!õ3À8¹Ayk^–aú.{5hÛ½ý¬­o/|Ú–6’‹æ¯Õè÷Ñ?ovYTt M@³ïÑ\îð›¸qÒ9»^Uˆ‚úâ‚F˜)MÞÉ	C™N©^”KÞ cNÁsf…qq­	V†Iõõ× ÷|î	òÐýJ¹\ÝþRÕÈÂ›|GË²îm»Vûa§È·»Â1þ.gf zwÿê‹#ªmÝá²vË8T=¸G”1Þ8²œ»=	¡)[žÍÔØUÓ±sDS”£ËÐÐÙ…Xd`™¸åþ‡›t±4Uè;î(Ñú#¢ÔU«r¦1#\h…E0opÀÇŸÜ‰4²"eGÇU3Iò—Í½œ&(x’¨\†ü2e™?ï1 ã9¢¢¢ˆ‹|é÷ÏÎ§:[î˜5œúñõ]]lQOÝ’Àp¨†(¹”m_L‡*>·Gé	ž4GÆŸ.õ3æUG¨7…¾d½3K˜EÖÓ¯ïLSîÀ‹™|Ø½>Â>q@GÙ»7>5&“´ {Ø+¾rXÄAõÁ¶êmg*{ƒ&°„Ø<‹^f [ªÚ;drßªak¿²(xhÙ’_mj}eÛõ’ä-™¹€;E’G £vG{ÕãÎän ÝíÏž1!lT~~è_½»SŸÚ'%'fkü‰¼™Î¶³ü$µÐ¾ Äq­Ñ¿Û’ÅOŽý¶íE?¥®ã3Ò+¡»¯Ç û“ÌîjVÖ4ú˜ä"¹ÆCÏ¶yº¾4Ä(8ÂfCA×s¦qœ#-’Hk@vÈÀìÎ!…‰îP~½Á·ï/r‘”ÜüýÈ<óÈ€”dvXÃt–fN&Æ=¾8uûèb1€ø‰Öq&á.ˆGÑšÉ¶ØˆÞ§sŽh(æOdÐ÷ ¹‰¹{ë¦IúðÉI¶/~a.­†ó_T4
+ÁÊ>¸¯L]œÄ}ÕóWõ3ñÿž£<0òùÔ”hÍ1¤_Ir{=êÐöd»cfêeçé™%2ÑÁT/lF³’Ñ
+…0·äŸÝtÎÌ©?þ2s7+Ê§ÒÞ…•WüåàÛºl¶ñÒDôAˆþ:ê¡ ˜î¼¹eEÈ3<…V6õE5”êäÞ/§Ydèõ¾…Ã•4¡çlÐû4¦ ü7ÆH¤˜û•¼Ÿ7W^›S±„DŠÏáÚ(øz^FôO’G>Ó+½“ÿŽ‡˜—°•¿ø»jÍòjªÞ7‰úvt)t•PÿÂÑB,y­~2é%³U‘ÏL&OÊÛ§4ð•4:Àëñ£3Œ¯ÕqO‹'}‘?žn-õTQÿ‡``ò>eýÝº
+b¡†7ÁÎËÐ<'¶?:<IÕœP™sñ+Í1V ±"Å^á§ˆ°»<”Ý§Èð:×ÐÆhƒ‚Êt¥UÝhVžKO1 jª´•åý!øÐ¶©6—	3v`WËgík9°wÉú^-‚Cì#)j»@<·lƒ_*üpŸXÏXÏ|ì–Ò`JXþ	Spjöî^ºª›±Ó°µì1J``äjFYÙ¥ÈØ›m§Ê‹º	vª9ÚÎ¾†É‰wKˆjidsööíÜ{V¨Bj¬<òç°v›ÉýiÃŠšY¤˜<’MëÓ(¨‰¶[—{ ±„z-MpGa¦¨– ej}tb#©7È¯çd×”¼‹W§IË'ÝWâ¹VZQ†Äpõ+×öc¾R(}ƒ‘ÇýÝØO}—Ü2´.Ãú=_¼¼cÌÁö]nÔfki5"Ÿ”ØIU+1»­`ëÞs‡ü7€uµÏeDÄµyÞ7e÷£¥V^[¸	LJ«uz¾&iVÎ6oF LŽÂ”qeOÿl¤>+½v.Rí\N€¶½ €8pc8Ì[/*ÖÃñ¥
+Kî~P	/SÕâÚQ!xüHy
+dÚ†¡!áÐ)uçe×¸ñ#X¡""-h‰ VÁ)nIú¯wòÿÑ3í« jTÏ¾ùHrRXgÑ hW<G?)Âx4¤rGT”ce&é(åSµ†ÌÆË³ÝwîùMË9òX°FG‰±ºà=øÑ0ÓóYá2±/ ž*•ér­=‚%ãš ó€Ó+<Â‹Î°ü—äîÅbÏäy.F$_:mƒ½RP5†°ŽØ‰˜mÞ§‘Ë‚«8úh
+ŽM¨PY ±ýÈƒ*ÊÞ˜„ † Ÿâ¬¤eIqâhì¦Ì	@Ÿz0ødçsõ|R+–¼Ït>©É[øaN8©|ç~—RÒÖZ;¨øÕb©Ì²¥íìÆ6ð¯>lëòþ×]'=/òg4Òêë“÷‡ÓÛCzŠó›É»²™“¶<O8áÆ8ÎœpL$Ue|Ü‘Ñµœ23Jg•î(…Iq¢Sòuª›a§-AèÔ¾×Ã7ân¾d8.íoñ\Íbö1ƒ™Ü&è1þ/ûÖéšÝÁïXåP(æ„Þ û“”â»Ž·”TO†¯|ÙDØÀ„É8D¯äºâ„U=oÍO&þú®„º‹QâYÊðg!Ïî<uÝ¤IVe¼ÈF_îKxåõ…òý¶ì=×ÔW÷éê#FáÆæNYqM8z¼Ê~*á
+rnËòõT?ÅÁÑ<ú¤±lÆiÞvA_~=:†z¡[­<N<V/o	bù»I—ÌL"átÑÓ8øCÖ“_uúÍrn¾eÕR7—%âìÇi^ÎŽTÒ*CH«Ýg§m fÁ{i½¡Ï/ö2×þý @Íö„ÕY`$ñ.;êåsßUm‡»PŽ‹rö¯.êciu•ôYƒ}ü>÷I•îÝf½¹tŒ·GF”DŠ½a›Š¦h¤7úùK%åw”ÒC‡]…b¹Õ 68¿Pžõd¹å0)ÑP§|ÀÀ$¨yáÐavª7Lkï‚âE™Ì˜c‘·öU%ëWZ0 Z²—Ð…XÂ3GÓì`ì}Œkj¾+¿m úGy"ÕÄ¿„”ŠÁAm™`ÅTB!ô—©Ïfo¡H[ƒT0\9ø½ï›Eãz7føo[\¬S3£]BÐh*P -ÛcÈCÍ×Æýq•óášþ½(ÑÜ¹2*à,‹šÞOºÓbÖg;vxšÛ¯ÞÍ¾Ï·}Ú~–1wdJ! úhþ 5“ó”£úVè}ì«-Åæ}ÿõ<R:©É_´Ê&~‰Ýxý%Ì¤a‡1HÏÏÞ©8Kçè0Ïu;mé™±X>\-©Ð=`=÷žÜËMøíLññv¸'Bs?æ}Øm9N‡fr0W­ŸëPa?ó==ûù¡Ñ™‘ÙãsÓÜÆ]#c‚]9iÉ‰ŽEÝåú)ã†0p¦Vd­ÎÔX-"jaY©º¼ð©Z
+1ªr‹LPäŸ>Ô4¨Dg.tÈÜ0ÊSL –4Ûë³À9ÕÓÿMá˜»¤ÿ7‹’Àò½Ÿ=Pˆ5±‘«´ÍÈIep?˜ä‹	˜XCyÌcÿzï×$¤‚n¤ˆÁ*­KÆgB€nwR‚¡3ÌQðNDØpfÅgíMÎÐT!È„ãÒ¬lhó{ƒvœ)þ?aÝµø5•“—Áý§ÄðãË¢,eZõAˆºñXvü¡°ç=¼iRË,ÑK–¶ú5…Ålž¹xE2ñšË¡£mõ¹““ÔýœŽ<ebR—W÷1¯H×ƒÀ:ã
+Tgíü¨Ý2ìD'/*e(Æ‹ê$ÆžülBJÒÁô7'…5KXê€œË•òZnYs¶Ÿd>ñ®øü¨BÒ±~ýí´Ÿ… Ÿ¸zAÒeÓ·óp•†½ç^Ösö€ÿ`Lqe¸÷_t7Ì´À-½“!Š"Ç¬_ 26m@ž9Ç)]½a6pby!Çvâ&>Ú”ç¾c—UÛápÈ<žfà²Lf€¹—‰^a‘íôRtþ7U¥Ä˜yÏ¯{>‘^OöÝ$®çG 8°#‚œŠ_ ¥ûë×hˆÁRFß/!Ìwo®Éÿ®¿ýQ°«î6ß5|©)¡)‰«4H<#Å?„„çœ`8$µm³«nˆl!¯ïn	ù;¦´6\¸Tk½•X|ö¼WÇÇdæ¯^Úì2#ÔÑQ–yóË/ÔZ1ådzñÁ…>c ¨™k1à†å†¿Ð€ã‰µ™Ôkti›µÕ€× ±öû
+FÛdoæÉ¬Ä€’NÅ=IhEÌÎÎéúu>¡¶°í¨m¬­l:€ïMì)¿è—…@èPHNŸ_…·Œk7€·`M¢[6¢t‡M•bØ¡|ÔvŽ“•«giÝõ˜Ec¾wÅÏ†¿b´r$Ãm|¢ÿ¿åCÂFVÛ0¤@=v*fy !Xp£Í-šnPMv-R-Ížè@<³´þS{·^¡’xÕ½o­†ãÀÒ{\%*»’­ÍêÕ?Á±Ö8'¶ÀÓ[ŸÇÔk])³/pM7jÄˆ_ù5‚ÄžLâ×€ø»Èl‘Ëöü´mjÁO)^
+ÊÍki`Vª6Ä6]T9Û˜+Q@8âÖKZßD˜
+¥nB]†]Y¬j3ƒÄ!üù9„iV¶J¨.ûRŸUß}µ¹t6~{#éïàw]NöV ˜ÙTNhêÆ	|9ç"¶k¦!‰ó§ësû%ö%C³¡Mæé¡±þ»³4Mv„n¾šú×ïA ‚ Lí¾lÐžúå"WàØË”ÌŒ#Ë.Ö†vœqC'ÿ°zeÈ(Ìïffw.ýxlL¾¤P¸N.£Gg4‚Ï-¥kÿ
+ëáóL›„ûæ·
+ Rï:Âýfô-ü}ÌÐÃ‰N>Ê_‚X@¤<¤$Cç†Ï’*›$NÿÀ¶r‚®1gÇ`@Mò^a‡A¾¦vAŽ9OG¶²œ7'5j8¡ú›©E2Rg¾P)v«[¸¦ÈCÛšª×1Æ6¨ùk¦ûÁn³÷H÷Ü’ã=‡­ú¯Ÿ4ôE§<‚­DÄll– ©î6C£ð «¦]]±A«aæ99u!0k!7¡°üÝî—DóøþÂ4éçgh•³Å{¼»•Ù6#‚V"JF&ÜQ\v:­P¿lk3Àx¨ HPvL~+ôï÷·ûíä¥"R­uÆH3†a<=‚(B,çÐÌè†Ê:AÍdMtnx)ôzØ´ÅÅ°l³¤tÄ„JŒó Òß<¡†0¾hÅîêw.Ž‚Ô˜hŽ€Xnjaõ—Uó”JGÞ¢¶;/LÞ¬àÁÈ1¼aeÏ9©ÿãÄÐ±ºrœ>78$ÈÚv\Ä›ûfªÅmËâ ú@PkXÔkkÂi˜ôÒBÈÀìö]ãÀÉ.Ñ¥0—!³§:Ý7v(€Á`³ú]ÈÐ>wÕüè‘:Kœ'9ãÅÅ¢ v&&%£¥Á³ž¸r_d#pVÁK¢ájúË=°#T^™d`þ”¿;ÖU@˜ê‹¨Úý÷š=xÎ…I¥ð*]=¯¿Ç}çâÌŽH‰kIñ«¶WÊZ iÞuš4AIÉxãÜÃ@v^ÝBÃ(·6²ó‹|*XNp°†t@s‘¯]gšÛMpóÁUüKÕv:Hµ4u“ZŸ¿ÙÀ\¾Á‚ÐÍ¨<m Eäåùö`$á¦d¥T`fÏBô_fHFñk¢èÁi',˜™ËY.iuÞx7Ìï¤§-^Öøâˆ°„2Z[§)®àùãN›Oz1Ò@ëtzÕ""Êò2\ªæV$góòûÇ'“|jpÝmy[ãÅcšX(Å|ü–šYsþ—“¨5¬½ú·Hm†E[8ô6Û÷³ûá0ûˆX0-Hfè³ØîÞêÑú?ÖERˆþPa)p™u,»Z–á±5ØzHœÌJøD¼ŸÒê„Iò®?ñ)öuVž
+€Ýsx¹g4LÁâ`ÜÄ¢³NÂ$ˆùå”Éy¯
+€œÍZ½Y>Êæ,ë¡¨TÎB&–@4´¨“Ò‘°ÜQD%-Æ*QóÐ€I«ç‚ÿox£$?-ºÀGmål­Û» 0•'¶9!b³³CâÑxyÃ]²êÂ•Ó»¶¢N£»ô®'ï 8ý?‚Â÷"®–@%çMFy3Nšëy¨«4$ðonpL*ÒQãN¤
+–ZñÅº5CRªæªP^Ï~³uÜ9)þ2o²"Qý‹Ç5ÅX}ÀÓ§îö“”\ª×Ê½å{ `À?Í%ÐWÕC„¥h13SËæ-Y›Í½œÙž¤-/×‡?rÞ,
+Í[ún%.ÈÐ£V+Fwù©íà°jè2Zx ­õP5w…Nq#HBa1c0YÂò›[zæüÀÙðÐ÷«= "ë«4¨ÖÊfZÉ–¨õLérè²THÆ€ÈÑx3¸ß*=–\Sol N…ÁÛ×£4é€rkýpBhP%¥-ŒAyá¥PÞóÌ÷ZßN.ÐiÈÊ»dQÿùIÈå~£²¾ß4Äü‰±F’Ú‚AÌÂŠø™’™¯R<áQ†VJ×kr%W‰º˜‰]Ø6šôÜ‚fi¤“ƒ²	[@§Î€óBY3¡½œ­Ù¨êØÓå£¦|€9ÞÄDO’±jžXº­Mòu$Þ¢8‹ªcÀà)Ñ®PH][F}®ù-‘álGôZwP³!²¾%:¨Ì0X«»t_y•…¿-W…Žjrwnêì‡Ä4ño±¹ÙùðÄ-àÐxªS¹$/FAKòpÎ–©X‘´g$HŸÖä¶dñŸpýs¹4•q Ï™.$#~Äâ±ü#€÷›Òâ{ö´V0±ªÅMÛòbÐGÛFãwŸiUAdv’«zèrMÉîvu¾ð1¡€¶m¾Ì„¨Fò9L Á÷¡‡pÌ¥tS·bÞ­ÌoÖYvoS’Ô.õ¾×&i>ÈM;§í©´•„_ÚkT`‘;J„Þˆ`Í‰8]}ãañ©’\3¢µUO”<ÏB¼¾jqê^ôp9¯ë9ýúh+7·ÇIJ)oSìI†ƒ….å:SÐ€Ñ ­y©¬-â[ƒ2ÍI.×Ã!&g	±‚ìqC¦‰¹`CG
+Öˆg m±æ ·(Š—´3®d/´ewgbT@¹oÁ¹›´¥d³ÑËCx h‘û:É<Îû97y¼Ý¢¤cÎ‹YêQ<75‘u.Û€1¦5Çw;0Ížz~ËƒoålÏƒ3â*$Ã´.o‚WÂfª?û ¥_^Ùw„\ŒšðE¾ÿ`úi<ƒòñG§)¤–ÁQ·a@K]ôÂU0óRNTnÐ¥ö|,@¥oÅ˜f*.æeð8ÊÈÂ›N«à°7Ìs=äøvr“‰£/!Ž¼¦2—v©S_¹æU—?}‘)_¬ÃøÖ§æß8žœìè‹&ŸµÊT+ |ïýí
+[4#÷ªÏ¸½.»ÄÁ|÷ŸÍÅ+ Õ_ÒÑßG°íHšèïh2«%¢ü2·ìVZLj}ÐŠ¥L(çúznI´Ó—æŽ%|ô…‚Toá\÷%#µž1œo-’¦…K~c¬¿lE„;_Ëïµ^ŸÜÒîG°gðºœœž+^hydq5n·¯ó>Ë$ÕÙoò˜¥*l=ÝÒ„pðê—Êžo	c ‡ïSlà„1pÊzÂ8p4Oo“= -4ML*Ík¥Øì>SºíÚû§yÙGóÅÝ€‡¨F‚ÑÐÅ9Jå’ò€7u‘°Þ¤ô†	Ñ	%Æc!Ýqõð".¼©¾ó0ˆMD¿TÌ.{Sdô7É<&@çaiq˜g¢‹I¹Ç]óÖ.	)¢.IÄ}}©{V-É=çä{cEfg™g2æ–(@dPdBØ@[õI¹ÎËø|tß®­Ñ¥Ü‰]Ÿ4ÔÖ4"i¦¼ÙÚM›[ä½âr‡m´¡uâµ¨x„J·i×U$lìk‡i5Ì*:Æ®°Éß‚yrì÷ŒÍƒ®í´¹ƒ’£ûÔœgcY÷±’ðøÛÃ.ªÒÝµÆšÊÍF+¤5ä†Šœ9ç$&¯GK$¡¯(a*²GzŠC­œ@ü¹Ï¥Ó5÷Ú ~Í.²JÍ¡]¶¢„Ñáùh~áïåðÁ¹”ü¯hÞIXôKëÃÐã;yHà¦x†°Œ@N¯ÔmÜŠLjŸPý¨FhÁc!×è4éòÁàVb$ì†kÄòNMs~ç™ÌÕ+´ñSÙ0Á·  ¨ý;ã5õÖ«9G9êûSî’Ä9ûkßöJš‡w£©ã)*fõnåoÿ’A:ÿ‰½Æ4!’Ü<T¨rí³ïÂ°iÇŸŸtF0™¾K/SêµìóÈOÁ–"`’š¡B+¿ŸPzµSŽf‰É”väîH°¢}¬+Áq>>2sØÁÂJò^ïš¶?Väë|m|ËäÒô‚·pÌ@¹¿!‰Å[Â2„3çüÆ|…'¿Ô’|ž¨‡²¬Y·ò]S@9	Ýå·ZÁGS<\.ƒãzr:zªSbWÈ›‚”ÂÄ‰°z;úÆ
+Ò@\3Ï§¹ÐåÅ!jÔà?œ¥ÖI
+Õ
+æJl3”¢Oƒ1ñdÅ¶Õ‰:™“¡"–ÔvÂi‡îäeæ DÅîÍý¶Sx«a«Šg(Ñ¿ùV\Ò¨wšÈµˆ"nEO_-2Ìãœ¡Ûkeøq•„Ñiût«PdKz¡º¿Á(g$dŠ=eóŽwŒü!m:û¬;‹B+zk÷&W4Ôªç®ÐƒéÿO<nƒ_Sm—ïÖcÆ¬Ž²j"co’§ý+ûtÉû×s‘ªs9s“ü}“ÓÛ2îi^õ¦Üæ ´wû2ÐÜÜ/9²†HaRÉZSrý6óüµ½Aþ
+5;ó{Ý8ð„~‘_öYÿ;¿Û¬¾ò:Æíõ[þSé	E´‘ÌZZJ—~0‡Ú%‚à` *?¿Úµ^:®¼6\Â†Ê–ô¾`Äõ Ðq,r&ÛRb'1s’ÏŸ"û¦=âÒ^1=/brÎ”MîÅ*&1ÎÙÍ¿JÓ‚‰ö§JZd)›Ög,â‘9MúÕ*}¡‹¸vCÌE½ß×X¾@FtG´+ÈeöÀ*ÝRÃ	\´Ç½¥ $.^Ä¦æžáÍv6×Ž6÷YÎYïÈëB£ˆ{¬Iù‹KãA\xs†YÎ=¸eSc½ÌþgbAÒ 6×Ù½b…2UO\Ð°4Ýþ_èU
+UÜ¦G:CkL˜¬î~åÎªHÉFÿÞPpÂ;/'ÌÒÖAD²T\x•„«¢):BàŽXcØVÐ}o/ÌåÙÚïÒ:u ÀµcÊ´¸†v†Ÿ¬·ÁóûÑK’FÜM@‰ª0ïë—xÓ-ª¤4Kc³zb5RÝG£´:qTUö3<xïcÙãÆì’]Evyu§µí—5Þi*†­š"(ÙèËËr¢f¸˜ç´'ë˜~-†™TÊu®šÉ!2p]”l¼Kvsø<G°×²æí/à’ÇtcÎB‹ÞMí¯/øNÌyeµ[ËÉAö»CúÕ'‡,<Û—‚‡y¸v«Ö0U¥¨©~€wÔ¶¹Â—¥¯«—>èF
+Z*î×„m‰’ƒfÐpNÔúz_â­7±—€´£¼my±÷›ÒB=™J”0C§gRrj‰>¨¥dWûE>¥¡³Çˆe#»N5â¿Úê_Ç)ßâEò‰Ã=GòV¬7òIºé3ûó\M“ÛkmÄL ºOC‰Ìê?/¯`¥ð@FQ)JÛcT„gÝ4»È ¶úõI¥ÝñwÂcì‹…ð ¯¬Z>­‡†zîÏRýˆÃ¨Ï¹ûõ×xWœDM€`(Œ&Öµñz€{£á) ®˜œ¡±´‰5î¤­£òXL£‚¸d\ÆåÆ§iY[˜À8e^@Mc½`í¼ ÙžWY– }	¾ØÂèCÕN¸L¢z]ág%	ÃÍãÖ#C#õòÍ WŠ{lPB“±Ê¾Ø=î²3ïÊ.À³Ð©X&©úÍ¼­L$¶su/ÚZXX’˜‡sËÍ«R`¹ÊWà=³÷¯z…Cjï-s!—^ˆ“¸ÔfÛìî$Pá¼´#Ë=1ºOe‡Ì/ÖM`õhþ¸aÒðÛPÜº´†žìŽžê„ô^ë€•Áè 3)EkÚX}óbYe¿Ð‰»¯hÖ8Ý°EÅ1vE*‰šªüßlw¢Åd’µü B-‘Â®0nªºÌÑrR½Ôâ{ž! é«3‘áO0ýØ–Ô¹Ï­Ðç7Ë*™Y7¢ý—±A)ÖÕ	*ÊN<9tþY¹‹·~˜ÐTuPˆuWŽKÃ¨Åx»®ˆ£Úlî›#ø9ÖøAG™PEºÐAá8ªö•L„ãÎ´®ås×ÛeËIgD¸œ{û.Mõ·k?ûëû±Ñøa(€â BD}ùˆ0ÆÇW¢Aµ§å)VÏ±IQ’ø¢É"q0Ôæ6¼=Ï8åN¦w«œf÷ÛÜºŠæW%²LÞ”Äxéòxþõe7SGùD*(T\¾®R¶Ê|ªpø…*édceÂÓfª¾=<7s®fëljz	±fDþÍhØ”ZIRL/ÆššˆcÄÀµ~úîb½½mYÛ$”ekÏiÎ1Žæ	Å\r{½–3-2É°r:Â(ke6ÞÈÌk—å`Ë\VÁÕ=aîÛÛ÷`TB³¸i³`ªå=„žá¿um
+prz]ùðÏOŠvÐ¦ß\´J:úÇ-.ý†V½¢_>¹ö×ï÷sÇqÇOn1:.!ýÁ¬¶®ƒ¾#6vˆ\zˆµßÓd˜¿¾x€3Ýë4Ñˆt<ê9.bi'I#Xã”X(FRðbmƒ nÔ”¢¬`‚­pšË"*­s×Â›™-ÇÀõbYíŸ£ßwo& —ºž0[áSÔžRo­ÞB Ô¦×}>ybFÒç¿øæUÀÄjØÞDhaØ)£¬Ÿ¼«˜°T+qÇ<ÌÊæ±|ùÚrá»Hýá#¨“0ƒê¤7zXx2CÀ»F.>‹LWñmõ?"{~wå~0EW$OŒCûž¯?]tÖ¦™¤{&-æä†ŠüÍ‡æ–lg„oHÀÒê)¨«¬ë›Öß%BC­LTÊ‹µt"t@øÀÝi0´Ë~¼åðåïïaTEâŒ˜¿	B†¼‘~ÑàTT;ÆÍi^ýçeš”—k‹ƒ=[®Ð¬6‚Ž	¢j´1¾:ßhÁ™©k_ëz«ÜìƒLw†ûš.ÆîÞ ôj¦ÿ4ÃŽ»èøuÙþ%n‡×€Ñk±]>øˆ¶<z–NÖss^Ì^'s
+û—Ü5FÛ&°#íMX*NÛ ²ªÚ:|È¬|þA‰­™FFôt
+¥HóÛl·@ýˆO/.8ûŒìž6ç{‚ÊünföR©›Ztnœ¨ã58	Æ,kÚùÔP|k©ˆ">8˜kÄ±Ð’…ê¼ä%oÝg¹!ñAuî>!‚¦‹f´ê$MÛ!0^¦1ýjàç”žGÜ÷ûš¾Ð*iÂŠ‹ðK¾ŒÏQ¯°†®œ¹£t–v:W¾÷h¼2 Í'—1p™jÚo„k!+âkª‚„+#qk‘…à}êñ2¾aF&ëõ¬ŠFzØÕë–ë‰ŽÖèer’ö!Éªn‘wëÑLñvÉFeîs&{?Å:¨®Óf*P¥Üq’ÛÁÿödÔŸø‡u¶º£ÄwÃÞTÆˆrœÄ©ˆÙ[—1ádª¥™ÙÇÍ½Nô3þ²®1H‚{ÃXÚ~-èn‘/Ó?éOµâ Hw°èë fCm³.®‚‘È]pÌ¹åŠÅ‡í’k©ÕÚf±¤AhZ•ÀVeIh~±TSÄy7g‰'/ BfgV5÷©2»ubh¶LK0týÓ(¾ÔZ›vÂ°³]ÄK±k“ë¸¦Óc¤"À›kñm{ÖçL¸ìÿ:?	6£Þîþ»ð·9ýëÅÌ	Vùû&?Wo…w	*­6C¾`;¦|%ÎÝñŠ½Ü“¿µh.$œ²HØJ>|E5°ä—\i`cu;©Õ)ØxZ6ýp1d.ôTNÎ9+>:AÄ	NDÂå7Îaÿÿ·Jä¤ex†©qWLQ9¬k¡ˆ]>r„y½¦Ñ¥ °Ÿ¼ªF|®¾+Q›:®ý¡O”]Ù'Œ\å|*öZ-<ói>Asœ£Ò 0Ää¿`'wó³ºíhÂlI•'ÿýÂ †¹«êE)—ü½³°«»a¨+«…øÕ€02Æ½‰µNª¶Ë™4Â8n†í¥Ÿ}ÛŸ¡={û\²’,¨t?ê(`ðÿ½Ù!ášÂCéì›t1³åÍ9@öAO71}
+Ur¢åêì^å•NcÔ7×á”H¨GfÖš–ÞxqÀ‹ÃÆ˜PÒÏdiDTÿ"L´krÿmŸWbrÃ)š…éØ0G1™˜—‡
+£F¡Rìµ5FÉì'Q<l’UÙœm‚sõü/¸²Ð;Û¥6úw°W¤,,Ò.kÏ¢ÙÇ!Š]¤X)·O6KŒ+Œ“™Á0ÑO§§qÂDb¾³ÇALršŒôUHWäto;è¶æ”WïÌÝ4Äž”míèÚ9·ÒwéùðcA¨s=/ž·v¶ú$Ûæ ýÌeÁüœ¾’	Âœþ7(À]?¥ b«ÙØCY¢4ee÷åx‰µ=‚6ÖÌ™žsà£ Ç‰öÆ%C+Õ?¾ÕüÒ”ï=39åP	Å+Ð»¬ëäžFh»fôtì°b’•gé.%¼ˆT+Øu¹¼4
+ÇIºGúÂs1Ñ·³`aïDéýìMj\¥¡ü›Mú]{…	ï£(ÊÆÞ"y;OEó0ë.…ÔJÕ"‰ðP ÄR¾àÍ‚_Ó˜X÷†„G2Ôo:.™¯âõrÞ œ8Ë‚–»ˆâ¯‹ -kÏgOøn\Y÷›•[3R”î—Lˆ™¸Dlð˜æxlö”zÛÏNba¾PPlJkä€n®ÉË:f[t!ÜéNlÐ•z²SðK«\42œ6ÜåÑœ‘þéð_¥jÑ·+\(½f³í´ƒzÕyJ@K7•ºY÷xEI¯2pû½HâÆHKm#h¶èY	ªèëùüX=/ÜW¬ê„	8úr§ú”vÏŽK0˜^tV¨Ûáiøh¤r=½Ñ¹ë¤&b¦¯ì²`-ôÑdN<êf½ï‡ŽÌ!±BñÁ_•q'Å&^†\½I+€~ÓÙd¢Si,<$z;«È?"°;7ãÇM>!ùf¨|éËPÈïX Xy~;˜n
+_£©˜ßM9¥®"Ù_Ö³€ªkO—Ê™ad.¤ÖûÂi—3EéM/Z•üaÝÊpÐQóñ*Â•¸ž¤-T)Q8†Î £ê¨±%‰¹g‚®BYN¿qhX»ãÈ™Ú(ã*©tP&r¹®œ#‰$ó‹¹ÅD~uì8ûõéEŠ¢í,®XX@·°À¾Í¡_
+­öÅÆÝ0OôD&¦G@~¡àI#ÙàW1ÙC+ŸRôlQœ%`Õnb>¡î:*q3m)ž+IƒÍ‰Ìë¬ÀDIˆ\	~Ÿ/ûù%~ì‘î©R€¸uÃwšŸ&*A+‡…±ÃÀÇýp§ú
+6–…¿}4¤.<?#ô©¡µ¶˜W¶È6|É¦{ðþ7ý”À«(-ñ‘‰¨Ã˜„'[ûð÷É7]f—ó¢F7æ¹t²l‘éO54e‰„O·u€VŸ1wróIŠé™ê_‹tŽÒGRCYvk|1D>¥J?C)ö»æ¨¸õMœJßíßÿ¨Ô,‡ëÿ(úÙCÐ°)È²¥1TÐï&ä$_ÿÌ	r4yü/û­äÜŸÉY+zq	E‰8ûœ¦Íh†!š'QÝ<˜¶/Ù5Ã“ÊTè°û‚±¼Œ9³t³ü8:Iµ“qÉn×ß‘õûgåkÅà¬•¨¢cBÌlÐ"Ä×R×yYL–ò(Èt»1ê>h¨§™’–ÿ68¿ó7êÛ´(HAhoÝ ))¢–™ÿ›·<Gszëøx£Õí“PÓôÖg^nóÞzÅh¶e>rÕuüÙÃ‡a^¹ŠÜhS”ô
+_/Ó‚QVnó*üGav¦ÍÙÁ§»Íê¼)ËŽÑP:%	§1îLx2ãaþ2­ú™×Aþž³Ó×·w‡°¬Àƒ#ÒYí\Ó\§Gvìm3…à©z‰È½>Ì·¿êÐrC¦°ÞÅ%µ° <ÿßØ‚	 {5BÅ2.wTÝ§J9Úï¹R"Ys|ã÷¼P3å˜œ½);ñljtÑ¯I_†¢UÙ;¯îQ	›M7ô±ó<»a¹+2¶½›å”Á<(ÔôŠÕ1é•;µÌRä3{fO¹rÇ·Žÿ?Î.ŽO
+eyz;#HZ_`ÎMègýæ­Á¬’23Eb(‰“^ŠÕÆ,Í^c<”Ëaq–U™Ï¹±rb"Rí-Žxè£Ûõ]2wàˆímiú#¢<Ãë?yÃ—æBv²Ú
+B|†[?.Ò
+Ý`ÜeÑ¡”eX!Mâ*šñ~æ9GæŽ›IFv¨œ²È€Ë’a¤Š\<hMÏFÖHöej2úŽD<ññäKƒnÿ0ÍëàÐ«;‹Â¨Òâ:I0œd¼§Â?ºÜsÎ²G‰Mñ¶ÃD¹p^Ê-é†jÙ”nøî´m@$nG
+"4ãÒ“‹úZ›Í r_ÈV-ÔÙ’‡Rƒ™òQn¶À@õž6V‚´o@=cã&¸çèžÖL´îE„œt“N?Ñ<˜EÖa²Z¦n„QY°œ¿@¾?R‘JÁ“MîÉä)d¯ôRJX®Ê¢B·‚dVC‡{i¤>W¼:A‹Ä"2ªR?(bÅRz!¼…ÎWl”I²kje/íº§à6þà.ßÍ¿sö¥][WNÂÈ‹91­èÃ‚MüL˜ošÌ„IõD?ß©žGÙ9^™FkÎÛ«ìãHŽK–™Õ-çT °¯`aIUÆ\k3Ï6‰c®< ý“U2¼QQ[XHJ+
+K|þ7cÐ‡b˜è«‚é*¼Ñ]¤¡[p´MZêC–WS„žëÝ
+	ýkI9ÌoÂBqƒä¹P¿ˆp%d´è`9¿÷ôÊµEmŽÃÓ*ˆ,Mˆ“ÐeÖCHiÀ– @”ÈÙ½ënaW+Vs£ZuMÏq}®V&"œ»IÂ¨@ž©ÉÍÚÀÛÀíÍerÚÖëˆæ´öÉ: àãF)ïdõÃ‘×±|gGúlJ˜
+Ndš[1ã@gÏaŠ·Õ›dt«´7ÌUùj4%B‹±Y¬¯iÀkÅûA Ë§áßñ¥)•,xÞÅÆ’érEK+š(½Û&6>±û#ÿŒOGœÜdh@†Ïe,Žo,)D'cz_¾¬Á·ÜòÇíxRVf.¡)oµìj fà|¾±¤&çûv À½é"Ñ>pqíÁ»¦h8oÌÕ©N[Öü9º¦Ìùo­T-ð4/ÜÄ?ˆCöûñ4†–&ÇsŠ®I>¤¥¸:…0AêÕ¸džfça½¦ë‡¿ÝP3¹8À\m•èíIpe«*CÑ$ÛÅäí‹àC[\ùàÄ®ÝUí¼R^Üû|iN„7DO²\L n}½¯áÖ²Ð–©º!—‹\}šîÿ„þ8ÿ»ÎP—F¸k2¼´:„Áëcü¡o¨Ü¸ÆC55/KõDÁñÍôß¾Á†#Hôíz-±Ë:õJ÷Õô…ÅÜ›ôÞÿ7Tn"ú AœRHlêwëRðâL›&ËŒ~~
+h€„2€˜É;lSò'):¶§v3(GÓì	Ðe)-ü Š•·„¥ìö’[­XnÁZcN	Ï¼2“—È‘$Ä)äœïE'Úzðþþ³
+Doý(®dˆón9÷–¹d•O` ±š`="USK|vêú([QåØkë’è}$eBÍú„5¸Àªz£‰î˜ü”˜t71ºŠË(U—cÄÓXõEC1¼€¤m…‰¥yqì@#ÒÝ­(å²—iAÎZ"”IíÂ’äÊ7pd…F¾ÞLÃæb¦‘Ûõ) !püˆ|e”ËˆlL2^3«E	é pÚ½Þ!³é‰SþÝ€ ýOlgƒÌèÁ¹š„jÿOÄ†ä~ÿN…÷GiCzŽlÝ6Ã*éƒ¥««o¾©à@†¸²t“WT¦7ïÍ+¡–ð[s‰nÊF›ûTZ“Im¡™Ü×– òZÐPþ'‰ù@/è£9Û“ë“ý©@\«tã¾êP5»ËÎ/dr(û{-´Ö—âÃ«QíôÍ½í‘¡j6ÍÑÈ^f·G^½{jQàÿRJÌ]Fât™VŸÐ»4Õ0ÉŸCGí=áPÉ;¹>Í&ïzE9í>jJkc¸!	·Í–§œ¬9ZÆH`¤´¿rŠ:¬¨Àž§Üd‰Dí)¥:-‘M èF‰Ôás#Ñk  †â>_¦ÍŽ¬ËZ*÷EUd¬ ¸³´Á]ÐQÁªdçê:âN‚øpIÊg89;ÞRñxñq—ã‡ô‘÷¥ö,9c¢¦1nî [ùTô'RÆõ–m	Wñ8—¥OÓ6½‘iÁn„u…Ô£ãjÑúÊ)[Y2ÄÖIÀždJ±|o‹FUy¡ÎU:í+-Þáå	QÊ'4"%!üeI9K7¾,ÞäÞt¿¸Ãòmsîˆ¡OŠžR]u¦ì ÔšöJ[PAåÙœ}Pce‰oj¯Èc/nv"iA<ýã$^À"ÛF[HcŠ<ÛC1µ¯¢ð- <Ø[o=³B˜.D …;Ä¬¦ÀÑEÐù38›ÀÅçKnžwƒ½ F—]çùF¥Ž`zÇü¢``=nsä´%Í¿‹…ÛŒaØwh’¶Å?ªÚt>3ÆF„•©‰ë2nÐvqÅbI9,›Ñ:‰AµëmD¦a}2"º×¢>ëÔ²-õ‘0ù¿V åÌœøQ¯i‰kÿ3_Ÿ.m¤>R…ÞSw¦¬Ö\Šr¯ºÉ¢Ykä‡yÍ—¢&VÝê7ôŒº°Â=­©Ž9é<Ä“ÔÍêRÝ*»¬ªºŒ‘@}©<+èü·“¬oœGË¬~¦:«øÜè–kgIË2å‡–Ëpã®ç½¥!hé[ªœÑ7ŒL='GeˆÊÁOûëÁæ$Ç¿(àý^¬6´¼>ÆÄÑñŽyÕXkÑ©BW›ÿ’gŸÍLPšH5Âï§Kø5q›ª7¤s )Fé~‹ Bd®@ŽH^ !Tí@€ûÃ–L—]Áû¡ù"€®¯»±†l.IèZ¹›~’/gŒ?[;æËíû«p¨©(KÇ5·þ°¤ÔhB‡ƒ°y¸?í\J²?,m!äÌˆÁE#Ï6—æPç37.Kò@9æ’1¾ÚG—-bÇ‚qÏ–žü%\=o3àª\„éj
+Ç¨¡¬â}ó1¾ä$³¤š!DC²G7úàèM¥°È$Â÷Šð9ÁÌ1
+“é\Ë5sOÐ*ãÖ‹m¶1ñÌîAíº‰X³1óÆ“ m=þ°üÅ Ò‹aÍçNtó³…«ÚÌg›k¿!Bå#Bk¦‹ÉÔ)•wÐ2lU&nšWâR¯-Ó­<ÞÂCèö³×Æá…£‰hñ³ñU4"oÝÖ£° ByeçCž‡ÂØ¦àe­“¹äQÉ:©3‰Àïíé¨À2¢ÿXGóNÆW©í&{ÐÜÙø£9
+i‡±
+êüeþfq+@1<ùµ¢Àüà4Ò|Ô5‘5¿y ?É|üèÊÆ¿íZWPw†Ÿ}Âê½w
+1¨¿*I"É+¬Æ½ãÛc7ã«sµ	·d{±pÕÕ”žË@Ñ]G€“^—åoù>Îó’™ã‚fð\­„ÆQ@ÀO± KŒW²à~
+t_®{ê±/ÜÓ¥MaÎr¡ne'0mÞA÷¡iy1‡{8¬”œã[;¼^c—b6ãuù¸ó•É³1SÁ‘=ù?Y3s‹ch¸-!6û$n6OÒ~n‡ê[ÊK€M—Dm)ðCÓ¸›³FÁMX7Gnñ¦šë|¥æB1HýáØTÓf)¶	«†RãG&Ô~¹í
+‚H>æZ"­æŸÜ­ÁÒÁ>ï±£á5m:óçŒHwIÏ›«.,x€<¹úº±ò²>Î¡K
+s©Ñg:àÓPh_÷É
+§…ÞN-5·dp‹õH¾ü…T&ÐV¡å¨1)ŒSÔ Ûp]Ÿ­!~\`ycžð7R£^Ö¾º©á^“ƒ(Ä4Y(ÖÛ‡®¢ ¬AI/!$(6\ƒæÉškôÚ}¼¸·dŒ‹×¬ƒ9:NùÂûáõ¤sþw½JqTÇ³Âd qÍ†í¦
+u>•…6¢+*§®`È¾SýŽ7ê+ÆÝÈÃÅƒÙ•¡ÙÎ´#Bîì'RŒ¢?€+,Vo?ÅãÓ„¥
+Uý-Ýÿ«¿mº¸±K”ê˜…šÎµÉé#õµ1¨ H1bøÊL—ð}¾´…èXVü?Pc(T‘vL+ù¬à(£ÝýL
+,Çd—h(?dä ¼ž›ÌiY®Rmª¿¿î6˜Ï¼hˆUtBçâ~x$$ggZkGD´iâf =¸÷9T+Iœ í®h¿W‘ãxÏMTôñû°Ãå{m-ÝÎ¶xP‘!cu—AþY[û^üõ4H™½8”»Ô¸ÕÛ :÷M$,¡¥G(÷(»Ç5÷µ¿òwþ•†dæEjAúV.ý¶(HÐ¹ƒ$¯ð½6N“èg÷oÆ“çÿcå ô¢“š&L=¤Uâs;ŒÝÃ¬¼˜Yûû?ò“²ž¹¬{NS6íêž¦©ñv1ßë5þSB6N{Ò9|CpÒnÏØêÝÄW9Œæ7~…JAš Xe½Ì×x°s{ìþÅ#‹ã ë(‰‘i‚,½K³qïÉô’P;Ž¸Š:Kªü­¤Ú~Vö»¥û¤Œ;PFjj#ïÆÞÇ#`b?yR
+ð¥´‚‹…=b¤Ä"Á7”Åý{¶úWù/¥)\’Þ~Löí†{±D=ƒB8—À|ÈgLÚØƒF€Ñ•`Ãš5Ü@Õõ”‚ÿ9É¹BP&“}-°«QTÒMì"X4‚R_éç ¹Í%RN|Â6–i#uð¶ˆ­D“(Ìäõ¸Ê_9ocC©1a“âè1ø‰R,c-"ß©V@EÒæ]zdL ªT£G†Äè`ë¥Øè®ŒÈ|"úL¨¡dÒgp–¶žDÌË2)ßz‚è`<˜æXtÝóÉÃÂvWN­ 
+·9gŠT¾ô ð’`zO‘œF*1ß\U§h6xðäîTGŠÅ†¯vþ	ÒbRÜGíK´lYÔì¼îÎ«Abäcüù§‡©ç¨Vøë6+<SÉ²¦ÙÂ¥•þW?šD@ä¼‰Ã|B¸fÊYØâ—íUËK¢yDŽ·\:ž1+)ªÞH9¶2½ï¬Þ¨íqg4@Ü¶ýËe7¶œyEà­²§– 4®ãô¤Ü"ª-C²õ`ÌÊkª›isKe©eY‰5£M{:
+>k+€ø$Rð+þ¨‰ŸVÌ‚¢mÿ\g‰ZÃ{NÔi$ý¶­ŒÐûZú%»Ø;¡¹JN“zâ.lû¾‚,>NÈöÈ9øí/‹"1µ| ­+ÚµÿåL‡¿‘Œf:úe4'GâKÜÃÃh÷³"ùkí†„¦{ÒòŸ‡?EN'¡‚9Ö*¹q£H {Ûu,Šúi¸›T…0[}Õ*ž´Ñ$ŒÕíºP—‹Ïÿºkœü‰diö/Öhh©ýÔ‘úÕáÃ£½‰#‘*¥HJÔ ¹¯Ã™uL×½+E^É-v9Ò%3,¬Q„iÊ\>Y&9:ûŒzëÚC†ÞÊ„¶UëC"Ü%*˜RI;U‘B$êç[j^¾‡œÒ‚AF·½
+Î!z©¯+ŒËøùÐÖgÌ_Sã2¾?ðQíVŽ9€ª@Î4tð Üa¥´8–r´d)­
+²	Ø÷3d…ÄKÛ8XdOà|6^ï
+©ÒÌ£gŠþÃi
+¡H¹ùf¢~ë`ïJªŠ[›r2DK+^ªè„1	4P+~Énœ™+½7²Í*IJÑv¼4Ð`Ý^¦ˆé‹|r5ZŽóŠ”;f*³±{·P/a;?Ø¾!ìªzI¸†²VRÚTîk{7N.7Z–o_BÙ•Æœ4rBáÎµX:¢_t·Õ–h‚«x%S»ø\ÊKpBÿ4‡žªp-/¹Ðm1J#œán”ÅíWby{Uáº|m^u²=qo àð€x‚8ÏyjI;Þ¢LÛ¦À—¡r§í­òQ†ùüb|ý:“³ûc*«
+‰·¥ý¸Ëx<Q?£\4©hÍD| ¾ÿo‡Ø“Höc¦çGéQ Ç±Pé1™ÈÑªAáà>ÞøìQx¬jÂ!¯ÒÊÔ*ŽÏ/—[þ·2–’WŸÒn³]-Cê:­Uµºîø}Š"¦ÀU`;½ÚZvúÔ²?¸PfÕ+Ø"j¨‹¤‹ðn›€(Š7Äh-Õ/Þ3îý	C}¼},³d À+Á?ŠøM­$nÇ»coeûÃo:¿$‰<%jÝÝÈQWd‡*gkî²jºœ[TÎ%ãm‰eåöÏ$u‘ç‹§»ëh}rqA”G¶¿þÂH;º£ë¦NØÕˆkM9ñ§gËÂ»:v$bþì—²Â×{WŸ\5.ƒí¹œ×hOˆ¥šì|Z/bÞÀa0ß´ 4ŽÃto9§ŒnˆÿüI–ÿ¿Ìì*âJA¦(PºäT´É>>½UNT!(
+Ù,ÑU‚¥Cèa¨½Þ•a`%ç§ÓA®™0	ÍRe—v¾!ÜŸö|_¶n'ÉúFYðŽ•½SÓ ÒK°<:–µ¾i ‰WHGUÃ—6ñ,?‡]Kgpßg®Ù4¼åmºaýP2òidû@´­•¶{í¿Z·2ýõT:£ý£o¾oÞƒo¹|ÌÔÍ³ªßŒeÑ«äæ}âê?UÖÑêl–Ñ½'xúÃZŸŒ7)€Æ–¡kÎ—ÂÎßüÀ´>`ß{õƒ¤½þÅ”LÌ¼ÁŸ¦&Œ9oÓ×°É9ËÌò5QäùßoÝ€DÝ~ïRp¾k¹Er=È<Ä-ê‰ÝP-8©ÕõÞŠáI“‚ÌêØùï›Çã/*Ð–e{D	ûwë0ù™n­ßQ©¤€Ò 2CDbqÿ…Ü'Uùó¦áPª‚ØŽ9¤*Ûµ1ÍjÞSý¸u\âçü0õßwò/"Þ”–¸Ì£’­>™›è_ôØHQ5Ö™†0†hòAÔ"jG×`"bEÇð X@Ëƒxöˆ—>xrïj%þiY¯˜AcÂˆ@a”X7Ü•œth
+’o¦A·U„çh‡ƒÅ‰ŽËâ‘Y+^¹»ë‚v°þ•«" È3Ûì|U×.èËVëÑ­{ùüc!ôØ(Eò¸1 W©£ª8kŒ=Wp«³®Ûþ¶Jb§¿´…`òÅÙŽSl1 Ü?Á‘1nžçF¦ò(ÒbÓ´fÔ+ºš9õ-ÂvfUâ/X4‰g"¯$Ðf ±2+¬!TÊí=Lîë…ÃXðóžë7·a:.°„ú¹4åÚØ;Ÿ¦qQ¦ÒÊ²îŒ¦Œ?"àGßjöoQ–œ’°P_9¡bŽ#hzéyñÞÙ¾ÜU¹®±&?×lÏsêêIáç„vLÎ_f¦ÞJ¥í*½±hÝXP,áäEÉ©ÀŒfÿÏ2³óxþž2ûé½Tåk+á35ýÔtúýÑ%[‰†nÊ&º6Tb„ËêU"gçcfíîT¸|_’tö®z’¥ðÀHiAëŸÿdÖI×Y{yb=ôb‹9€Pþ%sâònôâ'¸}…v’FLÀÑ
+×6ö²tßüd!«ÒºÂê±xÉž8KUo·Žs‡VâN$éÇ—áŒ!I“œ˜³µÈLz§UÇŒ.¼MI|×ÒÀ½é(0Ùïv¬÷pþ¿üìP%Ð±‹‡Ö {ÎOv%’EÅgÉó†la(T¡¯Ìb9–æOÝä =®>^•ƒ«×»Ø%²3MaM-ÇÉ:(H°q†Ù5ÌºÏÜ*8VÙßyí¤¤Ëüÿþ1âý4—ø†»*€$†+r=`jŠ¤êÜµÇø¨‚Ko¦&Ó%ß„ÒÙaE‡c+U=·Dü®sþT%©ÚhcÙíÛxþ:€=ýÚ4ýÑ’F¹v…7\`zòáÂÛ3o_Ã©€D™‹oÃï¬E@,åÆ¸©UQÃ}O5À·W^$ß•z°ÿölU†vOŽkC=žô~\öU?‡lgŽ°æSÕoÎ­œ» bÙ×|…EÁ¢Ù}Á{¾)6½>ƒaÝ`‡Ç7ÅÞ¼P’8€MÁü´Ç¿¿,ú/:G²áþéã„äW­ú}ižð  F»õîƒZÒùÑiJ8ŸSëK£§ÿ&6[”|£ÝzŠõ+›ÈýN¸e-_–)ì5„œÒ„µx ðînÓmÙß!ý€®G<‚Àšö®?¡w
+Œ®X üB%t¾z/ÍÜ¥#h@7JÐKs0ô4dóçP¨e›|„®÷”cå¿ð3~l÷*p­(ç\¡ºõâR´±ÍG W\•§_jàPË e5;´!'›±Ê?¨¤Ê­¸-XÕÎ5^RîŒ°ÁøÈßu‡ePk2logÕ0óš€„‚$wDrêx*{ƒøu'VÐ¡§WYGP§ÞNd•Ð÷³“¤ù›„lêFñ/r2uì~õÃÃvÖ·ÌÂBÓkÝ¥f'I›ë@¤“nÃC®¿TV6VæµýáÑXBvSÂ˜·îa¾Føè~'Bã9
+¡ÀgŸÄÅ„²j‡M×á ¬ôY*ºŒUÇm0|§¥‡ApjÄÊñµ’ÏAù²NÖPÿ×µ¸VËzX mþÿ4w€ÊÉ®›¡¦a·â+®JÃo~†k(¦•«$®±/¬²ãA9m*ÄF_å½UÉû¼7.¦(³é9ª1g+ôc¸j¢ï
+Éw¼Ò‚»ø;Æå*–Rµ`;¢½·¸Öá›4G‘mKl`Šh5§æjK BÏ š
+ …ÀM‚ù%i{‚D¹8ÇaŽ'¶àÆU|(ïº—]ÐÚ¯±æßÅ ® @ý}óý–Ï( —Ku^ û˜ ò\Ø`d3Ã*ùRQp·ð˜Õ´£ÏÃø”a®c¼ÛJ3³×Ñ|Ê\xÂŽÑé¯+nYë.°Ý-—9¸üØ’c”ƒrIÓúýÞ‰î<'$¶vÊAøÕ*Éÿ@1’°1`Žãç›§CÆ&øŸíHzS¨àŸævœV¾Áßk¨LáC§ºyó|9`¨¹g
+ìƒV‘@1Eâõ…Õ`^ÀvùÝ™`\zìÅG)ŠZ}¿~Ë»ôO[rÞ¶JcžIÖÅÊ)Ö–¹Q‡;»`H `:áÓ”šø×vÅãÈþ›æ¯à&eÛ i!_¼1ÎêEÒÑ9·L±z¡åÒd Öèˆ¶%wfwÑÚ´þ‘B«[@$Ê‰‹Ì™òKQŒö¸¼$2£ŠeuË_U'*x•îˆLµSÃV*‡L•ö$û9ŸË¨ã
+^n€³h³cŒah2uw}:õÊ`´©ä(­žû`1ÙýNºmVºÔ
+¼\üàˆ¦€øöTF69*å³ô%Âç³o#s›ûtñã{ò[Š˜_Æ˜‹)lª©ƒ§îâéëY‘;5×Èmï‰8‘Ó×úèûà²…Ù‘+pRÚš&IÞ¬§lOòT ªµq\ûêåøçè8·"{ân1ŽdH_êà®Ål”ÇÏî7<$HHèÕL»•>]Ñ}–Xc¥½Ï÷€ø´à®Á{ž‰BãaôT¸¢ëÚ{Ó2yO5;Á-<6‚…>‰®H¤óìÂ+¥×”öñl§=k‚ ©=oùz!7%‡Â,qžÃÂQÀ×%1Š„¥ÉåÜøâmïÔã¬,Õ[«ýÏnUêåé9ôÍš+¶¥kYÊ^·'<ÎZÙ¦öz4Ôj0ôãgŒ		\‹ÍÇ0¨·æh.Î§Í!w–ÿ4¢Ï†äŸR¯´ÛÛöÛÚŒIÿ‰ZL“ˆÞú¹½²0»¢B}sBþúÛí¥†Á5òý—Á×"d_–î˜ñÓ¿MÂ§3nŸvàÀ4®ôû•‹Ôœ“Éæ :_?û¨3oJÓjpÌ}•¾$…Ei¢Ñ‘ØøKVNÃx‘ôE>z¨Ø_qÃÛÖeTò—áŽ°qX%LèA'Þù´±L¡õ»#^»¢}( ‚ O:¿D«”y•z`f—,ÌTçì‰<ø¦ä(n•/ƒ‚WUV©ù-‹¾¹$zÄwë-f½Ë°û›B&¦|ªtíó 7*HNÿ6dª ^Z@L&¥ppÛ­W©žŽ:’^pìHq¾Ð…ªO0Ú[ñÁìÙì§ø›´vBÞˆP&ôUxræÉ!\…(žç´¾Ñ˜^­¨IL[IEˆ„!'†a>[~„õý‰U‡gâÙÎÞ ïØ·B¦ëþ  ÄÏ
+qp tIÒdöVò'Dxçv­ø¤~"¤{èt?ñ§a¥–5è®gÂœÑ›Ý}¥Wí«ô*±áŠ6w¥SÄmÿšï?¯ýczfð§$¨Ù˜M:gÓb’z¨EW®1èà…ñ|Ç¹ÖÈêZáÖ4´–Ý÷¼<H@2âJ‹IR˜?ðà>¿†ÞOñ~œÐ‰`Í+¶Œ"T»
+Ùí×nBåà“’²y?Òð‹	)[C‡0N„¥%>è£îT6Ô¨¦§?/BÁÔbpR¤®džåÓ.c>0s>äå'ŒÅ¬V‚ç¼ôÂr`—#P¿D¾Ø€’7Ù™ô96VÊ¤z> “øWóT^` Vý¹ìd…C3â4bb´ëSÏZ5›gÈ::QÈÚÝ¼Ðù'¸™hK¶Ç÷Ï«ˆ Zìˆ0Tø6âžRµä9Ž&Å›†õƒRhß
+–}9\™É†¸m9Z/X
+*!âˆq™v¢Ž!P5 ä¼ì1<†¼é š[ãæå²Iª•ëÊŸµ­5ü Ÿz5«;Û³4ûv1±3à¦1ûg˜9Ä£vE/‚xüáç¶ŽÞFªÓojŸR²øêp€Êñg¼W}N2ìz(XÅ³™Õ®£a1µá”Á·ö½ó/–;’½“×¡Œ@#®Ý/H;A»ã®î
+,~u†f!Õ¢©!ãp0S…þî'g"œÅaŸ•K†Š«
+9Ç©ÂE“¨MÕÄWò°UÓ“âphÈ`]ÿ€Ã¢ÙeR"$ú¸3ì¤ÊÍ±î9sŸÇëðYUÒ‹	ŒøìLÄevš+ºï6¨Í(¢qZ‘³åyxËæ(ÇŒ:§ÿâ¼±4½Væ¢e›2éHÙ™É8Ç­½H¼¾æw×µ}a6ø‹¬-nÈ²x]ï8\î±Âò1Ãë`Ò‚-§ªx{	¸qUá` äTè@Ü­k}š%T!P¦ü¢’îq:é,“?3%5½½ˆòVYÂ“¢²ÓÂÆùÏ KY£‚âCÖê¿@ßæçýSW”ÊCH!Ÿ©òt_id,msg.id,'*  âŒ”ï¸™Ù„ÙŠØ³ Ù„Ø¯ÙŠ ØµÙ„Ø§Ø­ÙŠØ§Øª ØªØºÙŠÙŠØ± Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª*',"md",true)  
 return false
 end
 bot.setChatDescription(msg.chat_id,text)
@@ -8003,7 +7389,7 @@ end
 if data and data.luatele and data.luatele == "updateNewInlineQuery" then
 local Text = data.query 
 if Text == '' then
-local input_message_content = {message_text = " â€¢ Ø§Ù‡Ù„Ø§ Ø¨Ùƒ Ø¹Ø²ÙŠØ²ÙŠ\n â€¢ Ù„Ø§Ø±Ø³Ø§Ù„ Ø§Ù„Ù‡Ù…Ø³Ù‡ Ø§ÙƒØªØ¨ ÙŠÙˆØ²Ø± Ø§Ù„Ø¨ÙˆØª + Ø§Ù„Ù‡Ù…Ø³Ù‡ + ÙŠÙˆØ²Ø± Ø§Ù„Ø¹Ø¶Ùˆ\n â€¢ Ù…Ø«Ø§Ù„ @cemkbot Ù‡Ù„Ø§ @F_T_Y"} 
+local input_message_content = {message_text = " â€¢ Ø§Ù‡Ù„Ø§ Ø¨Ùƒ Ø¹Ø²ÙŠØ²ÙŠ\n â€¢ Ù„Ø§Ø±Ø³Ø§Ù„ Ø§Ù„Ù‡Ù…Ø³Ù‡ Ø§ÙƒØªØ¨ ÙŠÙˆØ²Ø± Ø§Ù„Ø¨ÙˆØª + Ø§Ù„Ù‡Ù…Ø³Ù‡ + ÙŠÙˆØ²Ø± Ø§Ù„Ø¹Ø¶Ùˆ\n â€¢ Ù…Ø«Ø§Ù„ @H6CBoT Ù‡Ù„Ø§ @F_T_Y"} 
 local resuult = {{
 type = 'article',
 id = math.random(1,64),
@@ -8011,7 +7397,7 @@ title = 'Ø§Ø¶ØºØ· Ù‡Ù†Ø§ Ù„Ù…Ø¹Ø±ÙÙ‡ ÙƒÙŠÙÙŠÙ‡ Ø§Ø±Ø³Ø§Ù„ Ø§Ù„Ù‡Ù…Ø³Ù‡',
 input_message_content = input_message_content,
 reply_markup = {
 inline_keyboard ={
-{{text ="â² Developer Khaled .  â³", url= "https://t.me/F_T_Y"}},
+{{text ="â² Developer AhMeD .  â³", url= "https://t.me/F_T_Y"}},
 }
 },
 },
@@ -8063,7 +7449,7 @@ end
 ----------------------------------------------------------------------------------------------------
 -- Ù†Ù‡Ø§ÙŠÙ‡ Ø§Ù„ØªÙØ¹ÙŠÙ„
 if text == 'Ø§Ù„Ø³ÙˆØ±Ø³' or text == 'Ø³ÙˆØ±Ø³' or text == 'ÙŠØ§Ø³ÙˆØ±Ø³' or text == 'ÙŠØ§ Ø³ÙˆØ±Ø³' then 
-local Text = "*ð—ð–¾lcð—ˆð—†ð–¾ ð—ð—ˆ ð—ð—ð–¾ ð–²ð—ˆð—Žð—‹cð–¾ ð–²ð—ð—‹ð–¾ð—†\n\n*[ âŒ”ï¸™ - ð–¥ð–¾ð–¾lð—‚ð—‡g ðŸª . ](https://t.me/D8BB8)*\n\n*[ âŒ”ï¸™ - ð–²ð—ˆð—Žð—‹cð–¾ xXð–²ð—ð—‹ð–¾ð—† . ](http://t.me/xXStrem)*\n\n*[ âŒ”ï¸™ - Developer . ](http://t.me/F_T_Y)*\n\n*[ âŒ”ï¸™ - Bot Khaled . ](http://t.me/cemkbot)*\n*"
+local Text = "*ð—ð–¾lcð—ˆð—†ð–¾ ð—ð—ˆ ð—ð—ð–¾ ð–²ð—ˆð—Žð—‹cð–¾ ð–²ð—ð—‹ð–¾ð—†\n\n*[ âŒ”ï¸™ - ð–¥ð–¾ð–¾lð—‚ð—‡g ðŸª . ](https://t.me/D8BB8)*\n\n*[ âŒ”ï¸™ - ð–²ð—ˆð—Žð—‹cð–¾ xXð–²ð—ð—‹ð–¾ð—† . ](http://t.me/xXStrem)*\n\n*[ âŒ”ï¸™ - Developer . ](http://t.me/F_T_Y)*\n\n*[ âŒ”ï¸™ - Bot AhMeD . ](http://t.me/H6CBoT)*\n*"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
